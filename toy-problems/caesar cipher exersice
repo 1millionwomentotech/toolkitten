@@ -1,0 +1,12 @@
+raw="g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+print(raw)
+key=int(input("Enter key:"))
+chr(ord('g')+key)
+
+result = ""
+for c in raw:
+    if c.isalpha():
+        result += chr(((ord(c)+key) - ord('a')) % 26 + ord('a'))
+    else:
+        result += c
+print(result)
