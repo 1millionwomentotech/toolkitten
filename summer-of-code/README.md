@@ -26,7 +26,7 @@ The all-summer hackathon is an open category so that those who have a project in
 |Week 12| Themed |September 29 - October 5   |TBD (best suited for senior developers with a broad skill set)||
 |Month 1|Open Ended |July 14 - August 10 |Python||
 |Month 2| Open Ended |August 11 - Septeber 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR||
+|Month 3| Open Ended |September 8 - October 5 |Blockchain, AR, VR||
 |All Summer| Open Ended |July 14 - Oct 14|Any topic | [karma](https://github.com/1millionwomentotech/karma) - Omnichannel Gamification for Nonprofit Engagement|
 
 
