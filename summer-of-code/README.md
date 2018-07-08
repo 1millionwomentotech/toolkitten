@@ -129,9 +129,6 @@ We run 12 weekly courses to introduce participants to a particular technical ski
 
 Courses should be interactive as much as possible, with Mentors available to answer questions over Helpdesk and Forum. For Course syllabi and schedule see below.
 
-
-Run the workshops in a second room if at all possible. 45-90 minute workshops are a good length. If you have more than one workshop, leave 15-30 minutes free between workshops to allow for the first leader to close up and the second leader to set up.
-
 # Sponsorship
 
 For large events like this, we need sponsors to help us cover the costs. At the moment we are $25k short of being able to admit all 19,951 pre-registrants.
@@ -141,6 +138,8 @@ Sponsors will give something — cash, prizes, t-shirts — with the expectation
 We will decide on a case-by-case basis what we are willing to give sponsors in return for their support. We will certainly thank our sponsors, by name, during your opening and closing session, and will probably tweet/etc. our thanks too. 
 
 Beyond that, if they have a great female speaker we may give them a time at a podium to speak to our attendees? Or a page in the online forum to show off their stuff? We have to strike the right balance between bringing in enough sponsorships with not interfering with the goals of the event.
+
+We are making some personal and company options for fundraising and will be sharing with the community in the coming weeks.
 
 ## Code of conduct
 
@@ -217,59 +216,59 @@ July 23 - 27    Advanced Python
 
 Using [Python the Hard Way](https://learnpythonthehardway.org/book/) we will go as far as possible in a week.
 
-Exercise 0: The Setup
-Exercise 1: A Good First Program
-Exercise 2: Comments And Pound Characters
-Exercise 3: Numbers And Math
-Exercise 4: Variables And Names
-Exercise 5: More Variables And Printing
-Exercise 6: Strings And Text
-Exercise 7: More Printing
-Exercise 8: Printing, Printing
-Exercise 9: Printing, Printing, Printing
-Exercise 10: What Was That?
-Exercise 11: Asking Questions
-Exercise 12: Prompting People
-Exercise 13: Parameters, Unpacking, Variables
-Exercise 14: Prompting And Passing
-Exercise 15: Reading Files
-Exercise 16: Reading And Writing Files
-Exercise 17: More Files
-Exercise 18: Names, Variables, Code, Functions
-Exercise 19: Functions And Variables
-Exercise 20: Functions And Files
-Exercise 21: Functions Can Return Something
-Exercise 22: What Do You Know So Far?
-Exercise 23: Read Some Code
-Exercise 24: More Practice
-Exercise 25: Even More Practice
-Exercise 26: Congratulations, Take A Test!
-Exercise 27: Memorizing Logic
-Exercise 28: Boolean Practice
-Exercise 29: What If
-Exercise 30: Else And If
-Exercise 31: Making Decisions
-Exercise 32: Loops And Lists
-Exercise 33: While Loops
-Exercise 34: Accessing Elements Of Lists
-Exercise 35: Branches and Functions
-Exercise 36: Designing and Debugging
-Exercise 37: Symbol Review
-Exercise 38: Doing Things To Lists
-Exercise 39: Dictionaries, Oh Lovely Dictionaries
-Exercise 40: Modules, Classes, And Objects
-Exercise 41: Learning To Speak Object Oriented
-Exercise 42: Is-A, Has-A, Objects, and Classes
-Exercise 43: Gothons From Planet Percal #25
-Exercise 44: Inheritance Vs. Composition
-Exercise 45: You Make A Game
-Exercise 46: A Project Skeleton
-Exercise 47: Automated Testing
-Exercise 48: Advanced User Input
-Exercise 49: Making Sentences
-Exercise 50: Your First Website
-Exercise 51: Getting Input From A Browser
-Exercise 52: The Start Of Your Web Game
+- Exercise 0: The Setup
+- Exercise 1: A Good First Program
+- Exercise 2: Comments And Pound Characters
+- Exercise 3: Numbers And Math
+- Exercise 4: Variables And Names
+- Exercise 5: More Variables And Printing
+- Exercise 6: Strings And Text
+- Exercise 7: More Printing
+- Exercise 8: Printing, Printing
+- Exercise 9: Printing, Printing, Printing
+- Exercise 10: What Was That?
+- Exercise 11: Asking Questions
+- Exercise 12: Prompting People
+- Exercise 13: Parameters, Unpacking, Variables
+- Exercise 14: Prompting And Passing
+- Exercise 15: Reading Files
+- Exercise 16: Reading And Writing Files
+- Exercise 17: More Files
+- Exercise 18: Names, Variables, Code, Functions
+- Exercise 19: Functions And Variables
+- Exercise 20: Functions And Files
+- Exercise 21: Functions Can Return Something
+- Exercise 22: What Do You Know So Far?
+- Exercise 23: Read Some Code
+- Exercise 24: More Practice
+- Exercise 25: Even More Practice
+- Exercise 26: Congratulations, Take A Test!
+- Exercise 27: Memorizing Logic
+- Exercise 28: Boolean Practice
+- Exercise 29: What If
+- Exercise 30: Else And If
+- Exercise 31: Making Decisions
+- Exercise 32: Loops And Lists
+- Exercise 33: While Loops
+- Exercise 34: Accessing Elements Of Lists
+- Exercise 35: Branches and Functions
+- Exercise 36: Designing and Debugging
+- Exercise 37: Symbol Review
+- Exercise 38: Doing Things To Lists
+- Exercise 39: Dictionaries, Oh Lovely Dictionaries
+- Exercise 40: Modules, Classes, And Objects
+- Exercise 41: Learning To Speak Object Oriented
+- Exercise 42: Is-A, Has-A, Objects, and Classes
+- Exercise 43: Gothons From Planet Percal #25
+- Exercise 44: Inheritance Vs. Composition
+- Exercise 45: You Make A Game
+- Exercise 46: A Project Skeleton
+- Exercise 47: Automated Testing
+- Exercise 48: Advanced User Input
+- Exercise 49: Making Sentences
+- Exercise 50: Your First Website
+- Exercise 51: Getting Input From A Browser
+- Exercise 52: The Start Of Your Web Game
 
 ### Week 3
 
