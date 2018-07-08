@@ -25,8 +25,8 @@ The all-summer hackathon is an open category so that those who have a project in
 |Week 11| Themed |September 22 - 28 |Augmented Reality||
 |Week 12| Themed |September 29 - October 5   |TBD (best suited for senior developers with a broad skill set)||
 |Month 1|Open Ended |July 14 - August 10 |Python||
-|Month 2| Open Ended |August 11 - Septeber 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR||
+|Month 2| Open Ended |August 11 - September 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
+|Month 3| Open Ended |September 8 - October 5 |Blockchain, AR, VR||
 |All Summer| Open Ended |July 14 - Oct 14|Any topic | [karma](https://github.com/1millionwomentotech/karma) - Omnichannel Gamification for Nonprofit Engagement|
 
 
@@ -87,7 +87,7 @@ If you know what projects are going to be worked on at the event, the earlier yo
 
 ## Open Ended Hackathons
 
-Each hackathon will have an open ended category to allow for those with pre-existing ideas to work on them and attract teammates to them. It is the Stakeholder's responsiblity to ensure that the project is explained, there is a clear project question, and that resources are available e.g. datasets.
+Each hackathon will have an open ended category to allow for those with pre-existing ideas to work on them and attract teammates to them. It is the Stakeholder's responsibility to ensure that the project is explained, there is a clear project question, and that resources are available e.g. datasets.
 
 ## Themed Hackathons
 
