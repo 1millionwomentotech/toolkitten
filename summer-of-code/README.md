@@ -392,8 +392,8 @@ Visual programming in Facebook [AR Studio](https://developers.facebook.com/docs/
 
 October 1 - 5 TBD (best suited for senior developers with a broad skill set)
 
-[VOLUNTEER NEEDED] An introduction to collaboration using Github.
-[VOLUNTEER NEEDED] Community engagement.
+- [VOLUNTEER NEEDED] An introduction to collaboration using Github.
+- [VOLUNTEER NEEDED] Community engagement course.
 
 ## Schedule
 
