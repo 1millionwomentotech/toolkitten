@@ -1,5 +1,51 @@
 # Summer of Code
 
+<!--ts-->
+   * [Summer of Code](#summer-of-code)
+   * [Hackathons](#hackathons)
+      * [What is a hackathon?](#what-is-a-hackathon)
+      * [Positive energy](#positive-energy)
+      * [Strengthen the community that the hackathon is for](#strengthen-the-community-that-the-hackathon-is-for)
+      * [Welcoming newcomers](#welcoming-newcomers)
+      * [Hacking](#hacking)
+      * [Cultivating Good Projects](#cultivating-good-projects)
+      * [Open Ended Hackathons](#open-ended-hackathons)
+      * [Themed Hackathons](#themed-hackathons)
+      * [Placing Newcomers into New Projects](#placing-newcomers-into-new-projects)
+      * [Other Tips](#other-tips)
+      * [Training](#training)
+      * [Sponsorship](#sponsorship)
+      * [Code of conduct](#code-of-conduct)
+      * [Happy hours](#happy-hours)
+      * [Registration](#registration)
+      * [Registration Limit](#registration-limit)
+      * [Communication Channels](#communication-channels)
+      * [Project Pitches](#project-pitches)
+      * [During the day](#during-the-day)
+      * [Wrap-up](#wrap-up)
+   * [Courses](#courses)
+      * [Syllabus](#syllabus)
+         * [Week 1](#week-1)
+         * [Week 2](#week-2)
+         * [Week 3](#week-3)
+         * [Week 4](#week-4)
+         * [Week 5](#week-5)
+         * [Week 6](#week-6)
+         * [Week 7](#week-7)
+         * [Week 8](#week-8)
+         * [Week 9](#week-9)
+         * [Week 10](#week-10)
+         * [Week 11](#week-11)
+         * [Week 12](#week-12)
+      * [Schedule](#schedule)
+         * [Project Pitches](#project-pitches-1)
+         * [Live Lectures](#live-lectures)
+         * [Code Freeze](#code-freeze)
+
+<!-- Added by: ilonabudapesti, at:  -->
+
+<!--te-->
+
 # Hackathons
 
 Throughout the Summer of Code there are 12 weekly hackathons, 3 monthly hackathons, and 1 all-summer hackathon. Participants may enter one or more.
@@ -44,7 +90,7 @@ Participants typically form groups of about 2-6 individuals, take out their lapt
 
 Hackathons have gotten a bad rap because of some that have an unhealthy, competitive structure, and for setting unrealistic expectations. Don’t participate in hackathon with that mindset and you’ll be on the right track. Here are the goals to keep in mind:
 
-## Strengthen the community that the hackathon is for.
+## Strengthen the community that the hackathon is for
 
 Be welcoming to newcomers to the community.
 Provide an opportunity for participants to learn something new.
@@ -67,13 +113,13 @@ Mentors must make sure that everyone has something to do. One way to do this is 
 
 [VOLUNTEER NEEDED] We are planning to hold a pre-event session just for newcomers, as Wikimedia recently did.
 
-# Hacking
+## Hacking
 
 The hacking track is for participants to dive into problems. Often groups of 2-6 individuals form around a project, such as building a new data visualization, writing a document, or collaboratively investigating a problem. Participants take out their laptops, connect to power and wifi, join on a video conference and get working.
 
 Hacking begins with project introductions. Participants that bring projects to the event have an opportunity to briefly (1 minute max) explain what they are working on at the very start of the event so that other participants can join that project. At the end of the event, a wrap-up session gives each project a chance to demonstrate some accomplishments.
 
-# Cultivating Good Projects
+## Cultivating Good Projects
 
 Not every project makes a good hackathon project. It is extremely important to maximize the following qualities in the projects at your event:
 
@@ -131,7 +177,7 @@ We run 12 weekly courses to introduce participants to a particular technical ski
 
 Courses should be interactive as much as possible, with Mentors available to answer questions over Helpdesk and Forum. For Course syllabi and schedule see below.
 
-# Sponsorship
+## Sponsorship
 
 For large events like this, we need sponsors to help us cover the costs. At the moment we are $25k short of being able to admit all 19,951 pre-registrants.
 
@@ -170,7 +216,7 @@ To determine our maximum capacity we want to allow 10 women to every Mentor who 
 A chat room on Discord: https://discord.gg/RXAebU
 A social media channels: use hashtag on Twitter, Instagram, Facebook #1millionwomentotech #SummerOfCode
 A code repository: https://github.com/1millionwomentotech/toolkitten/summerofcode
-A forum: https://1millionwomentotech.com/summerofcode
+A forum: https://1millionwomentotech.com/summerofcode (coming)
 
 ## Project Pitches
 
@@ -405,16 +451,26 @@ We hope the keep the weekly cadence always the same, so we can learn week-on-wee
 
 All times are British Standard Time (BST)
 
-### Saturdays
+### Project Pitches
 
-- 12 noon - 12:30pm Project Pitches, max 1 minute each, pre-recorded and uploaded to YouTube with hashtags #1millionwomentotech #SummerOfCode, and GitHub PR sent to @1millionwomentotech/toolkitten/summer-of-code/ appropriate Hackathon
+Saturdays by 12pm noon Project Pitches uploaded to YouTube, forum and GitHub.
+  
+  - YouTube: max 1 min video pre-recorded and uploaded to YouTube with hashtags #1millionwomentotech #SummerOfCode
+  - Forum: clear ask and offer
+  - GitHub: PR sent to @1millionwomentotech/toolkitten/summer-of-code/ to appropriate Hackathon
 
-### Mondays - Thursdays
+[Volunteer Needed] Add Project Pitch template with upload instructions: the leader’s name and affiliation, Discord username, a problem statement, the solution, and the skills/help needed.
+
+### Live Lectures
+
+Mondays through Thursdays:
 
 - 10:00 - 11:00am Morning Live Course via Webinar
 - 11:00 - 12:00pm noon Live Q&A via Webinar
 
-### Fridays
+### Code Freeze
+
+Fridays: 
 
 - 09:00am code freeze, all coding homework, projects, hackathon submissions must be complete
 - 09:00am - 12:00pm noon Judges deliberation
