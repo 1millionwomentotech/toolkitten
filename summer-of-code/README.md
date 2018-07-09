@@ -12,22 +12,24 @@ The all-summer hackathon is an open category so that those who have a project in
 
 |Name | Type | Dates | Theme | Project Ideas|
 |---|--- | --- | --- | ---|
-|Week 1| Themed |July 14 - 20 |   Introduction to Python||
-|Week 2| Themed |July 21 - 27 |   Python the Hard Way||
-|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python||
-|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow||
-|Week 5| Themed |August 11 - 17 | Introductory JavaScript||
-|Week 6| Themed |August 18 - 24  |Advanced JavaScript||
-|Week 7| Themed |August 25 - 31  |Mobile Prototyping (UI/UX) in InvisionApp||
-|Week 8|Themed |September 1 - 7 |Mobile App Development with React.JS||
-|Week 9| Themed |September 8 - 14 |Blockchain||
-|Week 10| Themed |September 15 - 21 |Virtual Reality||
-|Week 11| Themed |September 22 - 28 |Augmented Reality||
-|Week 12| Themed |September 29 - October 5   |TBD (best suited for senior developers with a broad skill set)||
-|Month 1|Open Ended |July 14 - August 10 |Python||
+|Week 1| Themed |July 14 - 20 | Introduction to Python|[Civilization III]() - 1mwtt in Python|
+|Week 2| Themed |July 21 - 27 | Python the Hard Way|[Boggle Solver]() - 1mwtt in Python|
+|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python| 
+  - [Keyword Strategy for 1mwtt]() - use web crawling, topic modeling, and common sense
+  - [Corpus Thomisticus]() - Digital Humanities Data Visualization Art for University of Oxford|
+|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow| - [Sanskrit Authorship Attribution]() - Digital Humanities for University of Oxford|
+|Week 5| Themed |August 11 - 17 |Introductory JavaScript|[Civilization III]() - 1mwtt in JS|
+|Week 6| Themed |August 18 - 24 |Advanced JavaScript|[Boggle Solver]() - 1mwtt in JS |
+|Week 7| Themed |August 25 - 31 |Mobile Prototyping (UI/UX) in InvisionApp| [Summer Of Code App]() |
+|Week 8|Themed |September 1 - 7 |Mobile App Development with React.JS| [Summer of Code App]() ctd. |
+|Week 9| Themed |September 8 - 14 |Blockchain| [Your Wallet]() - |
+|Week 10| Themed |September 15 - 21 |Virtual Reality| [Multiple Screens]() - |
+|Week 11| Themed |September 22 - 28 |Augmented Reality| [toolkitten's face]() - 1mwtt |
+|Week 12| Themed |September 29 - October 5|TBD (best suited for senior developers with a broad skill set)| |
+|Month 1|Open Ended |July 14 - August 10 |Python| |
 |Month 2| Open Ended |August 11 - Septeber 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR||
-|All Summer| Open Ended |July 14 - Oct 14|Any topic | [karma](https://github.com/1millionwomentotech/karma) - Omnichannel Gamification for Nonprofit Engagement|
+|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
+|All Summer| Open Ended |July 14 - Oct 14| Any topic| [karma](https://github.com/1millionwomentotech/karma) - 1mwtt Omnichannel Gamification for Nonprofit Engagement|
 
 
 ## What is a hackathon?
@@ -129,9 +131,6 @@ We run 12 weekly courses to introduce participants to a particular technical ski
 
 Courses should be interactive as much as possible, with Mentors available to answer questions over Helpdesk and Forum. For Course syllabi and schedule see below.
 
-
-Run the workshops in a second room if at all possible. 45-90 minute workshops are a good length. If you have more than one workshop, leave 15-30 minutes free between workshops to allow for the first leader to close up and the second leader to set up.
-
 # Sponsorship
 
 For large events like this, we need sponsors to help us cover the costs. At the moment we are $25k short of being able to admit all 19,951 pre-registrants.
@@ -141,6 +140,8 @@ Sponsors will give something — cash, prizes, t-shirts — with the expectation
 We will decide on a case-by-case basis what we are willing to give sponsors in return for their support. We will certainly thank our sponsors, by name, during your opening and closing session, and will probably tweet/etc. our thanks too. 
 
 Beyond that, if they have a great female speaker we may give them a time at a podium to speak to our attendees? Or a page in the online forum to show off their stuff? We have to strike the right balance between bringing in enough sponsorships with not interfering with the goals of the event.
+
+We are making some personal and company options for fundraising and will be sharing with the community in the coming weeks.
 
 ## Code of conduct
 
@@ -217,59 +218,59 @@ July 23 - 27    Advanced Python
 
 Using [Python the Hard Way](https://learnpythonthehardway.org/book/) we will go as far as possible in a week.
 
-Exercise 0: The Setup
-Exercise 1: A Good First Program
-Exercise 2: Comments And Pound Characters
-Exercise 3: Numbers And Math
-Exercise 4: Variables And Names
-Exercise 5: More Variables And Printing
-Exercise 6: Strings And Text
-Exercise 7: More Printing
-Exercise 8: Printing, Printing
-Exercise 9: Printing, Printing, Printing
-Exercise 10: What Was That?
-Exercise 11: Asking Questions
-Exercise 12: Prompting People
-Exercise 13: Parameters, Unpacking, Variables
-Exercise 14: Prompting And Passing
-Exercise 15: Reading Files
-Exercise 16: Reading And Writing Files
-Exercise 17: More Files
-Exercise 18: Names, Variables, Code, Functions
-Exercise 19: Functions And Variables
-Exercise 20: Functions And Files
-Exercise 21: Functions Can Return Something
-Exercise 22: What Do You Know So Far?
-Exercise 23: Read Some Code
-Exercise 24: More Practice
-Exercise 25: Even More Practice
-Exercise 26: Congratulations, Take A Test!
-Exercise 27: Memorizing Logic
-Exercise 28: Boolean Practice
-Exercise 29: What If
-Exercise 30: Else And If
-Exercise 31: Making Decisions
-Exercise 32: Loops And Lists
-Exercise 33: While Loops
-Exercise 34: Accessing Elements Of Lists
-Exercise 35: Branches and Functions
-Exercise 36: Designing and Debugging
-Exercise 37: Symbol Review
-Exercise 38: Doing Things To Lists
-Exercise 39: Dictionaries, Oh Lovely Dictionaries
-Exercise 40: Modules, Classes, And Objects
-Exercise 41: Learning To Speak Object Oriented
-Exercise 42: Is-A, Has-A, Objects, and Classes
-Exercise 43: Gothons From Planet Percal #25
-Exercise 44: Inheritance Vs. Composition
-Exercise 45: You Make A Game
-Exercise 46: A Project Skeleton
-Exercise 47: Automated Testing
-Exercise 48: Advanced User Input
-Exercise 49: Making Sentences
-Exercise 50: Your First Website
-Exercise 51: Getting Input From A Browser
-Exercise 52: The Start Of Your Web Game
+- Exercise 0: The Setup
+- Exercise 1: A Good First Program
+- Exercise 2: Comments And Pound Characters
+- Exercise 3: Numbers And Math
+- Exercise 4: Variables And Names
+- Exercise 5: More Variables And Printing
+- Exercise 6: Strings And Text
+- Exercise 7: More Printing
+- Exercise 8: Printing, Printing
+- Exercise 9: Printing, Printing, Printing
+- Exercise 10: What Was That?
+- Exercise 11: Asking Questions
+- Exercise 12: Prompting People
+- Exercise 13: Parameters, Unpacking, Variables
+- Exercise 14: Prompting And Passing
+- Exercise 15: Reading Files
+- Exercise 16: Reading And Writing Files
+- Exercise 17: More Files
+- Exercise 18: Names, Variables, Code, Functions
+- Exercise 19: Functions And Variables
+- Exercise 20: Functions And Files
+- Exercise 21: Functions Can Return Something
+- Exercise 22: What Do You Know So Far?
+- Exercise 23: Read Some Code
+- Exercise 24: More Practice
+- Exercise 25: Even More Practice
+- Exercise 26: Congratulations, Take A Test!
+- Exercise 27: Memorizing Logic
+- Exercise 28: Boolean Practice
+- Exercise 29: What If
+- Exercise 30: Else And If
+- Exercise 31: Making Decisions
+- Exercise 32: Loops And Lists
+- Exercise 33: While Loops
+- Exercise 34: Accessing Elements Of Lists
+- Exercise 35: Branches and Functions
+- Exercise 36: Designing and Debugging
+- Exercise 37: Symbol Review
+- Exercise 38: Doing Things To Lists
+- Exercise 39: Dictionaries, Oh Lovely Dictionaries
+- Exercise 40: Modules, Classes, And Objects
+- Exercise 41: Learning To Speak Object Oriented
+- Exercise 42: Is-A, Has-A, Objects, and Classes
+- Exercise 43: Gothons From Planet Percal #25
+- Exercise 44: Inheritance Vs. Composition
+- Exercise 45: You Make A Game
+- Exercise 46: A Project Skeleton
+- Exercise 47: Automated Testing
+- Exercise 48: Advanced User Input
+- Exercise 49: Making Sentences
+- Exercise 50: Your First Website
+- Exercise 51: Getting Input From A Browser
+- Exercise 52: The Start Of Your Web Game
 
 ### Week 3
 
@@ -393,8 +394,8 @@ Visual programming in Facebook [AR Studio](https://developers.facebook.com/docs/
 
 October 1 - 5 TBD (best suited for senior developers with a broad skill set)
 
-[VOLUNTEER NEEDED] An introduction to collaboration using Github.
-[VOLUNTEER NEEDED] Community engagement.
+- [VOLUNTEER NEEDED] An introduction to collaboration using Github.
+- [VOLUNTEER NEEDED] Community engagement course.
 
 ## Schedule
 
