@@ -12,22 +12,24 @@ The all-summer hackathon is an open category so that those who have a project in
 
 |Name | Type | Dates | Theme | Project Ideas|
 |---|--- | --- | --- | ---|
-|Week 1| Themed |July 14 - 20 |   Introduction to Python||
-|Week 2| Themed |July 21 - 27 |   Python the Hard Way||
-|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python||
-|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow||
-|Week 5| Themed |August 11 - 17 | Introductory JavaScript||
-|Week 6| Themed |August 18 - 24  |Advanced JavaScript||
-|Week 7| Themed |August 25 - 31  |Mobile Prototyping (UI/UX) in InvisionApp||
-|Week 8|Themed |September 1 - 7 |Mobile App Development with React.JS||
-|Week 9| Themed |September 8 - 14 |Blockchain||
-|Week 10| Themed |September 15 - 21 |Virtual Reality||
-|Week 11| Themed |September 22 - 28 |Augmented Reality||
-|Week 12| Themed |September 29 - October 5   |TBD (best suited for senior developers with a broad skill set)||
-|Month 1|Open Ended |July 14 - August 10 |Python||
+|Week 1| Themed |July 14 - 20 | Introduction to Python|[Civilization III]() - 1mwtt in Python|
+|Week 2| Themed |July 21 - 27 | Python the Hard Way|[Boggle Solver]() - 1mwtt in Python|
+|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python| 
+  - [Keyword Strategy for 1mwtt]() - use web crawling, topic modeling, and common sense
+  - [Corpus Thomisticus]() - Digital Humanities Data Visualization Art for University of Oxford|
+|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow| - [Sanskrit Authorship Attribution]() - Digital Humanities for University of Oxford|
+|Week 5| Themed |August 11 - 17 |Introductory JavaScript|[Civilization III]() - 1mwtt in JS|
+|Week 6| Themed |August 18 - 24 |Advanced JavaScript|[Boggle Solver]() - 1mwtt in JS |
+|Week 7| Themed |August 25 - 31 |Mobile Prototyping (UI/UX) in InvisionApp| [Summer Of Code App]() |
+|Week 8|Themed |September 1 - 7 |Mobile App Development with React.JS| [Summer of Code App]() ctd. |
+|Week 9| Themed |September 8 - 14 |Blockchain| [Your Wallet]() - |
+|Week 10| Themed |September 15 - 21 |Virtual Reality| [Multiple Screens]() - |
+|Week 11| Themed |September 22 - 28 |Augmented Reality| [toolkitten's face]() - 1mwtt |
+|Week 12| Themed |September 29 - October 5|TBD (best suited for senior developers with a broad skill set)| |
+|Month 1|Open Ended |July 14 - August 10 |Python| |
 |Month 2| Open Ended |August 11 - Septeber 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR||
-|All Summer| Open Ended |July 14 - Oct 14|Any topic | [karma](https://github.com/1millionwomentotech/karma) - Omnichannel Gamification for Nonprofit Engagement|
+|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
+|All Summer| Open Ended |July 14 - Oct 14| Any topic| [karma](https://github.com/1millionwomentotech/karma) - 1mwtt Omnichannel Gamification for Nonprofit Engagement|
 
 
 ## What is a hackathon?
