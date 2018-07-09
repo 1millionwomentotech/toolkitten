@@ -419,11 +419,15 @@ Using the Facebook React.JS [tutorial](https://reactjs.org/tutorial/tutorial.htm
 
 September 10 - 14 Blockchain
 
-Tentative: Using Oxford BlocSoc's intro to Blockchain course
+Tentative: Using Oxford BlocSoc's Intro to Blockchain Course
 
-Alternative is a Solidity intro course
+Alternative is a Solidity Intro Course:
 - https://solidity.readthedocs.io/en/v0.4.24/
 - https://codeburst.io/build-your-first-ethereum-smart-contract-with-solidity-tutorial-94171d6b1c4b
+
+IBM Cognitive Class Courses on Bitcoin and Blockchain :
+- https://cognitiveclass.ai/courses/introduction-to-bitcoin/
+- https://cognitiveclass.ai/courses/blockchain-course/ 
 
 ### Week 10
 
