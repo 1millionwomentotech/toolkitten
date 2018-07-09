@@ -1,5 +1,7 @@
 # Summer of Code
 
+Table of Contents
+==================
 <!--ts-->
    * [Summer of Code](#summer-of-code)
    * [Hackathons](#hackathons)
