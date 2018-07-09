@@ -62,10 +62,8 @@ The all-summer hackathon is an open category so that those who have a project in
 |---|--- | --- | --- | ---|
 |Week 1| Themed |July 14 - 20 | Introduction to Python|[Civilization III]() - 1mwtt in Python|
 |Week 2| Themed |July 21 - 27 | Python the Hard Way|[Boggle Solver]() - 1mwtt in Python|
-|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python| 
-  - [Keyword Strategy for 1mwtt]() - use web crawling, topic modeling, and common sense
-  - [Corpus Thomisticus]() - Digital Humanities Data Visualization Art for University of Oxford|
-|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow| - [Sanskrit Authorship Attribution]() - Digital Humanities for University of Oxford|
+|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python| [Keyword Strategy for 1mwtt]() - use web crawling, topic modeling, and common sense [Corpus Thomisticus]() - Digital Humanities Data Visualization Art for University of Oxford|
+|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow| [Sanskrit Authorship Attribution]() - Digital Humanities for University of Oxford|
 |Week 5| Themed |August 11 - 17 |Introductory JavaScript|[Civilization III]() - 1mwtt in JS|
 |Week 6| Themed |August 18 - 24 |Advanced JavaScript|[Boggle Solver]() - 1mwtt in JS |
 |Week 7| Themed |August 25 - 31 |Mobile Prototyping (UI/UX) in InvisionApp| [Summer Of Code App]() |
