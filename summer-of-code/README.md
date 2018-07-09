@@ -1,4 +1,68 @@
-# Summer of Code
+# Summer of Code Mentor Handbook
+
+How to become a Mentor?
+
+1. Complete the [Sign Up](https://memberportal.1millionwomentotech.com/mentor-optin) form.
+1. Watch [Mentor Onboarding Webinar](https://events.genndi.com/login/169105139238465262/4e65b1bba1/0/replay) from start to finish. Please use the Webinar provider so that when you complete the viewing you are automatically added to the Mentor's List. If you click over the YouTube, you can still watch the video but you won't be added to the list.
+1. Read the [Mentor FAQ](https://1millionwomentotech.com/summerofcode1/mentorfaq). [TODO: migrate to this README]
+1. Read and digest this README. 
+1. Watch, Star and Fork this repo.
+1. Follow @1millionwomentotech (@1mwtt) on:
+   - **IMPRTANT**: [YouTube - channel name requires 1,000 subscribers](https://www.youtube.com/channel/UC-86prgPyis3DB4hy6tlT5A)
+   - [Facebook @1milionwomentotech](https://www.facebook.com/1millionwomentotech/)
+   - [Instagram @1mwtt](http://instagram.com/1mwtt)
+   - [Twitter @1mwtt](https://twitter.com/1mwtt)
+   - [LinkedIn 1 Million Women To Tech Group](https://www.linkedin.com/groups/12121149)
+1. You will be emailed instructions on how to join the forum.
+
+
+Table of Contents
+==================
+<!--ts-->
+   * [Summer of Code](#summer-of-code)
+   * [Hackathons](#hackathons)
+      * [What is a hackathon?](#what-is-a-hackathon)
+      * [Positive energy](#positive-energy)
+      * [Strengthen the community that the hackathon is for](#strengthen-the-community-that-the-hackathon-is-for)
+      * [Welcoming newcomers](#welcoming-newcomers)
+      * [Hacking](#hacking)
+      * [Cultivating Good Projects](#cultivating-good-projects)
+      * [Open Ended Hackathons](#open-ended-hackathons)
+      * [Themed Hackathons](#themed-hackathons)
+      * [Placing Newcomers into New Projects](#placing-newcomers-into-new-projects)
+      * [Other Tips](#other-tips)
+      * [Training](#training)
+      * [Sponsorship](#sponsorship)
+      * [Code of conduct](#code-of-conduct)
+      * [Happy hours](#happy-hours)
+      * [Registration](#registration)
+      * [Registration Limit](#registration-limit)
+      * [Communication Channels](#communication-channels)
+      * [Project Pitches](#project-pitches)
+      * [During the day](#during-the-day)
+      * [Wrap-up](#wrap-up)
+   * [Courses](#courses)
+      * [Syllabus](#syllabus)
+         * [Week 1](#week-1)
+         * [Week 2](#week-2)
+         * [Week 3](#week-3)
+         * [Week 4](#week-4)
+         * [Week 5](#week-5)
+         * [Week 6](#week-6)
+         * [Week 7](#week-7)
+         * [Week 8](#week-8)
+         * [Week 9](#week-9)
+         * [Week 10](#week-10)
+         * [Week 11](#week-11)
+         * [Week 12](#week-12)
+      * [Schedule](#schedule)
+         * [Project Pitches](#project-pitches-1)
+         * [Live Lectures](#live-lectures)
+         * [Code Freeze](#code-freeze)
+
+<!-- Added by: ilonabudapesti, at:  -->
+
+<!--te-->
 
 # Hackathons
 
@@ -12,22 +76,22 @@ The all-summer hackathon is an open category so that those who have a project in
 
 |Name | Type | Dates | Theme | Project Ideas|
 |---|--- | --- | --- | ---|
-|Week 1| Themed |July 14 - 20 |   Introduction to Python||
-|Week 2| Themed |July 21 - 27 |   Python the Hard Way||
-|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python||
-|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow||
-|Week 5| Themed |August 11 - 17 | Introductory JavaScript||
-|Week 6| Themed |August 18 - 24  |Advanced JavaScript||
-|Week 7| Themed |August 25 - 31  |Mobile Prototyping (UI/UX) in InvisionApp||
-|Week 8|Themed |September 1 - 7 |Mobile App Development with React.JS||
-|Week 9| Themed |September 8 - 14 |Blockchain||
-|Week 10| Themed |September 15 - 21 |Virtual Reality||
-|Week 11| Themed |September 22 - 28 |Augmented Reality||
-|Week 12| Themed |September 29 - October 5   |TBD (best suited for senior developers with a broad skill set)||
-|Month 1|Open Ended |July 14 - August 10 |Python||
+|Week 1| Themed |July 14 - 20 | Introduction to Python|[Civilization III]() - 1mwtt in Python|
+|Week 2| Themed |July 21 - 27 | Python the Hard Way|[Boggle Solver]() - 1mwtt in Python|
+|Week 3| Themed |July 28 - August 3 | Natural Language Processing with Python| [Keyword Strategy for 1mwtt]() - use web crawling, topic modeling, and common sense [Corpus Thomisticus]() - Digital Humanities Data Visualization Art for University of Oxford|
+|Week 4| Themed |August 4 - 10 |Artificial Intelligence with Python & Tensorflow| [Sanskrit Authorship Attribution]() - Digital Humanities for University of Oxford|
+|Week 5| Themed |August 11 - 17 |Introductory JavaScript|[Civilization III]() - 1mwtt in JS|
+|Week 6| Themed |August 18 - 24 |Advanced JavaScript|[Boggle Solver]() - 1mwtt in JS |
+|Week 7| Themed |August 25 - 31 |Mobile Prototyping (UI/UX) in InvisionApp| [Summer Of Code App]() |
+|Week 8|Themed |September 1 - 7 |Mobile App Development with React.JS| [Summer of Code App]() ctd. |
+|Week 9| Themed |September 8 - 14 |Blockchain| [Your Wallet]() - |
+|Week 10| Themed |September 15 - 21 |Virtual Reality| [Multiple Screens]() - |
+|Week 11| Themed |September 22 - 28 |Augmented Reality| [toolkitten's face]() - 1mwtt |
+|Week 12| Themed |September 29 - October 5|TBD (best suited for senior developers with a broad skill set)| |
+|Month 1|Open Ended |July 14 - August 10 |Python| |
 |Month 2| Open Ended |August 11 - September 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Open Ended |September 8 - October 5 |Blockchain, AR, VR||
-|All Summer| Open Ended |July 14 - Oct 14|Any topic | [karma](https://github.com/1millionwomentotech/karma) - Omnichannel Gamification for Nonprofit Engagement|
+|Month 3| Open Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
+|All Summer| Open Ended |July 14 - Oct 14| Any topic| [karma](https://github.com/1millionwomentotech/karma) - 1mwtt Omnichannel Gamification for Nonprofit Engagement|
 
 
 ## What is a hackathon?
@@ -42,7 +106,7 @@ Participants typically form groups of about 2-6 individuals, take out their lapt
 
 Hackathons have gotten a bad rap because of some that have an unhealthy, competitive structure, and for setting unrealistic expectations. Don’t participate in hackathon with that mindset and you’ll be on the right track. Here are the goals to keep in mind:
 
-## Strengthen the community that the hackathon is for.
+## Strengthen the community that the hackathon is for
 
 Be welcoming to newcomers to the community.
 Provide an opportunity for participants to learn something new.
@@ -65,13 +129,13 @@ Mentors must make sure that everyone has something to do. One way to do this is 
 
 [VOLUNTEER NEEDED] We are planning to hold a pre-event session just for newcomers, as Wikimedia recently did.
 
-# Hacking
+## Hacking
 
 The hacking track is for participants to dive into problems. Often groups of 2-6 individuals form around a project, such as building a new data visualization, writing a document, or collaboratively investigating a problem. Participants take out their laptops, connect to power and wifi, join on a video conference and get working.
 
 Hacking begins with project introductions. Participants that bring projects to the event have an opportunity to briefly (1 minute max) explain what they are working on at the very start of the event so that other participants can join that project. At the end of the event, a wrap-up session gives each project a chance to demonstrate some accomplishments.
 
-# Cultivating Good Projects
+## Cultivating Good Projects
 
 Not every project makes a good hackathon project. It is extremely important to maximize the following qualities in the projects at your event:
 
@@ -129,10 +193,7 @@ We run 12 weekly courses to introduce participants to a particular technical ski
 
 Courses should be interactive as much as possible, with Mentors available to answer questions over Helpdesk and Forum. For Course syllabi and schedule see below.
 
-
-Run the workshops in a second room if at all possible. 45-90 minute workshops are a good length. If you have more than one workshop, leave 15-30 minutes free between workshops to allow for the first leader to close up and the second leader to set up.
-
-# Sponsorship
+## Sponsorship
 
 For large events like this, we need sponsors to help us cover the costs. At the moment we are $25k short of being able to admit all 19,951 pre-registrants.
 
@@ -141,6 +202,8 @@ Sponsors will give something — cash, prizes, t-shirts — with the expectation
 We will decide on a case-by-case basis what we are willing to give sponsors in return for their support. We will certainly thank our sponsors, by name, during your opening and closing session, and will probably tweet/etc. our thanks too. 
 
 Beyond that, if they have a great female speaker we may give them a time at a podium to speak to our attendees? Or a page in the online forum to show off their stuff? We have to strike the right balance between bringing in enough sponsorships with not interfering with the goals of the event.
+
+We are making some personal and company options for fundraising and will be sharing with the community in the coming weeks.
 
 ## Code of conduct
 
@@ -169,7 +232,7 @@ To determine our maximum capacity we want to allow 10 women to every Mentor who 
 A chat room on Discord: https://discord.gg/RXAebU
 A social media channels: use hashtag on Twitter, Instagram, Facebook #1millionwomentotech #SummerOfCode
 A code repository: https://github.com/1millionwomentotech/toolkitten/summerofcode
-A forum: https://1millionwomentotech.com/summerofcode
+A forum: https://1millionwomentotech.com/summerofcode (coming)
 
 ## Project Pitches
 
@@ -217,59 +280,59 @@ July 23 - 27    Advanced Python
 
 Using [Python the Hard Way](https://learnpythonthehardway.org/book/) we will go as far as possible in a week.
 
-Exercise 0: The Setup
-Exercise 1: A Good First Program
-Exercise 2: Comments And Pound Characters
-Exercise 3: Numbers And Math
-Exercise 4: Variables And Names
-Exercise 5: More Variables And Printing
-Exercise 6: Strings And Text
-Exercise 7: More Printing
-Exercise 8: Printing, Printing
-Exercise 9: Printing, Printing, Printing
-Exercise 10: What Was That?
-Exercise 11: Asking Questions
-Exercise 12: Prompting People
-Exercise 13: Parameters, Unpacking, Variables
-Exercise 14: Prompting And Passing
-Exercise 15: Reading Files
-Exercise 16: Reading And Writing Files
-Exercise 17: More Files
-Exercise 18: Names, Variables, Code, Functions
-Exercise 19: Functions And Variables
-Exercise 20: Functions And Files
-Exercise 21: Functions Can Return Something
-Exercise 22: What Do You Know So Far?
-Exercise 23: Read Some Code
-Exercise 24: More Practice
-Exercise 25: Even More Practice
-Exercise 26: Congratulations, Take A Test!
-Exercise 27: Memorizing Logic
-Exercise 28: Boolean Practice
-Exercise 29: What If
-Exercise 30: Else And If
-Exercise 31: Making Decisions
-Exercise 32: Loops And Lists
-Exercise 33: While Loops
-Exercise 34: Accessing Elements Of Lists
-Exercise 35: Branches and Functions
-Exercise 36: Designing and Debugging
-Exercise 37: Symbol Review
-Exercise 38: Doing Things To Lists
-Exercise 39: Dictionaries, Oh Lovely Dictionaries
-Exercise 40: Modules, Classes, And Objects
-Exercise 41: Learning To Speak Object Oriented
-Exercise 42: Is-A, Has-A, Objects, and Classes
-Exercise 43: Gothons From Planet Percal #25
-Exercise 44: Inheritance Vs. Composition
-Exercise 45: You Make A Game
-Exercise 46: A Project Skeleton
-Exercise 47: Automated Testing
-Exercise 48: Advanced User Input
-Exercise 49: Making Sentences
-Exercise 50: Your First Website
-Exercise 51: Getting Input From A Browser
-Exercise 52: The Start Of Your Web Game
+- Exercise 0: The Setup
+- Exercise 1: A Good First Program
+- Exercise 2: Comments And Pound Characters
+- Exercise 3: Numbers And Math
+- Exercise 4: Variables And Names
+- Exercise 5: More Variables And Printing
+- Exercise 6: Strings And Text
+- Exercise 7: More Printing
+- Exercise 8: Printing, Printing
+- Exercise 9: Printing, Printing, Printing
+- Exercise 10: What Was That?
+- Exercise 11: Asking Questions
+- Exercise 12: Prompting People
+- Exercise 13: Parameters, Unpacking, Variables
+- Exercise 14: Prompting And Passing
+- Exercise 15: Reading Files
+- Exercise 16: Reading And Writing Files
+- Exercise 17: More Files
+- Exercise 18: Names, Variables, Code, Functions
+- Exercise 19: Functions And Variables
+- Exercise 20: Functions And Files
+- Exercise 21: Functions Can Return Something
+- Exercise 22: What Do You Know So Far?
+- Exercise 23: Read Some Code
+- Exercise 24: More Practice
+- Exercise 25: Even More Practice
+- Exercise 26: Congratulations, Take A Test!
+- Exercise 27: Memorizing Logic
+- Exercise 28: Boolean Practice
+- Exercise 29: What If
+- Exercise 30: Else And If
+- Exercise 31: Making Decisions
+- Exercise 32: Loops And Lists
+- Exercise 33: While Loops
+- Exercise 34: Accessing Elements Of Lists
+- Exercise 35: Branches and Functions
+- Exercise 36: Designing and Debugging
+- Exercise 37: Symbol Review
+- Exercise 38: Doing Things To Lists
+- Exercise 39: Dictionaries, Oh Lovely Dictionaries
+- Exercise 40: Modules, Classes, And Objects
+- Exercise 41: Learning To Speak Object Oriented
+- Exercise 42: Is-A, Has-A, Objects, and Classes
+- Exercise 43: Gothons From Planet Percal #25
+- Exercise 44: Inheritance Vs. Composition
+- Exercise 45: You Make A Game
+- Exercise 46: A Project Skeleton
+- Exercise 47: Automated Testing
+- Exercise 48: Advanced User Input
+- Exercise 49: Making Sentences
+- Exercise 50: Your First Website
+- Exercise 51: Getting Input From A Browser
+- Exercise 52: The Start Of Your Web Game
 
 ### Week 3
 
@@ -393,8 +456,8 @@ Visual programming in Facebook [AR Studio](https://developers.facebook.com/docs/
 
 October 1 - 5 TBD (best suited for senior developers with a broad skill set)
 
-[VOLUNTEER NEEDED] An introduction to collaboration using Github.
-[VOLUNTEER NEEDED] Community engagement.
+- [VOLUNTEER NEEDED] An introduction to collaboration using Github.
+- [VOLUNTEER NEEDED] Community engagement course.
 
 ## Schedule
 
@@ -404,16 +467,26 @@ We hope the keep the weekly cadence always the same, so we can learn week-on-wee
 
 All times are British Standard Time (BST)
 
-### Saturdays
+### Project Pitches
 
-- 12 noon - 12:30pm Project Pitches, max 1 minute each, pre-recorded and uploaded to YouTube with hashtags #1millionwomentotech #SummerOfCode, and GitHub PR sent to @1millionwomentotech/toolkitten/summer-of-code/ appropriate Hackathon
+Saturdays by 12pm noon Project Pitches uploaded to YouTube, forum and GitHub.
+  
+  - YouTube: max 1 min video pre-recorded and uploaded to YouTube with hashtags #1millionwomentotech #SummerOfCode
+  - Forum: clear ask and offer
+  - GitHub: PR sent to @1millionwomentotech/toolkitten/summer-of-code/ to appropriate Hackathon
 
-### Mondays - Thursdays
+[Volunteer Needed] Add Project Pitch template with upload instructions: the leader’s name and affiliation, Discord username, a problem statement, the solution, and the skills/help needed.
+
+### Live Lectures
+
+Mondays through Thursdays:
 
 - 10:00 - 11:00am Morning Live Course via Webinar
 - 11:00 - 12:00pm noon Live Q&A via Webinar
 
-### Fridays
+### Code Freeze
+
+Fridays: 
 
 - 09:00am code freeze, all coding homework, projects, hackathon submissions must be complete
 - 09:00am - 12:00pm noon Judges deliberation
