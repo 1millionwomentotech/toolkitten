@@ -1,4 +1,20 @@
-# Summer of Code
+# Summer of Code Mentor Handbook
+
+How to become a Mentor?
+
+1. Complete the [Sign Up](https://memberportal.1millionwomentotech.com/mentor-optin) form.
+1. Watch [Mentor Onboarding Webinar](https://events.genndi.com/login/169105139238465262/4e65b1bba1/0/replay) from start to finish. Please use the Webinar provider so that when you complete the viewing you are automatically added to the Mentor's List. If you click over the YouTube, you can still watch the video but you won't be added to the list.
+1. Read the [Mentor FAQ](https://1millionwomentotech.com/summerofcode1/mentorfaq). [TODO: migrate to this README]
+1. Read and digest this README. 
+1. Watch, Star and Fork this repo.
+1. Follow @1millionwomentotech (@1mwtt) on:
+   - **IMPRTANT**: [YouTube - channel name requires 1,000 subscribers](https://www.youtube.com/channel/UC-86prgPyis3DB4hy6tlT5A)
+   - [Facebook @1milionwomentotech](https://www.facebook.com/1millionwomentotech/)
+   - [Instagram @1mwtt](http://instagram.com/1mwtt)
+   - [Twitter @1mwtt](https://twitter.com/1mwtt)
+   - [LinkedIn 1 Million Women To Tech Group](https://www.linkedin.com/groups/12121149)
+1. You will be emailed instructions on how to join the forum.
+
 
 Table of Contents
 ==================
