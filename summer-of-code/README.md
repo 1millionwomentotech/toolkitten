@@ -5,10 +5,10 @@ How to become a Mentor?
 1. Complete the [Sign Up](https://memberportal.1millionwomentotech.com/mentor-optin) form.
 1. Watch [Mentor Onboarding Webinar](https://events.genndi.com/login/169105139238465262/4e65b1bba1/0/replay) from start to finish. Please use the Webinar provider so that when you complete the viewing you are automatically added to the Mentor's List. If you click over the YouTube, you can still watch the video but you won't be added to the list.
 1. Read the [Mentor FAQ](https://1millionwomentotech.com/summerofcode1/mentorfaq). [TODO: migrate to this README]
-1. Read and digest this README. 
+1. Read and digest this README.
 1. Watch, Star and Fork this repo.
 1. Follow @1millionwomentotech (@1mwtt) on:
-   - **IMPRTANT**: [YouTube - channel name requires 1,000 subscribers](https://www.youtube.com/channel/UC-86prgPyis3DB4hy6tlT5A)
+   - **IMPORTANT**: [YouTube - channel name requires 1,000 subscribers](https://www.youtube.com/channel/UC-86prgPyis3DB4hy6tlT5A)
    - [Facebook @1milionwomentotech](https://www.facebook.com/1millionwomentotech/)
    - [Instagram @1mwtt](http://instagram.com/1mwtt)
    - [Twitter @1mwtt](https://twitter.com/1mwtt)
@@ -181,15 +181,15 @@ Having project ideas ready is especially important as we do not know how many pa
 
 Do not allow anyone to pitch an idea that they will not be working on at the event, unless there really are not enough ideas to go around. Otherwise, this is a waste of everyone’s valuable time.
 
-Once hacking has begun, do not interrupt the hackers except to ensure that the hacking is going smoothly, to check that everyone has something to do, and to keep people on the overall schedule. 
+Once hacking has begun, do not interrupt the hackers except to ensure that the hacking is going smoothly, to check that everyone has something to do, and to keep people on the overall schedule.
 
 ## Training
 
 A successful hackathon might be just hacking, just training, or both hacking and training.
 
-As we expect a significant number of newcomers, having training workshops is a great way to give them something to do that they will be more comfortable with than diving into hacking. 
+As we expect a significant number of newcomers, having training workshops is a great way to give them something to do that they will be more comfortable with than diving into hacking.
 
-We run 12 weekly courses to introduce participants to a particular technical skill useful for the hackathon. 
+We run 12 weekly courses to introduce participants to a particular technical skill useful for the hackathon.
 
 Courses should be interactive as much as possible, with Mentors available to answer questions over Helpdesk and Forum. For Course syllabi and schedule see below.
 
@@ -199,7 +199,7 @@ For large events like this, we need sponsors to help us cover the costs. At the 
 
 Sponsors will give something — cash, prizes, t-shirts — with the expectation that they get something out of their support for your event. They might be recruiting/hiring and are looking to scout out our attendees, or they might be marketing a product that they want to promote.
 
-We will decide on a case-by-case basis what we are willing to give sponsors in return for their support. We will certainly thank our sponsors, by name, during your opening and closing session, and will probably tweet/etc. our thanks too. 
+We will decide on a case-by-case basis what we are willing to give sponsors in return for their support. We will certainly thank our sponsors, by name, during your opening and closing session, and will probably tweet/etc. our thanks too.
 
 Beyond that, if they have a great female speaker we may give them a time at a podium to speak to our attendees? Or a page in the online forum to show off their stuff? We have to strike the right balance between bringing in enough sponsorships with not interfering with the goals of the event.
 
@@ -280,7 +280,7 @@ Using [Learn to Program](https://pine.fm/LearnToProgram/) for Python.
 1. More About Functions and Methods
 1. Flow Control
 1. Arrays and Iterators
-1. Writing Your Own Functions 
+1. Writing Your Own Functions
 1. Classes
 1. There is nothing new in the chapter (recursion)
 1. Beyond This Tutorial
@@ -376,7 +376,7 @@ Using [Machine Learning Crash Course](https://developers.google.com/machine-lear
 
 August 13 - 17 Introductory JavaScript
 
-We will repeat [Learn to Program](https://pine.fm/LearnToProgram/) this time for JavaScript. 
+We will repeat [Learn to Program](https://pine.fm/LearnToProgram/) this time for JavaScript.
 
 1. Getting Started: Installing Python on Windows, Mac
 1. Numbers
@@ -386,7 +386,7 @@ We will repeat [Learn to Program](https://pine.fm/LearnToProgram/) this time for
 1. More About Functions and Methods
 1. Flow Control
 1. Arrays and Iterators
-1. Writing Your Own Functions 
+1. Writing Your Own Functions
 1. Classes
 1. There is nothing new in the chapter (recursion)
 1. Beyond This Tutorial
@@ -461,7 +461,7 @@ Use web tech to create content for audiences across mobile, web and VR.
 
 September 24 - 28 Augmented Reality
 
-Visual programming in Facebook [AR Studio](https://developers.facebook.com/docs/ar-studio) this is Mac only. We need a Windows alternative until AR Studio comes out for Windows. 
+Visual programming in Facebook [AR Studio](https://developers.facebook.com/docs/ar-studio) this is Mac only. We need a Windows alternative until AR Studio comes out for Windows.
 
 ### Week 12
 
@@ -481,7 +481,7 @@ All times are British Standard Time (BST)
 ### Project Pitches
 
 Saturdays by 12pm noon Project Pitches uploaded to YouTube, forum and GitHub.
-  
+
   - YouTube: max 1 min video pre-recorded and uploaded to YouTube with hashtags #1millionwomentotech #SummerOfCode
   - Forum: clear ask and offer
   - GitHub: PR sent to @1millionwomentotech/toolkitten/summer-of-code/ to appropriate Hackathon
@@ -497,7 +497,7 @@ Mondays through Thursdays:
 
 ### Code Freeze
 
-Fridays: 
+Fridays:
 
 - 09:00am code freeze, all coding homework, projects, hackathon submissions must be complete
 - 09:00am - 12:00pm noon Judges deliberation
