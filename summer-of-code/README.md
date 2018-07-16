@@ -233,6 +233,15 @@ A chat room on Discord: https://discord.gg/RXAebU
 A social media channels: use hashtag on Twitter, Instagram, Facebook #1millionwomentotech #SummerOfCode
 A code repository: https://github.com/1millionwomentotech/toolkitten/summerofcode
 A forum: https://1millionwomentotech.com/summerofcode (coming)
+   Name
+   Discord username
+   Job title
+   Are they new to hackathons?
+   What kind of hacker are they? Examples: Developer. Designer. Data Scientist. Domain Expert. Government Staff. Communicator. Project Manager. Advocate.
+   What are they interested in hacking on? (free form question)
+   Which hackathons and courses are they interested in?
+   How they heard about the event
+   Special needs/requests
 
 ## Project Pitches
 
@@ -257,7 +266,9 @@ Credit: This guide is based on https://hackathon.guide/
 
 ### Week 1
 
-July 16 - 20    Introduction to Python
+
+Mentors please indicate your [availability for Week 1 July 14 - 20 Intro to Python 
+ here](https://docs.google.com/forms/d/e/1FAIpQLSdxvAmaEaqqUCazxy1LphHOfPQUDCDU5zBj-zlTa8q3TnRR3g/viewform)
 
 Using [Learn to Program](https://pine.fm/LearnToProgram/) for Python.
 
