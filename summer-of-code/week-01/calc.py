@@ -13,21 +13,31 @@ def print_solution(num, date_format_1, date_format_2):
 
 # Hours in a year
 def hours_per_year():
-    return 24 * 365
+        return 24 * 365
 
 
 # Minutes in a decade
 def minutes_per_decade():
     return (hours_per_year() * 60) * 10
 
-minutes = "minutes"
-hours = "hours"
-year = "year"
-decade = "decade"
 
-print_solution(hours_per_year(), hours, year)
+# Your age in seconds
+def age_in_seconds(age):
+    print("You are " + str(((((int(age) * 365) * 24) * 60) * 60)) + " seconds old.")
 
-print_solution(minutes_per_decade(), minutes, decade)
+
+# Andreea Visanoiu​: 48618000 seconds old. Calculate @Andreea Visanoiu's age.
+def year_from_sec(second):
+    print(str(((((int(second) / 60) / 60) / 24) / 365)))
+
+
+print_solution(hours_per_year(), "hours", "year")
+
+print_solution(minutes_per_decade(), "minutes", "decade")
+
+age_in_seconds(30)
+
+year_from_sec(48618000)
 
 print(1+2)
 print(3)
