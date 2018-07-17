@@ -80,7 +80,7 @@ Open your text editor, and type the following:
 print(1+2)
 ```
 
-Save your program (yep, that’s a complete program!) as `calc.py`. Now run your program by typing ruby `calc.py` into your command line. 
+Save your program (yep, that’s a complete program!) as `calc.py`. Now run your program by typing `python calc.py` into your command line. 
 
 It should put a 3 on your screen. 
 
