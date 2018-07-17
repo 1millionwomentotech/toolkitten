@@ -41,6 +41,7 @@ print(minutes_in_a_day * days_in_year_leap * 10)
 print
 print "My age in seconds:"
 my_age = 32
+# 60 seconds/minutes * 60 minutes/hours * 24 hours/days * 365.2422 days/year * 32 year
 print(seconds_in_a_year_leap * my_age)
 
 
