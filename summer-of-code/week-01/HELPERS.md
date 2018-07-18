@@ -6,6 +6,7 @@
 1. [How to update my local repo?](#how-to-update-my-local-repo)
 1. [How to start with Python?](#how-to-start-with-python)
 1. [How to run python script?](#how-to-run-python-script)
+1. [How to close python running in console?](#how-to-close-python-running-in-console)
 1. [How to remember my git credentials?](#remember-git-credentials)
 
 ## How to clone repository
