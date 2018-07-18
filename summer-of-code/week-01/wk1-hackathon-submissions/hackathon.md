@@ -16,9 +16,14 @@ Bonuses for:
 If you are intermediate / advanced try to do your own research about Civilization III and the start working on the above. Submit your program via PR with the following file name:
 
 ```
-soc-wk1.py
+soc01h-cc-firstname-lastname.py
 ```
 
+`soc` is for the Summer Of Code
+`01`  is for Week 1
+`h`   is for hackathon
+`cc`  is for Continent Counter
+`firstname-lastname` is your name, to make sure there are no clashes with other people's submissions when you send a Pull Request into the same sub-folder.
 
 If you are a beginner or false beginner, read on. We'll be also giving out hints every day.
 
@@ -49,3 +54,9 @@ only at the corners are still considered to be on the same continent (since
 units could walk along diagonals).
 
 But before you get to the code, solve the problem in English first. It will help.
+
+There are two types of tiles: water and land
+We only want to count land
+You CAN travel diagonally
+[ 0, 1 ]
+[ o, X ]
