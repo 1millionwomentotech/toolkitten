@@ -35,6 +35,28 @@ print(old)
 print(new)
 
 
+world01 = 'oooooxxoooo'
+world02 = 'oooooxooooo'
+world03 = 'oooooxxoooo'
+world04 = 'oooooxooooo'
+world05 = 'oooxxxooooo'
+world06 = 'oooxoxxoooo'
+world07 = 'ooooxxooooo'
+world08 = 'oooooxxoooo'
+world09 = 'oooooxooooo'
+world10 = 'oooooxooooo'
+world11 = 'oooooxxoooo'
+
+world = 'oooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooooooooxxoooo'
+
+world = [ 'o', 'x', 'o' ]
+
+world = [[ 'o', 'x', 'o' ],
+         [ 'o', 'x', 'o' ],
+         [ 'o', 'x', 'o' ]
+         ]
+
+world[1][1]
 
 
 
