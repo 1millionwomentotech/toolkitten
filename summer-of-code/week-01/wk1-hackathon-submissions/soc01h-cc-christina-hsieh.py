@@ -1,12 +1,9 @@
 import random
 from pprint import pprint
 
-# define size of world
-size = 11 # might use user input in future
-
 # generate world using list comprehension
-world = [[random.randint(0,1) for x in range(size)] for x in range(size)]
-pprint(world)
+def gen_world(size):
+  return [[random.randint(0,1) for x in range(size)] for x in range(size)]
 
 # get random starting point
 def get_start(matrix):
@@ -16,14 +13,8 @@ def get_start(matrix):
     return (x, y)
   return get_start(matrix)
 
-start = get_start(world)
-
-print(start)
-
 # walk from starting point
 # use stack to track path and set to track count
-path = [start]
-land = set()
 def walk(point, matrix, stack, land):
   # add point to land
   land.add(point)
@@ -49,6 +40,18 @@ def walk(point, matrix, stack, land):
     # back = stack.pop()
     walk(stack.pop(), matrix, stack, land)
 
-walk(start, world, path, land)
+# define size of world
+size = int(input('How big would this world be?: '))
 
-print(len(land))
+world = gen_world(size)
+print(f"This is your {size} x {size} world")
+pprint(world)
+
+start = get_start(world)
+print(f"You will be starting at {start}")
+
+path = [start]
+land = set()
+
+walk(start, world, path, land)
+print(f"Your contient has {len(land)} title(s)")
