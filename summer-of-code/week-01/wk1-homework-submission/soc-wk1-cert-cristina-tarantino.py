@@ -75,12 +75,14 @@ print("\nDays it will take for a 64-bit system to timeout: " + str(
 delta = datetime.now() - datetime(1986, 12, 8, 18, 45)
 print("\nMy age is %d seconds" % delta.total_seconds())
 
+
 # 8. Full name greeting. Write a program that asks for a person's first name, then middle, and then last.
 #    Finally, it should greet the person using their full name.
 name = input("\nCould you please type your first name: ")
 middle_name = input("Could you please type your middle name: ")
 last_name = input("Could you please type your last name: ")
 print("\nHello %s %s %s! A really warm welcome to you!" % (name, middle_name, last_name))
+
 
 # 9. Bigger, better favorite number. Write a program that asks for a person's favorite number.
 # Have your program add 1 to the number, and then suggest the result as a bigger and better favorite number.
