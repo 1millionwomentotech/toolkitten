@@ -1,0 +1,28 @@
+world1 = []
+world2 = []
+result = " "
+print('Initial Count: ' + result)
+
+def print_world1(world1):
+    for x in range(3):
+        world1= (["O"] * 11)
+        print " ".join(world1)
+    return world1
+
+def print_world2(world2):
+    for x in range(5):
+        world2= (["X"] * 11)
+        print " ".join(world2)
+    return world2
+
+print_world1(world1)
+print_world1(world2)
+print_world1(world1)
+
+
+for x in xrange(0, 10):
+	if x == "X":
+		print_world1(world1[x])
+	result = result + print_world1(world1[x])
+
+print('The total number of continents is: ' + result + 'First Hackathon Complete. Thank you!!')
