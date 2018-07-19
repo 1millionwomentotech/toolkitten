@@ -1,0 +1,12 @@
+#Table of Contents
+
+print('Table of Contents')
+
+print('Chapter 1: Getting Started......page 1')
+print('Chapter 2: Numbers..............page 9')
+print('Chapter 3: Letters..............page 13')
+
+#angry boss
+
+ans = input('What do you want?')
+print(ans.upper() + 'YOU ARE FIRED!')
