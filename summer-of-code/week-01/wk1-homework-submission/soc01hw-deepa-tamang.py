@@ -14,13 +14,25 @@ print("Ans. There are",min_in_decade,"minutes in a decade.")
 
 # Your age in seconds
 print("\n.3. How many seconds old are you?")
+
+my_age = 24
+age_in_sec = 24*diy*hid*min_in_hour*60
+print("Age in seconds: ",age_in_sec)
+
+#Andreea Visanoiu'age
+print("\n4. I'm 48618000 seconds old. Calculate my age.  - @Andreea Visanoiu")
+curr_age_in_sec = 48618000
+age_in_yr = curr_age_in_sec/(60 * 60 * 24 * 365)
+print("Ans. @Andreea's age is",age_in_yr)
+
+#Calculate your age accurately based on your date of birth
 import time
 import datetime
 from datetime import timedelta
 
 curr_date = datetime.datetime.now()
-
-date_entry = input('Enter your date of birth in YYYY-MM-DD format : ')
+print("\n6. Calculate your age accurately based on your birthday.")
+date_entry = input('\nEnter your date of birth in YYYY-MM-DD format : ')
 year,month,day = map(int, date_entry.split('-'))
 
 try:
@@ -34,11 +46,11 @@ finally:
 
 full_dob = datetime.datetime(year, month, day, hour, minute, second)
 diff = curr_date - full_dob
-age = diff.total_seconds()
-print("Age in seconds: ",age)
-
-#Andreea Visanoiu'age
-print("\n4. I'm 48618000 seconds old. Calculate my age.  - @Andreea Visanoiu")
-curr_age_in_sec = 48618000
-age_in_yr = curr_age_in_sec/(60 * 60 * 24 * 365)
-print("Ans. @Andreea's age is",age_in_yr)
+age_in_sec = diff.total_seconds()
+myyear = age_in_sec/(60*60*24*365)
+mymonth = (myyear -int(myyear))*12
+mydays = (mymonth - int(mymonth))*30
+myhr = (mydays - int(mydays))*24
+mymin = (myhr - int(myhr))*60
+mysec = (mymin - int(mymin))*60
+print("\nAns. My accurate age based on my birthday: {0}yrs {1}months {2}days {3}hrs {4}min {5:.2f}sec".format(int(myyear),int(mymonth),int(mydays),int(myhr),int(mymin),round(mysec,2)))
