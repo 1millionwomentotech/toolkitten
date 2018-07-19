@@ -1,10 +1,10 @@
 ### DAY 1 ###
-
+import random
 import datetime
 
 # calculator
 # Write a program that tells you the following:
-# -Hours in a year. How many hours are in a year?
+# -Hours in a year. How many hours aare in a year?
 # -Minutes in a decade. How many minutes are in a decade?
 # -Your age in seconds. How many seconds old are you? (I'm not going to check your answer, so be as accurate—or not—as you want.)
 # -Andreea Visanoiu​: I'm 48618000 seconds old hahaha. Calculate @Andreea Visanoiu's age.
@@ -85,8 +85,10 @@ print(11 % 2)
 # 1) Try this to run & see what error messages, behaviour I get
 
 '''
-float('15')​
-float(99.999'​)
+float('15')
+
+
+float('99.999'​)
 int('99.999'​)
 
 int('5 is my favorite number!'​) 
@@ -99,17 +101,37 @@ int(3)
 
 #### A Few Things to Try
 
-'''2)
+'''
+2)
 - Full name greeting. Write a program that asks for a person’s first name, 
 then middle, and then last. Finally, it should greet the person using their full name. 
-   3)
+3)
 - Bigger, better favorite number. Write a program that asks for a person’s 
 favorite number. Have your program add 1 to the number, and then suggest the
 result as a bigger and better favorite number. (Do be tactful about it, though.)
-''' 
-    
-'''4) Check out more fancy string methods here: 
+'''
+
+# Full name greeting
+
+full_name = ""
+firts_name = input("Please, enter your first name: ")
+full_name += firts_name
+middle_name = input("Please, enter your middle name: ")
+full_name += " " + middle_name
+last_name = input("Please, enter your last name: ")
+full_name += " " + last_name
+print("Hello, " + full_name)
+
+# Bigger, better favorite number
+
+users_favourite_num = int(input("Please, enter your favourite number: "))
+print("I think a bigger and better number will be a better choice for you. " +
+"Let's have this: " + str(users_favourite_num + 1))
+
+'''
+4) Check out more fancy string methods here: 
 https://docs.python.org/3/library/stdtypes.html#str
+
 '''
 
 '''5)
@@ -118,8 +140,11 @@ https://docs.python.org/3/library/stdtypes.html#str
 ```
 WHADDAYA MEAN "I WANT A RAISE"?!? YOU'RE FIRED!!
 ```
+
     6)
-- Table of contents. Here’s something for you to do in order to play around more with center, ljust, and rjust: write a program that will display a table of contents so that it looks like this: 
+- Table of contents. Here’s something for you to do in order to 
+play around more with center, ljust, and rjust: write a program 
+that will display a table of contents so that it looks like this: 
 
 Table of Contents 
  
@@ -127,6 +152,21 @@ Chapter 1: Getting Started        page 1
 Chapter 2: Numbers                page 9
 Chapter 3: Letters                page 13
 '''
+
+# 5 Angry Boss
+
+what_you_want = input("What do you want? ")
+print("Whaddaya mean \'" + what_you_want + "\'?!? You are fired!!")
+
+# 6 Table of contents
+
+print("Table of contents \n")
+left_string = "Chapter 1"
+right_string = "Page 1"
+print(left_string.ljust(40, '.') + right_string)
+left_string_2 = "Chapter 2"
+right_string_2 = "Page 9"
+print(left_string_2 + right_string_2.rjust(40, '.'))
 
 
 '''7)
@@ -144,3 +184,12 @@ Research how to generate a random number with Python.
 https://docs.python.org/3/library/math.html 
 
 '''
+# 8 random num generator
+
+i = 1
+counter = 0
+while i < 11:
+    print(random.randint(1, 101))
+    counter += 1
+    i += 1
+print("Amount of printed nums: " + str(counter))
