@@ -33,9 +33,10 @@ Nah, most people have just been asking people if they wanna group up in this cha
 ###Is there any guide to upload the hackathon files? 
 I am a little bit confused with Github, no idea where and how to upload
 Jelena Z Mentor (python)-19-08-18 10:44
-I tried to find a guide, but I only found naming convention for the file: https://github.com/1millionwomentotech/toolkitten/blob/master/summer-of-code/week-01/wk1-hackathon-submissions/hackathon.md Easiest way to submit is to go here and create new file: https://github.com/1millionwomentotech/toolkitten/tree/master/summer-of-code/week-01/wk1-hackathon-submissions And make a pull request with a new file. This is a quick workaround for actually using git so please try to do it this way, and for next upload try to learn from some git guide how to use your own fork on github
+I tried to find a guide, but I only found naming convention for the file: https://github.com/1millionwomentotech/toolkitten/blob/master/summer-of-code/week-01/wk1-hackathon-submissions/hackathon.md 
+Easiest way to submit is to go here and create new file: https://github.com/1millionwomentotech/toolkitten/tree/master/summer-of-code/week-01/wk1-hackathon-submissions And make a pull request with a new file. This is a quick workaround for actually using git so please try to do it this way, and for next upload try to learn from some git guide how to use your own fork on github
 karen-gold-learner-19-08-2018  10:50
-Ilona explained this in today's teaser
+Ilona explained this in day 3's teaser video
 the idea is to create a helpdesk ticket in the member portal, so don't go to Github
 if you create a pull request in Github, it will show up for everyone, and they have created a private repo so we won't see each other’s answers
 
