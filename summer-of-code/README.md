@@ -89,8 +89,8 @@ The all-summer hackathon is an open category so that those who have a project in
 |Week 11| Themed |September 22 - 28 |Augmented Reality| [toolkitten's face]() - 1mwtt |
 |Week 12| Themed |September 29 - October 5|TBD (best suited for senior developers with a broad skill set)| |
 |Month 1|Open Ended |July 14 - August 10 |Python| |
-|Month 2| Open Ended |August 11 - Septeber 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
+|Month 2| Open Ended |August 11 - September 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
+|Month 3| Open Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
 |All Summer| Open Ended |July 14 - Oct 14| Any topic| [karma](https://github.com/1millionwomentotech/karma) - 1mwtt Omnichannel Gamification for Nonprofit Engagement|
 
 
