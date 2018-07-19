@@ -1,5 +1,30 @@
+#imported secrets module to randomly chose between land (1) and water (0)
 import secrets
 import math
+
+# Map generator
+#Code to randomly generate a map of a selected size
+
+#defining function to create a row
+#function takes one input size and outputs a list
+def make_row(size):
+    #setting up list of variables to chose from
+    var = (0, 1)
+    #initalise row as empty list
+    row = []
+    #generates the values in the row
+    for x in range(1, size):
+        #chose land or water
+        value = secrets.choice(var)
+        #add to row
+        row.append(value)
+    #outputs the list row
+    return row
+
+#This function generates a map using rows to create a list of lists.
+def map_gen(mapsize):
+    map = {x: make_row(map_size) for x in range(map_size)}
+    print(map)
 
 # This file contains two version of the continent counter.  
 # The first works (as far as I have been able to tell) 
