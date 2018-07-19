@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# mac finder cache
+.DS_Store
+
+# IDE
+.idea
+venv
