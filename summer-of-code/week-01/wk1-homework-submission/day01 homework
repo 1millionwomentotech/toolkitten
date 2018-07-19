@@ -1,0 +1,9 @@
+hoursperyear=24*365
+print(hoursperyear)
+print(10*24*365*60)
+print(19*24*365*60*60)
+print(48618000/(24*365*60*60))
+timeoutfor32=(2**31-1)/(60*60*24)
+print(timeoutfor32)
+timeoutfor64=(2**63-1)/(60*60*24)
+print(timeoutfor64)
