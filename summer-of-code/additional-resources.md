@@ -5,6 +5,12 @@
 
 ### Additional Resources 
 
+###Git
+- [Official Github Git Cheat Sheet (pdf)](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Udemy- Git Turtorial](https://www.udemy.com/git-started-with-github/)
+- [Udacity - How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
+- [Codeacedemy - Learn Git](https://www.codecademy.com/learn/learn-git)
+
 ### Python
 
 - [Python Docs](https://www.python.org/doc/)
