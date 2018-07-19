@@ -4,7 +4,7 @@
 
 Official communications are only through the @1millionwomentotech Memberportals:
 
-To get access please watch the Onboarding Video and choose one of the Membership options.
+To get access please watch the Onboarding Video and choose one of the Membership options. ->
 
 ## Onboarding Video
 
@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=9b91ZfNvYeU
 
 ## Join DIY (free - donation based):
 
-Do-It-Yourself (DIY) is free, includes class replays and code. Donations requested, if you can help with the mission to reach 1 million women by 2020, via Facebook or PayPal nonprofit charitable giving.
+Do-It-Yourself (DIY) is free, includes class replays and code. Donations requested, but are completely optional, if you can help with the mission to reach 1 million women by 2020, via Facebook or PayPal nonprofit charitable giving.
 
 Details and signup here:
 https://memberportal.1millionwomentotech.com/diy
