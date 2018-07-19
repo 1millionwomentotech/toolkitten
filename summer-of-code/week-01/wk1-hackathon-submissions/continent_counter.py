@@ -15,6 +15,6 @@ for item in list_of_tiles:
     if item[0] == coordinates[0] or item[0] == coordinates[0] - 1 or item[0] == coordinates[0] + 1:
         if item[1] == coordinates[1] or item[1] == coordinates[1] - 1 or item[1] == coordinates[1] + 1:
             if item != coordinates:
-            list_of_close_tiles.append(item)
+                list_of_close_tiles.append(item)
 
 print(list_of_close_tiles)
