@@ -1,4 +1,3 @@
-## Test change.
 import random
 
 # Generate world of size n
