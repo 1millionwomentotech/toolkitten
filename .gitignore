@@ -62,3 +62,4 @@ typings/
 
 # IDE
 .idea
+venv
