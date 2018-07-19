@@ -227,4 +227,4 @@ Create a single file called `soc-wk1-cert-firstname-lastname.py` and include the
 
 DIY: send PR to toolkitten repo, under https://github.com/1millionwomentotech/toolkitten/tree/master/summer-of-code/week-01/wk1-homework-submission
 
-Gold & VIP: login to the Membership are http://memberportal.1millionwomentotech.com/gold-vip-login/, open a Helpdesk ticket, for Department choose 'Upload File for Certification' and attach your .py file.
+Gold & VIP: From the Membership area http://memberportal.1millionwomentotech.com/gold-vip-login/ open a Helpdesk ticket. In the 'Department' dropdown choose 'Upload File for Certification' and attach your .py file. ;)
