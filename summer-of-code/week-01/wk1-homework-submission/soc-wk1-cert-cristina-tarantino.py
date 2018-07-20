@@ -1,4 +1,5 @@
 from datetime import datetime
+from random import randint
 
 days_in_year = 365
 
@@ -105,14 +106,48 @@ while True:
 
 # 10. Angry boss. Write an angry boss program that rudely asks what you want.
 # Whatever you answer, the angry boss should yell it back to you and then fire you.
+
 answer = input("\n" + name + " what the hell do you want? ")
 print(("whaddaya mean \"" + answer + "\"?!? you're fired!!").upper())
 
+
 # 11. Table of contents. Here's something for you to do in order to play around more with center, ljust, and rjust:
 # write a program that will display a table of contents so that it looks like this:
+# Table of Contents
+#
+# Chapter 1: Getting Started        page 1
+# Chapter 2: Numbers                page 9
+# Chapter 3: Letters                page 13
+rows = [
+        ["\nTable of Contents",           "\n"],
+        ["Chapter 1: Getting Started",  "page 1"],
+        ["Chapter 2: Numbers",          "page 9"],
+        ["Chapter 3: Letters",          "page 13"]
+      ]
+
+# get the length of the longest world from each row in rows and for each word in row + some padding
+col_width = max(len(r[0]) for r in rows) + 10  # padding
+# for every row in rows
+for r in rows:
+    # print the first word of the row leaving empty spaces to fill up the column width and then print the second element
+    print(r[0].ljust(col_width) + r[1])
 
 
 # 12. Write a program that prints out the lyrics to that beloved classic, "99 Bottles of Beer on the Wall."
+# source http://www.99-bottles-of-beer.net/lyrics.html
+starter_num = 99
+
+# print the lyrics title
+print("\n", (" Lyrics of the song %s Bottles of Beer " % starter_num).center(50, "🍺"), "\n")
+
+# print the lyrics in the loop from 99 to 0
+print(" ".join(str("\n" + str(i) + " bottles of beer on the wall, " + str(i) + " bottles of beer."
+      "\nTake one down and pass it around, " + str(i - 1) + " bottles of beer on the wall.\n")
+               for i in range(starter_num, 0, -1)))
+
+# print the end of the lyrics
+print("No more bottles of beer on the wall, no more bottles of beer. "
+      "\nGo to the store and buy some more, " + str(starter_num) + " bottles of beer on the wall.")
 
 
 # 13. Deaf grandma.
@@ -122,10 +157,18 @@ print(("whaddaya mean \"" + answer + "\"?!? you're fired!!").upper())
 # To make your program really believable, have Grandma shout a different year each time,
 # maybe any year at random between 1930 and 1950.
 # You can’t stop talking to Grandma until you shout BYE.
-# Hint: Try to think about what parts of your program should happen over and over again.
-# All of those should be in your while loop.
-# Hint: People often ask me, "How can I make random give me a number in a range not starting at zero?"
-# But you don’t need it to. Is there something you could do to the number random returns to you?
+print()
+tell_grandma = ""
+
+while tell_grandma != "BYE":
+    tell_grandma = input("Tell something to Grandma: ")
+    # if tell_grandma.isupper() and not tell_grandma.islower():   =>  this would be semantically more correct however
+    # I think that the above method will scan the string tell_grandma twice whilst the one below only once
+    if tell_grandma == tell_grandma.upper():
+        random_year = randint(1930, 1950)
+        print("NO, NOT SINCE %s" % random_year)
+    else:
+        print("HUH?! SPEAK UP, GIRL!")
 
 
 # 14. Deaf grandma extended. What if Grandma doesn't want you to leave?
@@ -161,9 +204,11 @@ print(("whaddaya mean \"" + answer + "\"?!? you're fired!!").upper())
 # Then print out the information from the list in a beautifully formatted table of contents.
 # Use string formatting such as left align, right align, center.
 
+
 # 19. Old-school Roman numerals. In the early days of Roman numerals,
 # the Romans didn't bother with any of this new-fangled subtraction “IX” nonsense.
 # No Mylady, it was straight addition, biggest to littlest—so 9 was written “VIIII,” and so on.
+
 
 # 20. Write a method that when passed an integer between 1 and 3000 (or so)
 # returns a string containing the proper old-school Roman numeral.
@@ -178,6 +223,7 @@ print(("whaddaya mean \"" + answer + "\"?!? you're fired!!").upper())
 # C = 100
 # D = 500
 # M = 1000
+
 
 # 21. “Modern” Roman numerals.
 # Eventually, someone thought it would be terribly clever if putting a smaller number before a larger one meant you
