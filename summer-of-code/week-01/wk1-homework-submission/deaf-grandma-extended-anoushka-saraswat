@@ -1,0 +1,12 @@
+import random
+count=0
+while count<3:
+ i_say=input()
+ if i_say.isupper():
+    for x in range(1):
+      print("NO, NOT SINCE "+str(random.randint(1930,1951))+"!")
+   
+ else:
+     print("HUH?! SPEAK UP,GIRL!")
+ if i_say=="BYE":
+  count=count+1
