@@ -13,7 +13,10 @@ Bonuses for:
 - benchmarking
 - extension of the problem to n x n size world
 
-If you are intermediate / advanced try to do your own research about Civilization III and the start working on the above. Submit your program via PR with the following file name:
+If you are intermediate / advanced try to do your own research about Civilization III and the start working on the above.
+
+### Naming Convention
+Submit your program via PR with the following file name:
 
 ```
 soc01h-cc-firstname-lastname.py
@@ -25,13 +28,14 @@ soc01h-cc-firstname-lastname.py
 `cc`  is for Continent Counter
 `firstname-lastname` is your name, to make sure there are no clashes with other people's submissions when you send a Pull Request into the same sub-folder.
 
+
+### Hints
 If you are a beginner or false beginner, read on. We'll be also giving out hints every day.
 
-### Hint 1
-
+#### Hint 1
 When generating the worlds for the game Civilization III, we want worlds
 with two primary supercontinents; those tend to be a lot of fun and just sort
-of feel “earthy” and... real. 
+of feel “earthy” and... real.
 
 The process, then, was something like the following:
 
