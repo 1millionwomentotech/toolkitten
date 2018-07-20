@@ -94,3 +94,32 @@ print("\nAngry Boss replied, "+ reply)
 
 # Random numbers generation
 
+## DAY - 4 ##
+
+#99 Bottles of Beer on the Wall
+print("Lyrics of the classic - 99 Bottles of Beer on the Wall")
+num = 99
+while num != 0:
+	print(str(num) + " Bottles of Beer on the Wall.")
+	num-=1
+
+# Deaf GrandMa + EXtended Deaf GrandMa Problem
+
+import random
+count = 0
+while True:
+	me = input("You: ")
+	if me=='BYE':
+		count += 1
+		if count == 3: 
+			break
+	else:
+		print("Consecutive BYE's:",count)
+		count = 0
+	if not me.isupper():
+		grandma = "HUH?! SPEAK UP, GIRL!"
+		print("GrandMa: " + grandma)
+	else:
+		year = random.randint(1930,1950)
+		grandma = "NO, NOT SINCE "+str(year)+"!"
+		print("GrandMa: " + grandma)
