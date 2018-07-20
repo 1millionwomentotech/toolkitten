@@ -1,14 +1,14 @@
 
-import random
+import time
 import numpy as np
 import math
+import random
 class Error(Exception):
 	"""docstring for Error"""
 	pass
 class WaterValueError(Error):
 	"""docstring for ClassName"""
 	pass
-
 x_cur_list=[] #array of curent continet points(x)
 y_cur_list=[] #array of curent continet points(y)
 x_list=[] #array of checked points(x)
@@ -76,6 +76,7 @@ def if_those_land_conected(x,y,index,world):
 						if_those_land_conected((x+1), 0,index,world)
 # Main function
 def main():
+	start_time=time.time()
 	x_start=0
 	y_start=0
 	index=11
@@ -122,6 +123,7 @@ def main():
 	"""	world=np.arange(25).reshape(5,5) #5x5 world #1
 	world=[[0,1,0,0,1],[1,0,0,1,0],[1,0,0,0,0],[1,0,1,1,1],[0,0,1,1,1]]
 	index=5"""
+	count_time=time.time()
 	if_those_land_conected(x_start,y_start,index,world)
 	for x in range(index):
 		for y in range(index):
@@ -135,7 +137,7 @@ def main():
 		print("%s) %s" %((j+1),num_lands[j]))
 	print("The size of continent you landed on is %s cells" %num_lands[0])		
 	print ("The largest continent contain %s cells" %max(num_lands))
-
+	print("All procces took %s sec, continent counter %s sec" %((time.time()-start_time),(time.time()-count_time)))
 #start point of programm
 main()
 	
