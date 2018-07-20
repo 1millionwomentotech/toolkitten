@@ -180,14 +180,14 @@ ctr=0
 
 #test values
 
-ntests=7
+ntests=10
 multiplierbase=11
 multipliers=[] #grid size multiplier
 for i in range (ntests):
     multipliers.append (i* multiplierbase )
     if (multipliers[i] > 11):
         multiplierbase=multiplierbase + multiplierbase
-#print(multipliers)  
+print(multipliers)  
 
 while (ctr < ntests ) :
     starttime=time.time()
@@ -213,11 +213,10 @@ while (ctr < ntests ) :
         n=multipliers[ctr]
         program["h"]=n # x
         program["w"]=n
-    print(n)  
+    #print(n)  
     #program["h"]=program["w"] # int(random.random() * n)
     sx= str(program["h"]) + " " + str(program["w"])
     print("Matrix : " , sx)
-    ctr=ctr+1
     
     logtime("Generating World:", sx, program["filename"])
     #print(program["w"], program["h"])
