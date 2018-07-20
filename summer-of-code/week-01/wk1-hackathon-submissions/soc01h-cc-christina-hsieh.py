@@ -1,3 +1,13 @@
+###################
+# Team Members:   #
+# - gillybops     #
+# - girijakumar   #
+# - MirandaBlair  #
+# - priyaka-xo    #
+# - tltyogg       #
+# - TWHou         #
+###################
+
 import random
 from pprint import pprint
 
@@ -37,7 +47,6 @@ def walk(point, matrix, stack, land):
         walk((x, y), matrix, stack, land)
   # reach end of land, retrace last step
   if stack:
-    # back = stack.pop()
     walk(stack.pop(), matrix, stack, land)
 
 # define size of world
