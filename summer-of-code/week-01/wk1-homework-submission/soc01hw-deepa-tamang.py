@@ -25,6 +25,18 @@ curr_age_in_sec = 48618000
 age_in_yr = curr_age_in_sec/(60 * 60 * 24 * 365)
 print("Ans. @Andreea's age is",age_in_yr)
 
+#TOUGH QUESTIONS
+
+#Timeout calculations
+print("\nHow many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow?")
+totalIntFlow32 = (2**31-1)/(100*60*60*24) #Since it counts the time it has been running  in 1/100 of a second
+print("Total days to timeout for 32 bit system: ", totalIntFlow32)
+print("\nWhat about a 64 bit system?")
+totalIntFlow64 = (2**63-1)/(100*60*60*24)
+print("Total days to timeout for 64 bit system: ",totalIntFlow64)
+
+
+
 #Calculate your age accurately based on your date of birth
 import time
 import datetime
