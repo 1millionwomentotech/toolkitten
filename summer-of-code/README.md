@@ -1,4 +1,40 @@
-# Summer of Code Mentor Handbook
+# Summer of Code Handbook
+
+# Important
+
+Official communications are only through the @1millionwomentotech Memberportals:
+
+To get access please watch the Onboarding Video and choose one of the Membership options. ->
+
+## Onboarding Video
+
+Your first step when coming across #1millionwomentotech is to learn more about the Mission and each #SummerOfCode option. Please enjoy the Onboarding Webinar on YouTube where the whole project, movement, as well as the Course contents and Hackathons are explained along with the Membership details:
+https://www.youtube.com/watch?v=9b91ZfNvYeU
+
+## Join DIY (free - donation based):
+
+Do-It-Yourself (DIY) is free, includes class replays and code. Donations requested, but are completely optional, if you can help with the mission to reach 1 million women by 2020, via Facebook or PayPal nonprofit charitable giving.
+
+Details and signup here:
+https://memberportal.1millionwomentotech.com/diy
+
+## Join GOLD or VIP
+
+Fund Yourself Fund Others (paid) has two levels "GOLD" and "VIP".
+
+Both include everything in the DIY section PLUS GOLD includes:
+- Premium Content
+- Support
+- Certificate
+
+VIP includes everything above in the DIY and the GOLD PLUS has personal Fast Forward Career Accelerator and Mastermind programs.
+
+Details and signup here:
+https://memberportal.1millionwomentotech.com/fund-yourself-fund-others
+
+# Student Handbook
+
+# Mentor Handbook
 
 How to become a Mentor?
 
@@ -229,10 +265,24 @@ To determine our maximum capacity we want to allow 10 women to every Mentor who 
 
 ## Communication Channels
 
-A chat room on Discord: https://discord.gg/RXAebU
+Official communications are only through the @1millionwomentotech Memberportals:
+
+To get access please join via either:
+- DIY (free - donation based): https://memberportal.1millionwomentotech.com/diy
+- Fund Yourself Fund Others (paid): https://memberportal.1millionwomentotech.com/fund-yourself-fund-others
+
 A social media channels: use hashtag on Twitter, Instagram, Facebook #1millionwomentotech #SummerOfCode
 A code repository: https://github.com/1millionwomentotech/toolkitten/summerofcode
 A forum: https://1millionwomentotech.com/summerofcode (coming)
+   Name
+   Discord username
+   Job title
+   Are they new to hackathons?
+   What kind of hacker are they? Examples: Developer. Designer. Data Scientist. Domain Expert. Government Staff. Communicator. Project Manager. Advocate.
+   What are they interested in hacking on? (free form question)
+   Which hackathons and courses are they interested in?
+   How they heard about the event
+   Special needs/requests
 
 ## Project Pitches
 
@@ -257,7 +307,9 @@ Credit: This guide is based on https://hackathon.guide/
 
 ### Week 1
 
-July 16 - 20    Introduction to Python
+
+Mentors please indicate your [availability for Week 1 July 14 - 20 Intro to Python 
+ here](https://docs.google.com/forms/d/e/1FAIpQLSdxvAmaEaqqUCazxy1LphHOfPQUDCDU5zBj-zlTa8q3TnRR3g/viewform)
 
 Using [Learn to Program](https://pine.fm/LearnToProgram/) for Python.
 
