@@ -1,0 +1,42 @@
+#homework for week 1 day 3 and 4
+first=input("type your first name ")
+
+middle=input("Type your middle name ")
+
+last=input("Type your last name ")
+
+name=first+' '+middle+' '+last
+print("Hi "+name)
+
+
+num=int(input("What is your favorite number? "))
+print(str(num+1)+" is your new favorite number.")
+
+
+#angry boss
+
+want=input("What do you want ")
+print('what do you mean "'+want+'" you\'re fired!!')
+
+#uppercase
+new=input("enter a new string ")
+print(new.upper())
+
+#grandma
+i_say=input()
+if i_say.lower():
+    print("HUH?! SPEAK UP,GIRL!")
+else:
+    print("NO, NOT SINCE 1938!")
+
+#sorting an array 
+alpha = list()
+num = input("Enter the number of elements you want to enter: ")
+print("Enter the letters: ")
+for i in range(int(num)):
+	n = input("Number: ")
+	alpha.append(str(n))
+print('array: ', alpha)
+
+alpha.sort()
+print('sorted array: ', alpha)
