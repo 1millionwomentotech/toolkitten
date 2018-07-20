@@ -6,69 +6,146 @@
 # 1MWTT Week 1 Hackathon
 
 
-def find_neighbors(index, l, land, continents):
+def find_neighbors(tile_index, tile, land, continents):
     # Iterate thru the tuples
-    continent = []
+    current_continent = []
+    merged = False
 
     found_continent = False
-    print("Incoming tile", l)
-    for c in continents:
-        #print(c, l)
-        if l in c:
-            continent = c
+    #print("Incoming tile", tile)
+
+    # Does this tile belong to a continent
+    for continent in continents:
+        if tile in continent:
+            current_continent = continent
             found_continent = True
-            break
-
-    if (found_continent == False): 
-        continent.append(l)
-        continents.append(continent)
-            
-    #print(remainingland)
+            #print("Found our Continent")
+            return
         
-    #land.pop(index)
+    # Let's put in in the temporary bucket
+    if (found_continent == False): 
+        current_continent.append(tile)
 
-    length = len(land)
-    
-    for j, t in enumerate(land):
-        if (j != index):  # don't want to compare with itself
-            #print(j,t)
-            
-            if ((abs(l[0] - land[j][0]) < 2) and (abs(l[1] - land[j][1]) < 2)):
-                            # Check if t exists on a certain continent, do a lookup
-                if t not in continent:
-                    continent.append(t)
-                    #print(continent)
-                                                        
+    #continents.sort(key = lambda c: len(c), reverse=True)
     #print(continents)
+
+    # Let us start looping over all the land tiles
+    merged_with_continent = False
     
+    for j, l in enumerate(land):
+        merged = False
+        if (j != tile_index):  # don't want to compare with itself 
+            if ((abs(l[0] - tile[0]) < 2) and (abs(l[1] - tile[1]) < 2)):
+                # We are neighbors
+                # Check if t exists on a certain continent, do a lookup
+                for c in continents:
+                    if l in c:
+                        # Merge with this continent
+                        if (c != current_continent):
+                            c.append(tile)
+                            merged_with_continent = True
+                            #print("merged with a continent")
+                            current_continent = c
+                            merged = True
+                            break
+                # either I merge with your continent or you merge with mine
+                if (merged == False):    
+                    current_continent.append(l)
+                
+                
+    #print(current_continent)
+    #print(len(current_continent))
+
+    if (merged_with_continent == False):
+        continents.append(current_continent)
+        #print("added new continent", current_continent)
+                                                        
     return 
-    
+
+def merge(list1, list2):
+    return list(set(list1 + list2))
+
+def is_neighbor(tile ,continent):
+  #  print("is_neighbor")
+  #  print(tile, continent)
+    for t in continent:
+        if ((abs(t[0] - tile[0]) < 2) and (abs(t[1] - tile[1]) < 2)):
+           # print("Found Neighbor")
+            return True
+
+    return False
+        
+
 def find_continents(land):
     """find_continents returns a list of lists of land""
 
     >>>find_continents([(0,0),(0,1),(0,2),(1,0),(3,0)) returns list of two lists
     (0,0),(0,1),(0,2),(1,0) and (3,0)"""
     continents = []
-    print("find_continents")
+    #print("find_continents")
     
     for index, t in enumerate(land):
         find_neighbors(index, t, land, continents)
+
+    #print("After find_neighbors")
+    #print(len(continents))
         
-    for c in continents:
-        print(c, len(c))
+    #for i, c in enumerate(continents):
+    #   print("Continent", i, c, len(c))
 
     continents.sort(key=lambda c:len(c), reverse = True)
-    print(continents)
-    
+    merged_continent = False
+    merged = []
 
-# Works Well       
+    
+    
+    for i, c in enumerate(continents):
+        print("Merging Continents")
+        print(i)
+        
+        sub_continent = continents[i+1:]
+        print(sub_continent)
+        for j, d in enumerate(sub_continent):
+            merged_continent = False
+            print(j, d)
+            for l in d:
+                print("*",l, continents[i])
+                if ((l in continents[i]) or is_neighbor(l ,continents[i])):
+                    print("found", l , "in", continents[i])
+                    #print(c)
+                    #print(d)
+                    continents[i] = merge(continents[i], d)
+                    print(i, continents[i])
+                    continents[j+1] = []
+                    #merged.append(j+1)
+                    #print(j+1)
+                    merged_continent = True
+                if (merged_continent == True):
+                   break
+    
+    final_continents = [c for c in continents if len(c) > 0]
+    
+           
+    print(len(continents))
+    print("*", len(final_continents))
+    print(final_continents)
+     
+    return final_continents
+
+def find_continent(tile, final_continents):
+    for c in final_continents:
+        if (tile in c):
+            print("You are on a continent", "of size", len(c))
+            return
+    print("You are in the ocean")
+            
 def find_land(world):
     """Returns the individual tiles of land in the world.
 
     >>> find_land("WWWWLLLL","LLWWLLLL")
     [(0,0),(0,1),(0,2),(0,3),(1,2),(1,3)]
     """
-    print("find_land()")
+    #print("find_land()")
     land = []
     for i, row in enumerate(world):
         for j, c in enumerate(row):
@@ -78,9 +155,9 @@ def find_land(world):
             if (c == "L"):
                 land.append(t)
                     
-    print(land)
-    print(len(land))
-    print("End find_land()")
+    #print(land)
+    #print(len(land))
+    #print("End find_land()")
     return land
 
 
@@ -89,8 +166,12 @@ if __name__ == "__main__":
     row1 = row1 + "L" *3 + "W" * 3 + "L" * 2
     row2 = "L" * 9
     row2 = row2 + "W" * 2
-    rows = [row1, row2]
+    rows = [row1, row2, row1, row2, row1, row2, row1, row2, row1, row2, row1]
 
     print(rows)
     land = find_land(rows)
-    find_continents(land)
+    final_continents = find_continents(land)
+    x = input("Please enter a number between 1 and 11 ")
+    y = int(x)
+    print("Let us assume you are standing on tile",y,",", y)
+    find_continent((y,y), final_continents)
