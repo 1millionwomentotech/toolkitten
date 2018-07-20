@@ -133,7 +133,11 @@ if __name__ == "__main__":
     print(rows)
     land = find_land(rows)
     final_continents = find_continents(land)
-    x = input("Please enter a number between 1 and 11 ")
+    y = 0
+    while (y < 1 or y > 11):
+        x = input("Please enter a number between 1 and 11 ")
+        y = int(x)
+        
     y = int(x)
     print("Let us assume you are standing on tile",y,",", y)
     find_continent((y,y), final_continents)
