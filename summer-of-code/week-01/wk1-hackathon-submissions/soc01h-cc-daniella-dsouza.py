@@ -12,22 +12,17 @@ def find_neighbors(tile_index, tile, land, continents):
     merged = False
 
     found_continent = False
-    #print("Incoming tile", tile)
 
     # Does this tile belong to a continent
     for continent in continents:
         if tile in continent:
             current_continent = continent
             found_continent = True
-            #print("Found our Continent")
             return
         
     # Let's put in in the temporary bucket
     if (found_continent == False): 
         current_continent.append(tile)
-
-    #continents.sort(key = lambda c: len(c), reverse=True)
-    #print(continents)
 
     # Let us start looping over all the land tiles
     merged_with_continent = False
@@ -51,14 +46,9 @@ def find_neighbors(tile_index, tile, land, continents):
                 # either I merge with your continent or you merge with mine
                 if (merged == False):    
                     current_continent.append(l)
-                
-                
-    #print(current_continent)
-    #print(len(current_continent))
 
     if (merged_with_continent == False):
         continents.append(current_continent)
-        #print("added new continent", current_continent)
                                                         
     return 
 
@@ -66,11 +56,8 @@ def merge(list1, list2):
     return list(set(list1 + list2))
 
 def is_neighbor(tile ,continent):
-  #  print("is_neighbor")
-  #  print(tile, continent)
     for t in continent:
         if ((abs(t[0] - tile[0]) < 2) and (abs(t[1] - tile[1]) < 2)):
-           # print("Found Neighbor")
             return True
 
     return False
@@ -82,43 +69,23 @@ def find_continents(land):
     >>>find_continents([(0,0),(0,1),(0,2),(1,0),(3,0)) returns list of two lists
     (0,0),(0,1),(0,2),(1,0) and (3,0)"""
     continents = []
-    #print("find_continents")
     
     for index, t in enumerate(land):
         find_neighbors(index, t, land, continents)
-
-    #print("After find_neighbors")
-    #print(len(continents))
-        
-    #for i, c in enumerate(continents):
-    #   print("Continent", i, c, len(c))
 
     continents.sort(key=lambda c:len(c), reverse = True)
     merged_continent = False
     merged = []
 
-    
-    
     for i, c in enumerate(continents):
-        print("Merging Continents")
-        print(i)
-        
         sub_continent = continents[i+1:]
-        print(sub_continent)
         for j, d in enumerate(sub_continent):
             merged_continent = False
-            print(j, d)
             for l in d:
-                print("*",l, continents[i])
                 if ((l in continents[i]) or is_neighbor(l ,continents[i])):
-                    print("found", l , "in", continents[i])
-                    #print(c)
-                    #print(d)
                     continents[i] = merge(continents[i], d)
-                    print(i, continents[i])
+                    #print(i, continents[i])
                     continents[j+1] = []
-                    #merged.append(j+1)
-                    #print(j+1)
                     merged_continent = True
                 if (merged_continent == True):
                    break
@@ -126,9 +93,9 @@ def find_continents(land):
     final_continents = [c for c in continents if len(c) > 0]
     
            
-    print(len(continents))
-    print("*", len(final_continents))
-    print(final_continents)
+    #print(len(continents))
+    #print("*", len(final_continents))
+    #print(final_continents)
      
     return final_continents
 
@@ -149,15 +116,10 @@ def find_land(world):
     land = []
     for i, row in enumerate(world):
         for j, c in enumerate(row):
-            #print("(%d, %d) - %s" % (i, j, c))
             t = (i,j)
-            #print(t)
             if (c == "L"):
                 land.append(t)
                     
-    #print(land)
-    #print(len(land))
-    #print("End find_land()")
     return land
 
 
