@@ -180,7 +180,7 @@ ctr=0
 
 #test values
 
-ntests=10
+ntests=7
 multiplierbase=11
 multipliers=[] #grid size multiplier
 for i in range (ntests):
