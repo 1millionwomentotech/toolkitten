@@ -1,4 +1,40 @@
-# Summer of Code Mentor Handbook
+# Summer of Code Handbook
+
+# Important
+
+Official communications are only through the @1millionwomentotech Memberportals:
+
+To get access please watch the Onboarding Video and choose one of the Membership options. ->
+
+## Onboarding Video
+
+Your first step when coming across #1millionwomentotech is to learn more about the Mission and each #SummerOfCode option. Please enjoy the Onboarding Webinar on YouTube where the whole project, movement, as well as the Course contents and Hackathons are explained along with the Membership details:
+https://www.youtube.com/watch?v=9b91ZfNvYeU
+
+## Join DIY (free - donation based):
+
+Do-It-Yourself (DIY) is free, includes class replays and code. Donations requested, but are completely optional, if you can help with the mission to reach 1 million women by 2020, via Facebook or PayPal nonprofit charitable giving.
+
+Details and signup here:
+https://memberportal.1millionwomentotech.com/diy
+
+## Join GOLD or VIP
+
+Fund Yourself Fund Others (paid) has two levels "GOLD" and "VIP".
+
+Both include everything in the DIY section PLUS GOLD includes:
+- Premium Content
+- Support
+- Certificate
+
+VIP includes everything above in the DIY and the GOLD PLUS has personal Fast Forward Career Accelerator and Mastermind programs.
+
+Details and signup here:
+https://memberportal.1millionwomentotech.com/fund-yourself-fund-others
+
+# Student Handbook
+
+# Mentor Handbook
 
 How to become a Mentor?
 
@@ -229,7 +265,12 @@ To determine our maximum capacity we want to allow 10 women to every Mentor who 
 
 ## Communication Channels
 
-A chat room on Discord: https://discord.gg/RXAebU
+Official communications are only through the @1millionwomentotech Memberportals:
+
+To get access please join via either:
+- DIY (free - donation based): https://memberportal.1millionwomentotech.com/diy
+- Fund Yourself Fund Others (paid): https://memberportal.1millionwomentotech.com/fund-yourself-fund-others
+
 A social media channels: use hashtag on Twitter, Instagram, Facebook #1millionwomentotech #SummerOfCode
 A code repository: https://github.com/1millionwomentotech/toolkitten/summerofcode
 A forum: https://1millionwomentotech.com/summerofcode (coming)
