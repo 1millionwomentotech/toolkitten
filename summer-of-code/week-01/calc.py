@@ -13,9 +13,9 @@
 # print('')
 # print('Good-bye.')
 
-# print( 'I like' + 'chocolate cake.' )
-# print('I like ' + 'apple pie.')
-# print('I like' + ' apple pie.')
+print( 'I like' + 'chocolate cake.' )
+print('I like ' + 'apple pie.')
+print('I like' + ' apple pie.')
 
 # print('blink ' * 4)
 # print('moo'*3)

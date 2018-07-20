@@ -1,3 +1,5 @@
+### DAY - 1 ###
+
 # Hours in a year
 print("1. How many hours are there in a year?")
 diy = 365
@@ -66,3 +68,29 @@ myhr = (mydays - int(mydays))*24
 mymin = (myhr - int(myhr))*60
 mysec = (mymin - int(mymin))*60
 print("\nAns. My accurate age based on my birthday: {0}yrs {1}months {2}days {3}hrs {4}min {5:.2f}sec".format(int(myyear),int(mymonth),int(mydays),int(myhr),int(mymin),round(mysec,2)))
+
+### DAY - 3 ###
+
+#Full name greeting
+print("Full name greeting")
+fname = input("First name: ")
+mname = input("Middle name: ")
+lname = input("Last name: ")
+full_name = fname + ' ' + mname + ' ' + lname
+print("Hello,",full_name)
+
+#Bigger, better favorite number
+print("Favorite number")
+num = input("Enter your favorite number: ")
+bignum = int(num) + 1
+print("The bigger better favorite number can be "+ str(bignum))
+
+# Angry Boss
+print("Angry boss's reply")
+print("\nAngry Boss: What do you want??\n")
+answer = input("Your answer: ")
+reply = "WHADDAYA MEAN \""+ answer.upper() + "\"?!? YOU'RE FIRED!!"
+print("\nAngry Boss replied, "+ reply)
+
+# Random numbers generation
+
