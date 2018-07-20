@@ -1,7 +1,6 @@
 #########################################################
 # Civilization III Text Map Generator                   #
 # Features:                                             #
-#       + Benchmarking                                  #
 #       + Saving and loading maps                       #
 #       + Generating Maps                               #
 #       + Displaying Maps                               #
@@ -18,7 +17,7 @@ from operator import eq #calc_map.py
 
 
 ##################################################################
-# Code formally in seperate map.py file                          #
+# Code formerly in seperate map.py file                          #
 ##################################################################
 arr = []
 world = []
@@ -85,7 +84,7 @@ def print_world(world):
     #print(f"world: {world}")
 
 ##################################################################
-# Code formally in seperate calc_map.py file                     #
+# Code formerly in seperate calc_map.py file                     #
 ##################################################################
 ## to make random
 map = []
@@ -213,7 +212,7 @@ def is_valid(array, index):
     return 0 <= row < len(array) and 0 <= column < len(array[row])
 
 ##################################################################
-# Code formally in seperate driver.py file                     #
+# Code formerly in seperate driver.py file                     #
 ##################################################################
 
 def main():
