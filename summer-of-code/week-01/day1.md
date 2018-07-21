@@ -27,7 +27,7 @@ Since setting up your environment differs somewhat from platform to platform (wh
 If you are ready to get started, here are the download and install links:
 - [Sublime Text 3](https://www.sublimetext.com/3)
 - [Python 3.7.0](https://wiki.python.org/moin/BeginnersGuide/Download)
-- [iTerm2](https://www.iterm2.com/index.html) - Mac
+
 
 #### 1.1 Windows 
 
@@ -63,6 +63,9 @@ Demo
 Sublime
 
 Command + N
+
+Optional for Mac, you can use the built-in command prompt or what I use
+- [iTerm2](https://www.iterm2.com/index.html) - Mac
 
 #### 1.3 Linux 
 
@@ -158,6 +161,8 @@ print(1<<9)
 
 #### 2.5 A Few Things to Try
 
+Basic Exercises for Certification:
+
 Write a program that tells you the following:
 
 - Hours in a year. How many hours are in a year?
@@ -165,13 +170,15 @@ Write a program that tells you the following:
 - Your age in seconds. How many seconds old are you? (I'm not going to check your answer, so be as accurate—or not—as you want.)
 - Andreea Visanoiu​: I'm 48618000 seconds old hahaha. Calculate @Andreea Visanoiu's age.
 
-
 Here are some tougher questions:
 
 - How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow?
 - How about a 64-bit system?
 - Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday) - you will need Python modules.
 
+## Submission Guidelines
+
+Create a single file called `soc-wk1-cert-firstname-lastname.py` and send PR to the Gold and VIP private repo.
 
 
 
