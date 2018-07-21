@@ -195,3 +195,46 @@ while i < 11:
     counter += 1
     i += 1
 print("Amount of printed nums: " + str(counter))
+
+
+############################### DAY 4 #######################################
+
+# 1) “99 Bottles of Beer on the Wall.” 
+# Write a program that prints out the lyrics to that beloved classic,
+# “99 Bottles of Beer on the Wall.” 
+
+i = 99
+while i > 0:
+    print(str(i) + " bottles of beer on the wall, " + str(i) + 
+    " bottles of beer.\nTake one down and pass it around, " + str(i - 1) +
+    " bottles of beer on the wall.\n")
+    i -= 1
+print("""No more bottles of beer on the wall, no more bottles of beer. 
+Go to the store and buy some more, 99 bottles of beer on the wall.""")
+
+# 2) Deaf grandma
+'''
+- Deaf grandma. Whatever you say to Grandma (whatever you type in), 
+she should respond with this: HUH?! SPEAK UP, GIRL! unless you shout it 
+(type in all capitals). If you shout, she can hear you (or at least she thinks so) 
+and yells back:q
+
+NO, NOT SINCE 1938!
+
+To make your program really believable, have Grandma shout a different year each time, 
+maybe any year at random between 1930 and 1950. 
+(This part is optional and would be much easier if you read the section on Python’s 
+random number generator under the Math Object.) You can’t stop talking to Grandma until 
+you shout BYE. 
+
+- Hint: Try to think about what parts of your program should happen over and over again. 
+All of those should be in your while loop. 
+
+- Hint: People often ask me, “How can I make random give me a number in a range not 
+starting at zero?” But you don’t need it to. Is there something you could do to the number random returns to you? 
+
+- Deaf grandma extended. What if Grandma doesn’t want you to leave? When you shout BYE, 
+she could pretend not to hear you. Change your previous program so that you have to 
+shout BYE three times in a row. 
+Make sure to test your program: if you shout BYE three times but not in a row, 
+you should still be talking to Grandma.''' 
