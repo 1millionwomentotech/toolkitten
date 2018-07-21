@@ -217,7 +217,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.""")
 - Deaf grandma. Whatever you say to Grandma (whatever you type in), 
 she should respond with this: HUH?! SPEAK UP, GIRL! unless you shout it 
 (type in all capitals). If you shout, she can hear you (or at least she thinks so) 
-and yells back:q
+and yells back:
 
 NO, NOT SINCE 1938!
 
@@ -238,3 +238,25 @@ she could pretend not to hear you. Change your previous program so that you have
 shout BYE three times in a row. 
 Make sure to test your program: if you shout BYE three times but not in a row, 
 you should still be talking to Grandma.''' 
+
+exit_string = "bye"
+user_input = ""
+counter = 0
+
+while counter < 3:
+
+    user_input = input("What do you want to say to Granny? ")
+
+    if user_input != user_input.upper():
+        print("HUH?! SPEAK UP, GIRL!")
+        counter = 0
+
+    elif user_input.isupper() and user_input != exit_string.upper():
+        random_num = random.randint(1930, 1950)
+        print("NO, NOT SINCE " + str(random_num))
+        counter = 0
+    
+    elif user_input == exit_string.upper():
+        counter += 1
+    
+
