@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+# my vs code settings 
+,vscode
+settings.json
+
+#my own personal work
+day1.py
+mementopython3-english.pdf
