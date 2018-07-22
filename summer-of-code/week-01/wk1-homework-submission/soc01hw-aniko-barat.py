@@ -258,5 +258,40 @@ while counter < 3:
     
     elif user_input == exit_string.upper():
         counter += 1
-    
 
+
+# 3 Sort of leap year calculator    
+'''
+- Leap years. Write a program that asks for a starting year and an ending year 
+and then puts all the leap years between them (and including them, 
+if they are also leap years). Leap years are years divisible by 4 (like 1984 and 2004). 
+However, years divisible by 100 are not leap years (such as 1800 and 1900) 
+unless they are also divisible by 400 (such as 1600 and 2000, 
+which were in fact leap years). What a mess! 
+'''
+input_starting_year = 0
+input_ending_year = 0
+print("\nHi, I'm a leap year calculator, if you give me a starting year and an ending year,\nI will list for you the leap years between the given years.\n")
+
+while True:
+    try:
+        input_starting_year = input("Give me a starting year, pls: ")
+        input_starting_year = int(input_starting_year)
+        input_ending_year = input("Give me an ending year, pls: ")  
+        input_ending_year = int(input_ending_year) 
+        break
+    except ValueError:
+        print("Pls, give me a valid number, pls! ") 
+
+# Leap years are years divisible by 4 (like 1984 and 2004). 
+# However, years divisible by 100 are not leap years (such as 1800 and 1900) 
+# unless they are also divisible by 400
+
+list_of_leap_years = []
+for year in range(input_starting_year, input_ending_year - 1):
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+        list_of_leap_years.append(year)
+
+print("Leap years in the given range:\n")
+for year in list_of_leap_years:
+    print(year)
