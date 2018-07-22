@@ -123,3 +123,20 @@ while True:
 		year = random.randint(1930,1950)
 		grandma = "NO, NOT SINCE "+str(year)+"!"
 		print("GrandMa: " + grandma)
+
+# Leap Years
+
+print("Leap Years List")
+start = int(input("Enter starting year:"))
+end = int(input("Enter ending year:"))
+leap = list()
+while start<=end:
+	if start%4==0:
+		if ((start%100==0) and (start%400)!=0):
+			start+=1
+			continue	
+		leap.append(start)
+		start+=4
+	else:
+		start+=1
+print(leap)
