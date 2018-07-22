@@ -140,3 +140,38 @@ while start<=end:
 	else:
 		start+=1
 print(leap)
+
+#Find something today in your life, that is a calculation.
+
+import time
+import random
+import sys
+print("Let's go to the zoo with family. It is 9.00am now.")
+duration = 0
+reply = ['Dad: \"Have patience.\"',
+		'Dad: \"No.\"',
+		'Dad: \"Not yet.\"',
+		'Dad: \"We\'ll reach soon.\"'
+
+]
+while duration<=40:
+	blah = "..... "
+	if duration==0:
+		duration +=10
+		continue
+	for l in blah:
+		sys.stdout.write(l)
+		sys.stdout.flush()
+		time.sleep(1)
+	print("9:"+str(duration)+"am")
+	time.sleep(1)
+	print("You: \"Are we there yet?\"")
+	time.sleep(2)
+	if duration==40:
+		print("Dad:\"Yes, I'm looking for a parking space.\"")
+		break
+	else:
+		print(random.choice(reply))
+		duration +=10
+time.sleep(2)
+print("You: \"Yipee!!  we finally got to the zoo.\"")
