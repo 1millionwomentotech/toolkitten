@@ -30,8 +30,35 @@ def preprocess():
         print(item)
     print('For the pattern {} we found {} terms in {}:'.format(looking_for, len(found), duration))
 
-#side = 4
-#my_board = create_board(side)
 
-preprocess()
+def valid_operations(x: int, y: int, side: int) -> list:
+    ops = []
+    if y > 0:
+        ops.append((x, y -1))
+    if y < side - 1:
+        ops.append((x, y+1))
+    if x > 0:
+        ops.append((x - 1, y))
+        if y > 0:
+            ops.append((x - 1, y - 1))
+        if y < side - 1:
+            ops.append((x - 1, y + 1))
+    if x < side - 1:
+        ops.append((x + 1, y))
+        if y > 0:
+            ops.append((x + 1, y - 1))
+        if y < side - 1:
+            ops.append((x + 1, y + 1))
+    return ops
+
+side = 4
+#my_board = create_board(side)
+my_board = [['l', 'w', 'k', 'x'], ['k', 'c', 'm', 'h'], ['d', 'u', 'x', 't'], ['k', 'o', 't', 'i']]
+
+starting_point = (0,0)
+
+word = (starting_point,)
+
+
+#preprocess()
 
