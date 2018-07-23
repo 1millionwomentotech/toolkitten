@@ -1,7 +1,7 @@
 ## Summer of code - 1 million women to tech
 ## Anna Laszlo
 ## Hungary
-## July 18, 22, 2018
+## July 18, 22, 23 2018
 
 ## Week 1 Homework: **A Few Things to Try** sections
 
@@ -151,3 +151,124 @@ estimate = round(num_of_shelves * length_of_shelf * percent_used / 100)
 print("Approximately you have " + str(estimate) + " number of books on your bookcase.")
 
 
+## Building and sorting an array. Write the program that asks us to type as many words as we want
+## (one word per line, continuing until we just press Enter on an empty line) and then repeats
+## the words back to us in alphabetical order. Make sure to test your program thoroughly;
+## for example, does hitting Enter on an empty line always exit your program?
+## Even on the first line? And the second?
+array = []
+while word != "":
+    word = input("Give one word: ")
+    array.append(word)
+array_sorted = sorted(array)
+print(array_sorted)
+
+
+
+## Table of contents. Write a table of contents program here. Start the program with a list holding
+## all of the information for your table of contents (chapter names, page numbers, and so on).
+## Then print out the information from the list in a beautifully formatted table of contents.
+## Use string formatting such as left align, right align, center.
+table_of_contents = ["Chapter 1: Getting Started", "1",
+                     "Chapter 2: Numbers", "9",
+                     "Chapter 3: Letters", "13"
+                     ]
+for i in range(0, len(table_of_contents), 2):
+    print("{0:<35}".format(table_of_contents[i]) +
+          "{0:^6}".format("page") +
+          "{0:>4}".format(table_of_contents[i+1])
+          )
+
+
+
+
+## Write a function that prints out "moo" n times.
+#n = input("Please give an integer number between 1 and 10: ")
+def print_n_moo(n):
+    a = []
+    for i in range(0, n):
+        a.append("moo")
+    print(a)
+print_n_moo(4)
+
+## or
+def print_n_moo(n):
+    for i in range(0, n):
+        print("moo")
+print_n_moo(6)
+
+
+
+
+## Old-school Roman numerals. In the early days of Roman numerals, the Romans didn’t bother with any
+## of this new-fangled subtraction “IX” nonsense.
+## No Mylady, it was straight addition, biggest to littlest—so 9 was written “VIIII,” and so on.
+## Write a method that when passed an integer between 1 and 3000 (or so) returns a string
+## containing the proper old-school Roman numeral. In other words, old_roman_numeral
+## 4 should return 'IIII'. Make sure to test your method on a bunch of different numbers.
+## Hint: Use the integer division and modulus methods.
+## For reference, these are the values of the letters used: I = 1 V = 5 X = 10 L = 50 C = 100 D = 500 M = 1000
+ROMAN = [   (1000, "M"),
+            ( 500, "D"),
+            ( 100, "C"),
+            (  50, "L"),
+            (  10, "X"),
+            (   5, "V"),
+            (   1, "I")
+        ]
+def old_int_to_roman(n):
+    res = ""
+    while n > 0:
+        for arabic, roman in ROMAN:
+            while n >= arabic:
+                res += roman
+                n -= arabic
+    return res
+
+print("-2 = "   + old_int_to_roman(-2))
+print("4 = "    + old_int_to_roman(4))
+print("23 = "   + old_int_to_roman(23))
+print("100 = "  + old_int_to_roman(100))
+print("549 = "  + old_int_to_roman(549))
+print("1567 = " + old_int_to_roman(1567))
+print("3444 = " + old_int_to_roman(3444))
+
+
+
+## “Modern” Roman numerals. Eventually, someone thought it would be terribly clever if putting a
+## smaller number before a larger one meant you had to subtract the smaller one.
+## As a result of this development, you must now suffer.
+## Rewrite your previous method to return the new-style Roman numerals so when someone calls
+## roman_numeral 4, it should return 'IV', 90 should be 'XC' etc.
+
+ROMAN = [   (1000, "M"),
+            ( 900,"CM"),
+            ( 500, "D"),
+            ( 400,"CD"),
+            ( 100, "C"),
+            (  90,"XC"),
+            (  50, "L"),
+            (  40,"XL"),
+            (  10, "X"),
+            (   9,"IX"),
+            (   5, "V"),
+            (   4,"IV"),
+            (   1, "I")
+        ]
+def new_int_to_roman(n):
+    res = ""
+    while n > 0:
+        for arabic, roman in ROMAN:
+            while n >= arabic:
+                res += roman
+                n -= arabic
+    return res
+
+print("-2 = "   + new_int_to_roman(-2))
+print("4 = "    + new_int_to_roman(4))
+print("23 = "   + new_int_to_roman(23))
+print("90 = "   + new_int_to_roman(90))
+print("100 = "  + new_int_to_roman(100))
+print("549 = "  + new_int_to_roman(549))
+print("1567 = " + new_int_to_roman(1567))
+print("3444 = " + new_int_to_roman(3444))
