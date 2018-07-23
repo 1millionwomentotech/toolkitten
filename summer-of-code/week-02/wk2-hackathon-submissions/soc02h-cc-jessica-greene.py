@@ -37,13 +37,15 @@ class boggle():
         self.counter = 0
         self.height = height
         self.width = width
-        self.dictionary = generate_dictionary()
+        self.words = []
+        self.filename = 'sowpods-dictionary.txt'
+        self.dictionary = self.generate_dictionary()
         self.alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'O', 'P' , 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
         self.board =  self.generate_board()
-        self.filename = 'sowpods-dictionary.txt'
-        
-        
-    def generate_dictionary(self): 
+   
+
+    def generate_dictionary(self):
+        dictionary = []
         with open(self.filename,'r') as f:
             for line in f:
                 dictionary.append(line)
@@ -64,21 +66,31 @@ class boggle():
                 row.append(self.alphabet[random.randint(0,len(self.alphabet)-1)])
             board.append(row)
         # hard coded board for testing, comment out to use above world generator
-        #board = [
-        #    [A, S, I, F],
-        #    [L, B, T, O],
-        #    [L, O, O, R],
-        #    [S, E, E, X]
-        #]
+        board = [
+            ['A', 'S', 'I', 'F'],
+            ['L', 'B', 'T', 'O'],
+            ['L', 'O', 'O', 'R'],
+            ['S', 'E', 'E', 'X']
+        ]
         return board
+
+    def check_valid_coords(self):
+        pass
+    
+    def check_for_match(self):
+        pass
+    
+    def check_neighbours(self):
+        pass
+        
+    def start_checking(self):
+        pass
         
 if __name__ == '__main__':
     # make board object from class setting grid height and width
     game = boggle()
-    # assign board from game object to variable
-    board = game.generate_board()
     # print board out - for checking
-    for row in board:
+    for row in game.board:
         print(row)
-    dictionary = game.generate_dictionary()
-    print(len(dictionary))
+    # print length of dictionary
+    print(len(game.dictionary))
