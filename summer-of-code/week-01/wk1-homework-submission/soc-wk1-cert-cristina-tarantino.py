@@ -1,6 +1,7 @@
 from datetime import datetime
 from random import randint
 
+
 days_in_year = 365
 
 # year leap. Source https://en.wikipedia.org/wiki/Year#Variation_in_the_length_of_the_year_and_the_day
@@ -82,11 +83,13 @@ print("\nMy age is %d seconds" % delta.total_seconds())
 name = input("\nCould you please type your first name: ")
 middle_name = input("Could you please type your middle name: ")
 last_name = input("Could you please type your last name: ")
+
 print("\nHello %s %s %s! A really warm welcome to you!" % (name, middle_name, last_name))
 
 
 # 9. Bigger, better favorite number. Write a program that asks for a person's favorite number.
 # Have your program add 1 to the number, and then suggest the result as a bigger and better favorite number.
+print("\nEXERCISE Bigger, better favorite number")
 
 # infinite loop
 while True:
@@ -106,6 +109,7 @@ while True:
 
 # 10. Angry boss. Write an angry boss program that rudely asks what you want.
 # Whatever you answer, the angry boss should yell it back to you and then fire you.
+print("\nEXERCISE Angry boss")
 
 answer = input("\n" + name + " what the hell do you want? ")
 print(("whaddaya mean \"" + answer + "\"?!? you're fired!!").upper())
@@ -118,6 +122,9 @@ print(("whaddaya mean \"" + answer + "\"?!? you're fired!!").upper())
 # Chapter 1: Getting Started        page 1
 # Chapter 2: Numbers                page 9
 # Chapter 3: Letters                page 13
+
+print("\nEXERCISE Table of contents")
+
 rows = [
         ["\nTable of Contents",           "\n"],
         ["Chapter 1: Getting Started",  "page 1"],
@@ -135,6 +142,9 @@ for r in rows:
 
 # 12. Write a program that prints out the lyrics to that beloved classic, "99 Bottles of Beer on the Wall."
 # source http://www.99-bottles-of-beer.net/lyrics.html
+
+print("\nEXERCISE \"99 Bottles of Beer on the Wall.\"")
+
 starter_num = 99
 
 # print the lyrics title
@@ -157,7 +167,9 @@ print("No more bottles of beer on the wall, no more bottles of beer. "
 # To make your program really believable, have Grandma shout a different year each time,
 # maybe any year at random between 1930 and 1950.
 # You can't stop talking to Grandma until you shout BYE.
-print()
+
+print("\nEXERCISE Deaf grandma")
+
 tell_grandma = ""
 
 while tell_grandma != "BYE":
@@ -176,6 +188,28 @@ while tell_grandma != "BYE":
 # Change your previous program so that you have to shout BYE three times in a row.
 # Make sure to test your program: if you shout BYE three times but not in a row, you should still be talking to Grandma.
 
+print("\nEXERCISE Deaf grandma extended")
+
+tell_grandma = ""
+num_bye = 0
+
+while num_bye < 3:
+    tell_grandma = input("Tell something to Grandma: ")
+    # if tell_grandma.isupper() and not tell_grandma.islower():   =>  this would be semantically more correct however
+    # I think that the above method will scan the string tell_grandma twice whilst the one below only once
+    if tell_grandma == tell_grandma.upper():
+        if tell_grandma == "BYE":
+            num_bye = num_bye + 1
+        else:
+            num_bye = 0
+        random_year = randint(1930, 1950)
+        print("NO, NOT SINCE %s" % random_year)
+    else:
+        print("HUH?! SPEAK UP, GIRL!")
+
+if num_bye == 3:
+    print("GOODBYE HONEY!!! SEE YOU SOON! I LOVE YOU!")
+
 
 # 15. Leap years.
 # Write a program that asks for a starting year and an ending year and
@@ -184,11 +218,78 @@ while tell_grandma != "BYE":
 # However, years divisible by 100 are not leap years (such as 1800 and 1900)
 # unless they are also divisible by 400 (such as 1600 and 2000, which were in fact leap years). What a mess!
 
+print("\nEXERCISE Leap years ")
+
+print("\nLet's find leap years. Type a range of two years to find all the leap years in the range.")
+loop_years = []
+
+# infinite loop
+while True:
+    # try to convert the input in an integer
+    try:
+        year_one = int(input("\nPlease type the starting year: "))
+        year_two = int(input("\nPlease type the ending year: "))
+
+        # check that year one is minor of year two
+        if year_one >= year_two:
+            raise ValueError("\nThe starting year must be greater than the ending year!")
+
+    # if it is not possible acknowledge the user and continue to prompt him to insert a number
+    except ValueError as error:
+        if error:
+            print(error)
+        else:
+            print("\nThat wasn't a valid year!")
+        continue
+
+    # else execute the input manipulation and break the infinite loop
+    else:
+        current_year = year_one
+        while current_year <= year_two:
+            if current_year % 400 == 0 or (current_year % 4 == 0 and current_year % 100 != 0):
+                loop_years.append(current_year)
+
+            current_year += 1
+
+        for y in loop_years:
+            print(y)
+        break
+
 
 # 16. Find something today in your life, that is a calculation.
-# Go for a walk, look around the park, try to count something.
-# Anything! And write a program about it. e.g. number of stairs, steps, windows,
-# leaves estimated in the park, kids, dogs, estimate your books by bookshelf, toiletries, wardrobe.
+# I had a JavaScript interview today and the question was to perform a left rotation operation on an array.
+# For example, if  left rotations are performed on array, then the array would become .
+# For example, if 2 left rotations are performed on an array [1, 2, 3, 4, 5],
+# then the array would become [3, 4, 5, 1, 2].
+# Here is my algorithm:
+
+print("\nEXERCISE FROM YOUR LIFE")
+
+
+def rot_left(array, rotations_num):
+    a_length = len(array)
+    new_array = [None]*a_length
+    pos_to_left = rotations_num
+
+    i = 0
+    while i < a_length:
+        pos_to_left = pos_to_left if pos_to_left != 0 else a_length
+        to_index = a_length - pos_to_left
+        new_array[to_index] = array[i]
+        pos_to_left -= 1
+        i += 1
+
+    return new_array
+
+
+print("\nRotate the following array [1, 2, 3, 4, 5] of 2 position to the left")
+print(rot_left([1, 2, 3, 4, 5], 2))
+print("\nRotate the following array [1, 2, 3, 4, 5] of 4 position to the left")
+print(rot_left([1, 2, 3, 4, 5], 4))
+print("\nRotate the following array [1, 2, 3, 4, 5] of 5 position to the left")
+print(rot_left([1, 2, 3, 4, 5], 5))
+print("\nRotate the following array [1, 2, 3, 4, 5] of 6 position to the left")
+print(rot_left([1, 2, 3, 4, 5], 6))
 
 
 # 17. Building and sorting an array. Write the program that asks us to type as many words as we want
@@ -197,6 +298,20 @@ while tell_grandma != "BYE":
 # does hitting Enter on an empty line always exit your program? Even on the first line? And the second?
 # Hint: There’s a lovely array method that will give you a sorted version of an array: sorted(). Use it!
 
+print("\nEXERCISE Building and sorting an array")
+
+word_list = []
+
+user_word = input("\nPlease type as many words as you want one word per line, "
+                  "continuing until you press Enter on an empty line "
+                  "and I will repeat them to you in alphabetical order: ")
+
+while user_word != '':
+    word_list.append(user_word)
+    user_word = input()
+
+
+print(sorted(word_list))
 
 # 18. Table of contents. Write a table of contents program here.
 # Start the program with a list holding all of the information for your table of contents
@@ -204,20 +319,61 @@ while tell_grandma != "BYE":
 # Then print out the information from the list in a beautifully formatted table of contents.
 # Use string formatting such as left align, right align, center.
 
+print("\nEXERCISE Table of contents with function and info array")
+
+
+def print_contents(contents_list):
+    # get the length of the longest world from each row in rows and for each word in row + some padding
+    col_width = max(len(r[1]) for r in contents_list) + 10  # padding
+
+    print("\nTable of Contents\n")
+
+    for c in contents_list:
+        print("Chapter " + c[0] + ": " + c[1].ljust(col_width) + "page " + c[2])
+
+
+contents_table = [
+    ["1", "Getting Started", "1"],
+    ["2", "Numbers", "9"],
+    ["3", "Letters", "13"],
+]
+
+print_contents(contents_table)
+
 
 # 19. Write a function that prints out "moo" n times.
+
+print("\nEXERCISE moo")
+
+
+def moo(n):
+    print("\nmoo" * n)
+
+
+# infinite loop
+while True:
+    # try to convert the input in an integer
+    try:
+        moos_num = int(input("\nPlease type how many times you want to 'moo': "))
+    # if it is not possible acknowledge the user and continue to prompt him to insert a number
+    except ValueError as error:
+        print("\nThat wasn't a valid number!")
+        continue
+    # else execute the input manipulation and break the infinite loop
+    else:
+        moo(int(moos_num))
+        break
 
 
 # 20. Old-school Roman numerals. In the early days of Roman numerals,
 # the Romans didn't bother with any of this new-fangled subtraction “IX” nonsense.
 # No Mylady, it was straight addition, biggest to littlest—so 9 was written “VIIII,” and so on.
-
-
-# 21. Write a method that when passed an integer between 1 and 3000 (or so)
-# returns a string containing the proper old-school Roman numeral.
-# In other words, old_roman_numeral 4 should return 'IIII'.
+# Write a method that when passed an integer between 1 and 3000 (or so) returns a string containing
+# the proper old-school Roman numeral. In other words, old_roman_numeral 4 should return 'IIII'.
 # Make sure to test your method on a bunch of different numbers.
+#
 # Hint: Use the integer division and modulus methods.
+#
 # For reference, these are the values of the letters used:
 # I = 1
 # V = 5
@@ -227,9 +383,78 @@ while tell_grandma != "BYE":
 # D = 500
 # M = 1000
 
+print("EXERCISE Old-school Roman numerals")
 
-# 22. “Modern” Roman numerals.
+
+def old_romans(number):
+    result = ''
+    decimal = [1000, 500, 100, 50, 10, 5, 1]
+    roman = ["M", "D", "C", "L", "X", "V", "I"]
+
+    # looping over every element of our arrays
+    for i in range(len(decimal)):
+        # keep trying the same number until we need to move to a smaller one
+        while number%decimal[i] < number:
+            # add the matching roman number to our result string
+            result += roman[i]
+            # subtract the decimal value of the roman number from our number
+            number -= decimal[i]
+
+    return result
+
+
+# infinite loop
+while True:
+    # try to convert the input in an integer
+    try:
+        user_number = int(input("\nPlease type a number between 1 and 3000: "))
+    # if it is not possible acknowledge the user and continue to prompt him to insert a number
+    except ValueError as error:
+        print("\nThat wasn't a valid number!")
+        continue
+    # else execute the input manipulation and break the infinite loop
+    else:
+        print(str(old_romans(user_number)))
+        break
+
+
+# 21. “Modern” Roman numerals.
 # Eventually, someone thought it would be terribly clever if putting a smaller number before a larger one meant you
 # had to subtract the smaller one. As a result of this development, you must now suffer.
 # Rewrite your previous method to return the new-style Roman numerals so when someone calls roman_numeral 4,
 # it should return 'IV', 90 should be 'XC' etc.
+
+print("EXERCISE “Modern” Roman numerals.")
+
+
+def modern_romans(number):
+    result = ''
+    decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+
+    # looping over every element of our arrays
+    for i in range(len(decimal)):
+        # keep trying the same number until we need to move to a smaller one
+        while number%decimal[i] < number:
+            # add the matching roman number to our result string
+            result += roman[i]
+            # subtract the decimal value of the roman number from our number
+            number -= decimal[i]
+
+    return result
+
+
+# infinite loop
+while True:
+    # try to convert the input in an integer
+    try:
+        user_number = int(input("\nPlease type a number between 1 and 3000: "))
+    # if it is not possible acknowledge the user and continue to prompt him to insert a number
+    except ValueError as error:
+        print("\nThat wasn't a valid number!")
+        continue
+    # else execute the input manipulation and break the infinite loop
+    else:
+        print(str(modern_romans(user_number)))
+        break
+
