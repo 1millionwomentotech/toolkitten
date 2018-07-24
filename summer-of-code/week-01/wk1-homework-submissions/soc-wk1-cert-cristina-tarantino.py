@@ -455,5 +455,3 @@ def modern_romans(number):
 
 
 print(get_input_number(modern_romans, "\nPlease type a number between 1 and 3000: "))
-
-
