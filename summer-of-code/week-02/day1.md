@@ -77,3 +77,33 @@ print(​'Come again soon!')​
 
 
 #### Reading and writing files
+
+
+#### Things to Try
+
+- Calculate a table for each letter in the alphabet from a-z, and count how many times each letter appears in `alice_in_wonderland.txt` (fancy word for counting stuff is "frequency distribution" - because you are counting the frequency of something)
+
+# a: 34,560
+# b: 5,027
+# ...
+# z: 893
+
+Store the results in a list of lists:
+result = [  
+            ["a", 34560], 
+            ["b", 5027], 
+            ... 
+            ["z", 893]
+         ]
+
+Hint: use python's lower() method to turn all alphabetic letters into small case and count them (so "A" counts towards "a"). 
+
+Hint: Ignore non-alphabetic numbers, you can check with python isalpha() method.
+
+#### Optional
+
+- If you have already started Python the Hard Way, please choose 5 exercises and write tests for those in unittest and make them pass. Take your ex.py and your test_ex.py and zip them into a single file to upload for submission via the Helpdesk.
+
+- If you haven't started it and you have the .pdf then start the exercises. e.g. 1 - 10 a day
+
+
