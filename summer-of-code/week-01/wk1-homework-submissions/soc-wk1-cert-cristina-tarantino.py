@@ -1,3 +1,9 @@
+"""
+Description - Week 1 homework for 1mwtt program
+Author - Cristina Tarantino
+Date - July 2018
+"""
+
 from datetime import datetime
 from random import randint
 
@@ -76,6 +82,8 @@ print("\nDays it will take for a 64-bit system to timeout: " + str(
 # example showing %s string variable
 delta = datetime.now() - datetime(1986, 12, 8, 18, 45)
 print("\nMy age is %d seconds" % delta.total_seconds())
+# or
+# print("\nMy age is {} seconds".format(delta.total_seconds()))
 
 
 # 8. Full name greeting. Write a program that asks for a person's first name, then middle, and then last.
@@ -266,7 +274,7 @@ while True:
 print("\nEXERCISE FROM YOUR LIFE")
 
 
-def rot_left(array, rotations_num):
+def rotate_left(array, rotations_num):
     a_length = len(array)
     new_array = [None]*a_length
     pos_to_left = rotations_num
@@ -281,15 +289,27 @@ def rot_left(array, rotations_num):
 
     return new_array
 
+# The method above is the mere translation from JS to Python.
+# In Python array[-2] is a valid operation as lists are circular linked list (I presume)
+# In JS array[-2] is not possible so you have to reset the index
+# In Python therefore the function would be the below
+# def rotate_left(array, rotations_num):
+#     a_length = len(array)
+#     new_array = [None] * a_length
+#     for i in range(a_length):
+#         print(i - rotations_num)
+#         new_array[i-rotations_num] = array[i]
+#     return new_array
+
 
 print("\nRotate the following array [1, 2, 3, 4, 5] of 2 position to the left")
-print(rot_left([1, 2, 3, 4, 5], 2))
+print(rotate_left([1, 2, 3, 4, 5], 2))
 print("\nRotate the following array [1, 2, 3, 4, 5] of 4 position to the left")
-print(rot_left([1, 2, 3, 4, 5], 4))
+print(rotate_left([1, 2, 3, 4, 5], 4))
 print("\nRotate the following array [1, 2, 3, 4, 5] of 5 position to the left")
-print(rot_left([1, 2, 3, 4, 5], 5))
+print(rotate_left([1, 2, 3, 4, 5], 5))
 print("\nRotate the following array [1, 2, 3, 4, 5] of 6 position to the left")
-print(rot_left([1, 2, 3, 4, 5], 6))
+print(rotate_left([1, 2, 3, 4, 5], 6))
 
 
 # 17. Building and sorting an array. Write the program that asks us to type as many words as we want
@@ -343,26 +363,28 @@ print_contents(contents_table)
 
 # 19. Write a function that prints out "moo" n times.
 
+
+def get_input_number(callback, msg):
+    # try to convert the input in an integer
+    try:
+        user_number = int(input(msg))
+    # if it is not possible acknowledge the user and continue to prompt him to insert a number
+    except ValueError:
+        print("\nThat wasn't a valid number!")
+        return get_input_number(callback, msg)
+    # else execute the input manipulation and break the infinite loop
+    else:
+        return callback(user_number)
+
+
 print("\nEXERCISE moo")
 
 
-def moo(n):
-    print("\nmoo" * n)
+def moo(number):
+    print("\nmoo" * number)
 
 
-# infinite loop
-while True:
-    # try to convert the input in an integer
-    try:
-        moos_num = int(input("\nPlease type how many times you want to 'moo': "))
-    # if it is not possible acknowledge the user and continue to prompt him to insert a number
-    except ValueError as error:
-        print("\nThat wasn't a valid number!")
-        continue
-    # else execute the input manipulation and break the infinite loop
-    else:
-        moo(int(moos_num))
-        break
+get_input_number(moo, "\nPlease type how many times you want to 'moo': ")
 
 
 # 20. Old-school Roman numerals. In the early days of Roman numerals,
@@ -383,7 +405,7 @@ while True:
 # D = 500
 # M = 1000
 
-print("EXERCISE Old-school Roman numerals")
+print("\nEXERCISE Old-school Roman numerals")
 
 
 def old_romans(number):
@@ -403,19 +425,7 @@ def old_romans(number):
     return result
 
 
-# infinite loop
-while True:
-    # try to convert the input in an integer
-    try:
-        user_number = int(input("\nPlease type a number between 1 and 3000: "))
-    # if it is not possible acknowledge the user and continue to prompt him to insert a number
-    except ValueError as error:
-        print("\nThat wasn't a valid number!")
-        continue
-    # else execute the input manipulation and break the infinite loop
-    else:
-        print(str(old_romans(user_number)))
-        break
+print(get_input_number(old_romans, "\nPlease type a number between 1 and 3000: "))
 
 
 # 21. “Modern” Roman numerals.
@@ -424,7 +434,7 @@ while True:
 # Rewrite your previous method to return the new-style Roman numerals so when someone calls roman_numeral 4,
 # it should return 'IV', 90 should be 'XC' etc.
 
-print("EXERCISE “Modern” Roman numerals.")
+print("\nEXERCISE “Modern” Roman numerals.")
 
 
 def modern_romans(number):
@@ -444,17 +454,6 @@ def modern_romans(number):
     return result
 
 
-# infinite loop
-while True:
-    # try to convert the input in an integer
-    try:
-        user_number = int(input("\nPlease type a number between 1 and 3000: "))
-    # if it is not possible acknowledge the user and continue to prompt him to insert a number
-    except ValueError as error:
-        print("\nThat wasn't a valid number!")
-        continue
-    # else execute the input manipulation and break the infinite loop
-    else:
-        print(str(modern_romans(user_number)))
-        break
+print(get_input_number(modern_romans, "\nPlease type a number between 1 and 3000: "))
+
 
