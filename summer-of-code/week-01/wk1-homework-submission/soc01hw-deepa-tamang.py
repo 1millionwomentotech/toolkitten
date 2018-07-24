@@ -175,3 +175,144 @@ while duration<=40:
 		duration +=10
 time.sleep(2)
 print("You: \"Yipee!!  we finally got to the zoo.\"")
+
+#Building and sorting an array
+print("Building and sorting an array")
+words = list()
+while True:
+	line = input()
+	if line!='':
+		words.append(line)
+		continue
+	break
+words.sort()
+print("After sorting : ")
+print(words)
+
+# Table of Content
+
+print("Enter the table of contents")
+content = list()
+while True:
+	chapter = input("Chapter name:")
+	page = input("Page number:")
+	hr = input("Credit hour:")
+	content.append([chapter,int(page),int(hr)])
+	choice = input("Is there more?(Y/N)")
+	if choice=='N':
+		break
+print("\nTABLE OF CONTENTS\n")
+print("{0:<20} {1:^20} {2:>20}".format("Chapter","Page number","Credit Hour"))
+for x in content:
+	print("{0:<20} {1:^20} {2:>20}".format(x[0],x[1],x[2]))
+
+# Write a function that prints out "moo" n times. 
+
+print("To print \"moo\" n times")
+def say_moo(n):
+	for i in range(n):
+		print("moo")	
+num = input("Enter the number of times \"moo\" is to be printed:")
+say_moo(int(num))
+
+# Old school Roman numerals
+
+num_input = input("Enter an integer between 1 and 3000: ")
+number = int(num_input)
+roman = ""
+def Rconvert(letter,value):
+	rom = ""
+	while value>0:
+		rom+=letter
+		value-=1
+	return rom
+
+while number!=0:
+	if number>=1000:
+		roman+=Rconvert("M",int(number/1000))
+		number = number%1000
+	elif number>=500:
+		roman+=Rconvert("D",int(number/500))
+		number = number%500
+	elif number>=100:
+		roman+=Rconvert("C",int(number/100))
+		number = number%100
+	elif number>=50:
+		roman+=Rconvert("L",int(number/50))
+		number = number%50
+	elif number>=10:
+		roman+=Rconvert("X",int(number/10))
+		number = number%10
+	elif number>=5:
+		roman+=Rconvert("V",int(number/5))
+		number = number%5
+	elif number>=1:
+		roman+=Rconvert("I",int(number/1))
+		number = number%1
+
+print("Old school Roman equivalent of",num_input," = ",roman)
+
+# Modern Roman numerals
+
+num_input = input("Enter an integer between 1 and 3000: ")
+number = int(num_input)
+roman = ""
+
+def postRoman(letter, value):
+	rom = ""
+	while value>0:
+		rom+=letter
+		value-=1
+	return rom
+def preRoman(letter1, letter2):
+	rom = ""
+	rom=letter1+letter2
+	return rom
+
+while number!=0:
+	if number>=1000:
+		roman+=postRoman("M",int(number/1000))
+		number = number%1000
+	elif number>=500:
+		if number<900:
+			roman+=postRoman("D",int(number/500))
+			number = number%500
+		else:
+			roman+=preRoman("C","M")
+			number = number-(1000-100)
+	elif number>=100:
+		if number<400:
+			roman+=postRoman("C",int(number/100))
+			number = number%100
+		else:
+			roman+=preRoman("C","D")
+			number = number-(500-100)
+	elif number>=50:
+		if number<90:
+			roman+=postRoman("L",int(number/50))
+			number = number%50
+		else:
+			roman+=preRoman("X","C")
+			number = number-(100-10)
+	elif number>=10:
+		if number<40:
+			roman+=postRoman("X",int(number/10))
+			number = number%10
+		else:
+			roman+=preRoman("X","L")
+			number = number-(50-10)
+	elif number>=5:
+		if number<9: 
+			roman+=postRoman("V",int(number/5))
+			number = number%5
+		else:
+			roman+=preRoman("I","X")
+			number = number-(10-1)
+	elif number>=1:
+		if number<4:
+			roman+=postRoman("I",int(number/1))
+			number = number%1
+		else:
+			roman+=preRoman("I","V")
+			number = number-(5-1)
+print("Modern Roman equivalent of",num_input," = ",roman)
