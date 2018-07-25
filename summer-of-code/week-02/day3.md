@@ -139,6 +139,15 @@ Hint: You can start with the DIY signup form https://memberportal.1millionwoment
 
 #### Optional, Advanced
 
+- Come up with a whole taxonomy of Classes for 1MWTT
+    - Person()
+        - Student()
+        - Mentor()
+        - Volunteer()
+        - Employer()
+    Feel free to suggest/invent and also use mixins, decorators, and any other design patterns that you see would help reach the mission of 1 million women to tech by 2020.
+
+
 Python the Hard Way ex 30 Study Drills
 
 - Write some more songs using this and make sure you understand that you're passing a list of strings as the lyrics.
