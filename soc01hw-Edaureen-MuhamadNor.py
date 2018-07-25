@@ -121,8 +121,6 @@ while ending_Year < starting_Year:
 
 # List Building
 
-# List Building
-
 list_Item = []
 
 print("Let's make a list then sort it alphabetically!")
@@ -135,6 +133,8 @@ while word != "":
 
 for l in sorted(list_Item):
     print(l)
+
+# I gave up on the second Table Of Contents assignment, I'm so sorry.
 
 # Print Moo Function
 
