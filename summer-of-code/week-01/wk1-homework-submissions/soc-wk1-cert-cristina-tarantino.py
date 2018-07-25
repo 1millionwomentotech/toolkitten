@@ -198,21 +198,22 @@ while tell_grandma != "BYE":
 
 print("\nEXERCISE Deaf grandma extended")
 
-tell_grandma = ""
+tell_grandma_extended = ""
 num_bye = 0
 
 while num_bye < 3:
-    tell_grandma = input("Tell something to Grandma: ")
+    tell_grandma_extended = input("Tell something to Grandma: ")
     # if tell_grandma.isupper() and not tell_grandma.islower():   =>  this would be semantically more correct however
     # I think that the above method will scan the string tell_grandma twice whilst the one below only once
-    if tell_grandma == tell_grandma.upper():
-        if tell_grandma == "BYE":
+    if tell_grandma_extended == tell_grandma_extended.upper():
+        if tell_grandma_extended == "BYE":
             num_bye = num_bye + 1
         else:
             num_bye = 0
         random_year = randint(1930, 1950)
         print("NO, NOT SINCE %s" % random_year)
     else:
+        num_bye = 0
         print("HUH?! SPEAK UP, GIRL!")
 
 if num_bye == 3:
