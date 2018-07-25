@@ -289,6 +289,7 @@ def rotate_left(array, rotations_num):
 
     return new_array
 
+# alternative as suggested by mentor
 # The method above is the mere translation from JS to Python.
 # In Python array[-2] is a valid operation as lists are circular linked list (I presume)
 # In JS array[-2] is not possible so you have to reset the index
