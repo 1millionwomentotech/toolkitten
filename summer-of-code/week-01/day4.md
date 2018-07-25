@@ -106,9 +106,9 @@ sorted()  Sorts the list and creates a new list without modifying the original
 
 #### A Few Things to Try
 
-- Building and sorting an array. Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second? 
+- Building and sorting a list. Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second? 
 
-Hint: There’s a lovely array method that will give you a sorted version of an array: sorted(). Use it! 
+    Hint: There’s a lovely method that will give you a sorted version of a list: sorted(). Use it! 
 
 - Table of contents. Write a table of contents program here. Start the program with a list holding all of the information for your table of contents (chapter names, page numbers, and so on). Then print out the information from the list in a beautifully formatted table of contents. Use string formatting such as left align, right align, center.
 
