@@ -1,10 +1,16 @@
-### TODO ###
-# [x]load dictionary
-# [x]word checker
-# [ ]board gen
-# [x]builder
+from random import randint
 
-board = "fxie amlo ewbx astu".split()
+def create_board(filename):
+  dice = set()
+  board = ''
+  file = open(filename, 'r')
+  for line in file:
+    dice.add(line.rstrip('\n'))
+  while dice:
+    board += dice.pop()[randint(0,5)]
+  return [board[i:i+4] for i in range(0,len(board), 4)]
+
+board = create_board('dice.txt')
 
 def check_prefix(word, dictionary):
   for entry in dictionary:
@@ -17,7 +23,7 @@ def load_dict(filename):
   file = open(filename, 'r')
   for line in file:
     # TODO: only add if all letters are on board
-    word_list.add(line)
+    word_list.add(line.rstrip('\n'))
   return word_list
 
 boggle_dict = load_dict('dictionary.txt')
@@ -39,4 +45,3 @@ def build_word(current, used):
 
 def solve():
   pass
-  
