@@ -222,6 +222,10 @@ def run_game(board_size):
     duration = datetime.now() - start
     # Print score and time taked to find results
     print("\nYou scored {} points with {} possible words. It took {} to calculate this.\nPossible words were: \n\n {}".format(score, len(solutions), duration, solutions))
+    return result = {
+        "score":score,
+        "words": solutions
+    }
 
 if __name__ == '__main__':
     # Now with 3x3 board
