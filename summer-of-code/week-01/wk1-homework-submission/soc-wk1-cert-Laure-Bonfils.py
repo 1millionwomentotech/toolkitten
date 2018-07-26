@@ -69,7 +69,7 @@ print('Hello', firstName + " " + middleName + " " + lastName)
 ## Exercise: Bigger, better favorite number. Write a program that asks for a person’s favorite number. Have your program add 1 to the number, and then suggest the result as a bigger and better favorite number. (Do be tactful about it, though.)
 
 favNumber = input('What\'s your favorite number?')
-print('May I suggest a bigger amd better favorite number:', str(int(favNumber) + 1) + "?")
+print('May I suggest a bigger and better favorite number:', str(int(favNumber) + 1) + "?")
 
 ## Exercise:Angry boss. Write an angry boss program that rudely asks what you want. Whatever you answer, the angry boss should yell it back to you and then fire you. For example, if you type in I want a raise, it should yell back like this:
 # WHADDAYA MEAN "I WANT A RAISE"?!? YOU'RE FIRED!!
