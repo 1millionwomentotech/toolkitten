@@ -1,4 +1,5 @@
 from random import randint
+import re
 
 def create_board(filename):
   dice = set()
@@ -11,6 +12,8 @@ def create_board(filename):
   return [board[i:i+4] for i in range(0,len(board), 4)]
 
 board = create_board('dice.txt')
+# board = ['DNKO', 'EWTN', 'ELBH', 'QTCW']
+print(board)
 
 def check_prefix(word, dictionary):
   for entry in dictionary:
@@ -21,27 +24,40 @@ def check_prefix(word, dictionary):
 def load_dict(filename):
   word_list = set()
   file = open(filename, 'r')
+  letters = ''.join(board)
+  pattern = re.compile('[^'+letters+']').search
   for line in file:
-    # TODO: only add if all letters are on board
-    word_list.add(line.rstrip('\n'))
+    if not pattern(line.rstrip('\n')):
+      word_list.add(line.rstrip('\n'))
   return word_list
 
 boggle_dict = load_dict('dictionary.txt')
-found = set()
+# print(boggle_dict)
+found = []
 
-def build_word(current, used):
-  # add letter to word
-  used.add(current)
-  word = "".join([ board[x][y] for (x,y) in used ])
-  # check if word in dict
-  if word in boggle_dict:
-    found.add(word)
-  # check if word starts an entry
-  if check_prefix(word, boggle_dict):
-    for x in range(max(0, current[0]-1), min(current[0]+2, len(board))):
-      for y in range(max(0, current[1]-1), min(current[1]+2, len(board))):
-        if (x,y) not in used:
-          build_word((x,y), used)
+def build_word(prefix, path):
+  # check if prefix is a word
+  if prefix in boggle_dict:
+    found.append(prefix)
+  # check if prefix starts a word
+  if check_prefix(prefix, boggle_dict):
+    coord = path[-1]
+    for x in range(max(0, coord[0]-1), min(coord[0]+2, len(board))):
+      for y in range(max(0, coord[1]-1), min(coord[1]+2, len(board))):
+        if (x,y) not in path:
+          build_word(prefix + board[x][y], path + ((x, y),))
 
 def solve():
-  pass
+  for x in range(0, len(board)):
+    for y in range(0, len(board)):
+      build_word(board[x][y], ((x,y),))
+  found.sort()
+  score = 0
+  for word in found:
+    score += max(0, len(word) - 2)
+  return {
+    "score": score,
+    "words": found
+  }
+
+print(solve())
