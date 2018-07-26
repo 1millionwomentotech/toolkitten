@@ -99,9 +99,6 @@ def find_words(letters_list,dictinary):
 			possible_words.append(word)
 	possible_words.remove('')
 	return possible_words
-# def count_points(matched_words):
-# 	return score
-#  Checking if the letter on the board already part ofthe word
 # #Method to check is the word on the board
 def word_checker(size,word,board,x,y,letter_number,checked):
 
@@ -191,7 +188,9 @@ def score_counter(words_list, size):
 			score+=11
 		if lenght>=16:
 			score+=14
-	return score
+	result={"score": score,"words": matched_words} 
+	return result
+
 def main():
 	start_time=time.time()
 	size=0
@@ -242,7 +241,7 @@ def main():
 		full_check_time=full_check_time+(check_finish_time-check_time)
 	score_time=time.time()
 	#Counting score and store the result in the dictinary
-	result={"score": score_counter(matched_words, size),"words": matched_words} 
+	result=score_counter(matched_words, size)
 	finish_time=time.time()
 	print("\nResult = "+str(result))
 	print()
