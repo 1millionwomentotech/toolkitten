@@ -25,6 +25,7 @@ def open_dictinary(dictinary):
 def dice_and_board(board_size):
 	board=np.array(range(board_size*board_size), dtype='str').reshape(board_size,board_size)
 	dices=[]
+	# for 3x3 board I took boggle junior dices (8 pc) and added 1 more
 	dices_small=[["L","G","J","I","H","X"],["D","Y","E","B","O","A"],["C","P","E","A","Y","K"],
 	["I","N","L","K","P","W"],["U","T","S","W","Y","A"],["O","O","Q","E","H","N"],["O","P","R","M","L","T"],
 	["E","G","R","Z","S","R"],["A","B","F","E","C","D"]]
@@ -40,6 +41,7 @@ def dice_and_board(board_size):
 	["A","C","E","L","R","S"],["A","B","J","M","O","Q"],["E","E","F","H","I","Y"],
 	["E","H","I","N","P","S"],["D","K","N","O","T","U"],["A","D","E","N","V","Z"],
 	["B","I","F","O","R","X"]]
+	# for 5x5 big boggle game I took original big boggle dices
 	dicese_big=[["B","J","K","Q","X","Z"],["O","O","O","T","T","U"],["G","O","R","R","V","W"],
 	["A","A","A","F","R","S"],["A","E","E","G","M","U"],["D","H","H","L","O","R"],
 	["D","H","H","N","O","T"],["D","H","L","N","O","R"],["A","A","F","I","R","S"],
@@ -80,7 +82,7 @@ def dice_and_board(board_size):
 			num+=1
 	board_time=time.time()-board_time_start
 	return board, board_time
-# looking for words on the board the board an
+# looking for words on the board
 def find_words(letters_list,dictinary):
 	# looking for possible words which contain just letters from the board
 	possible_words=[]
@@ -101,14 +103,13 @@ def find_words(letters_list,dictinary):
 	return possible_words
 # #Method to check is the word on the board
 def word_checker(size,word,board,x,y,letter_number,checked):
-
 	if letter_number==len(word):
 		return 1
 	if x==size or y==size:
 		return 0
 	if x < 0 or y < 0:
 		return 0
-	# print("size=%s, x=%s, y=%s, word=%s, letter_number=%s" %(size,x,y,word,letter_number))
+	#if letter matches checking the next one in all directions
 	if board[x][y]==word[letter_number]:
 		if checked.count([x,y])>0:
 			return 0
@@ -154,7 +155,7 @@ def word_checker(size,word,board,x,y,letter_number,checked):
 # Function to count scores
 def score_counter(words_list, size):
 	score=0
-
+  	# scoring rules taken from the official boggle website https://www.hasbro.com/common/instruct/boggle.pdf
 	for word in words_list:
 		lenght=len(word)
 		if lenght==2 and size==3:
