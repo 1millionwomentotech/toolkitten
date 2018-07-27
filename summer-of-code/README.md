@@ -44,7 +44,7 @@ How to become a Mentor?
 1. Read and digest this README. 
 1. Watch, Star and Fork this repo.
 1. Follow @1millionwomentotech (@1mwtt) on:
-   - **IMPRTANT**: [YouTube - channel name requires 1,000 subscribers](https://www.youtube.com/channel/UC-86prgPyis3DB4hy6tlT5A)
+   - **IMPORTANT**: [YouTube - channel name requires 1,000 subscribers](https://www.youtube.com/channel/UC-86prgPyis3DB4hy6tlT5A)
    - [Facebook @1milionwomentotech](https://www.facebook.com/1millionwomentotech/)
    - [Instagram @1mwtt](http://instagram.com/1mwtt)
    - [Twitter @1mwtt](https://twitter.com/1mwtt)
@@ -126,7 +126,7 @@ The all-summer hackathon is an open category so that those who have a project in
 |Week 12| Themed |September 29 - October 5|TBD (best suited for senior developers with a broad skill set)| |
 |Month 1|Open Ended |July 14 - August 10 |Python| |
 |Month 2| Open Ended |August 11 - Septeber 7 |JavaScript|[toolkitten](https://github.com/1millionwomentotech/toolkitten) - 1mwtt faq chatbot|
-|Month 3| Oprn Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
+|Month 3| Open Ended |September 8 - October 5 |Blockchain, AR, VR| [1mwtt coin]() - 1mwtt collective incentive to learn and mentor |
 |All Summer| Open Ended |July 14 - Oct 14| Any topic| [karma](https://github.com/1millionwomentotech/karma) - 1mwtt Omnichannel Gamification for Nonprofit Engagement|
 
 
@@ -177,7 +177,7 @@ Not every project makes a good hackathon project. It is extremely important to m
 
 - [ ] Clearly articulated. Projects should have a clear question or problem they are trying to solve plus a reasonably specific proposed solution.
 - [ ] Attainable. Most projects will accomplish about 25% of what they think they can accomplish in the limited time they have. Manage each project’s goals so participants are able to feel accomplished at the end of the session, not interrupted.
-- [ ] Easy to onboard newcomers. Projects should have ready-to-go tasks for newcomers with a variety of skills and at a variety of skill levels. For coding projects, these tasks can’t require an intimate understanding of the code base, and make sure the build environment can be spun up in less than 20 minutes. Make a list of tasks or create github issues ahead of time!
+- [ ] Easy to onboard newcomers. Projects should have ready-to-go tasks for newcomers with a variety of skills and at a variety of skill levels. For coding projects, these tasks can’t require an intimate understanding of the code base, and make sure the build environment can be spun up in less than 20 minutes. Make a list of tasks or create Github issues ahead of time!
 - [ ] Led by a stakeholder. A stakeholder (or “subject matter expert”) guides a project to real-world relevance. Projects without a stakeholder can “solve” a problem that doesn’t exist. Ideally the leader (or one of the leaders) is a stakeholder, or a good proxy for a stakeholder. I strongly recommend reviewing Laurenellen McCann’s Build With, Not For series on involving stakeholders in all civic tech work. Additionally, it is never enough for a project leader to just be an ideas person. Beware when the leader is a stakeholder but can’t foresee how he or she might be implementing along with the rest of the team.
 - [ ] Organized. For projects with four or more members, especially newcomers, the project leader’s role should be to coordinate, ensuring each team member has something to work on and helping to welcome new team members.
 
@@ -187,7 +187,7 @@ If you know what projects are going to be worked on at the event, the earlier yo
 
 ## Open Ended Hackathons
 
-Each hackathon will have an open ended category to allow for those with pre-existing ideas to work on them and attract teammates to them. It is the Stakeholder's responsiblity to ensure that the project is explained, there is a clear project question, and that resources are available e.g. datasets.
+Each hackathon will have an open ended category to allow for those with pre-existing ideas to work on them and attract teammates to them. It is the Stakeholder's responsibility to ensure that the project is explained, there is a clear project question, and that resources are available e.g. datasets.
 
 ## Themed Hackathons
 
