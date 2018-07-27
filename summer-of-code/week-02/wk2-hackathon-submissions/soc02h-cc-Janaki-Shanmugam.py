@@ -39,26 +39,26 @@ Created on Thu Jul 26 22:35:24 2018
 ##############################
 # import SOWPODS (Scrabble) dictionary
 ##############################
-#filename = "sowpods.txt"
-#file = open(filename,'r')
-#dictionary = set(word.strip() for word in file)
-## create set of prefixes (2 letters or longer) in words in dictionary
-#prefixes = set()
-#for word in dictionary:
-#    for i in range(1, len(word)+1):
-#        prefixes.add(word[:i])
-#
-## function to check if word exists in dictionary
-#def check_dict(word):
-#    return word.lower() in dictionary
-## function to check prefixes
-#def check_prefix(string):
-#    return string.lower() in prefixes
+filename = "sowpods.txt"
+file = open(filename,'r')
+dictionary = set(word.strip() for word in file)
+# create set of prefixes (2 letters or longer) in words in dictionary
+prefixes = set()
+for word in dictionary:
+    for i in range(1, len(word)+1):
+        prefixes.add(word[:i])
+
+# function to check if word exists in dictionary
+def check_dict(word):
+    return word.lower() in dictionary
+# function to check prefixes
+def check_prefix(string):
+    return string.lower() in prefixes
 
 ##############################
 # create Boggle_board
 ##############################
-#from numpy import random
+from numpy import random
 # Specify board size (size*size)
 size = 4
 
@@ -148,25 +148,3 @@ for i in range(len(word_list)):
             score += points[j]
 
 print("Total points scored in this round is ",score,".")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
