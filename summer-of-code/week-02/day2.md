@@ -2,7 +2,7 @@
 
 ## Summer of Code
 
-### Week 2 
+### Week 2
 
 ### Day 2
 
@@ -21,7 +21,7 @@ for i in range(65,65+2*26):
 
 #### Things to try
 
-- There is something small that needs fixing. Can you spot it and fix it? (Hint, we only want A-Z and a-z)
+
 
 - Make a function that prints A-Z and a-z
 
@@ -73,7 +73,7 @@ def​ continent_counter(world, x, y):
  ​   # Either it's water or we already counted it,​
  ​   # but either way, we don't want to count it now.​
  ​   return​ 0
-  
+
     # So first we count this tile...​
     size = 1
     world[y][x] = ​'counted land'​
