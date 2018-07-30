@@ -1,9 +1,7 @@
 ### Week 1 Day 1 Homework
 
 ## Question 1: Hours in year?
-# Hours in common year
 print("Hours in Common Year: ", 365 * 24)
-# Hours in leap year
 print("Hours in Leap Year: ", 366 * 24)
 
 ## Question 2: Minutes in decade?
