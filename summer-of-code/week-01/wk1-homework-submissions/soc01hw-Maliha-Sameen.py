@@ -69,10 +69,132 @@ page += ['page 13'.rjust(25,'.')]
 for i in range(3):
 	print(chapter[i] + page[i])
 
+### Week 1 Day 4
 
+## Question 1: print lyrics of "99 Bottles of Bear"
+n = 99
+for i in range(n,-1,-1):
+	if i > 1:
+		print(i," bottles of beer on the wall, ",i," bottles of beer.")
+		print("Take one down and pass it around, ",i-1," bottles of beer on the wall.", end="\n\n")
+	elif i > 0:
+		print(i," bottles of beer on the wall, ",i," bottles of beer.")
+		print("Take one down and pass it around, no more bottles of beer on the wall.", end="\n\n")
 
+	elif i == 0:
+		print("No more bottles of beer on the wall, no more bottles of beer.") 
+		print("Go to the store and buy some more, ",n," bottles of beer on the wall.")
 
+## Question 2: deaf grandma
+import random
 
+count_bye = 0
+while True:
+	you = input("You: ")
+	if you != you.upper():
+		print("HUH?! SPEAK UP, GIRL!")
+	else:
+		if you in 'BYE':
+			count_bye += 1
+			if (count_bye < 3):
+				print("HUH?! SPEAK UP, GIRL!")
+			else:
+				break
+		else:
+			print("NO, NOT SINCE", random.randint(1930,1950))
+			count_bye = 0
+
+## Question 3: Leap Year
+start_year = int(input("Starting Year: "))
+end_year = int(input("Ending Year: "))
+
+print("Leap Years in between")
+
+for i in range(start_year, end_year+1):
+	if i % 100 == 0 and i % 400 == 0:
+		print(i)
+	elif i % 4 == 0:
+		print(i)
+
+## Question 4: Building and sorting an array. Write the program 
+## that asks us to type as many words as we want (one word per line, 
+## continuing until we just press Enter on an empty line) and then 
+## repeats the words back to us in alphabetical order.
+words = []
+while True: 
+	word = input("Input a word: ")
+	if word != "":
+		words.append(word)
+	else:
+		break
+
+print("Sorted Words:")
+sorted_words = sorted(words)
+for word in sorted_words:
+	print(word)
+
+## Question 5: Table of Contents
+print("Table Of Contents".center(50,'_'))
+
+chapters = []
+pages = []
+for i in range(10):
+	chapters += [("Chapter " + str(i)).ljust(25,'.')]
+	pages += [("page " + str(i)).rjust(25,'.')]
+
+for i in range(10):
+	print(chapters[i] + pages[i])
+
+## Question 6: Write a function that prints out "moo" n times.
+def moo(n):
+	for i in range(n):
+		print("moo")
+moo(3)
+
+## Question 7: Old School Roman numerals
+# I = 1 V = 5 X = 10 L = 50 C = 100 D = 500 M = 1000
+def old_roman_numeral(num):
+	roman_string = ''
+	while num > 0:
+		if num >= 1000:
+			roman_string += 'M'
+			num -= 1000
+		elif num >= 500:
+			roman_string += 'D'
+			num -= 500
+		elif num >= 100:
+			roman_string += 'C'
+			num -= 100
+		elif num >= 50:
+			roman_string += 'L'
+			num -= 50
+		elif num > 10:
+			roman_string += 'X'
+			num -= 10
+		elif num >= 5:
+			roman_string += 'V'
+			num -= 5
+		elif num >= 1:
+			roman_string += 'I'
+			num -= 1
+	return roman_string
+
+print(old_roman_numeral(4))
+
+## Question 8: Modern Roman Numeral
+def modern_roman_numeral(num):
+	numeral_value = (1000,900,500,400,100,90,50,40,10,9,5,4,1)
+	numeral_symbol = ('M','CM','D','CD','C','XC','L','XL','X','IX',
+		'V','IV','I')
+	roman_string = ""
+	for i in range(len(numeral_value)):
+		count = int(num / numeral_value[i])
+		roman_string += numeral_symbol[i] * count
+		num -= numeral_value[i] * count
+
+	return roman_string
+
+print(modern_roman_numeral(4))
 
 
 
