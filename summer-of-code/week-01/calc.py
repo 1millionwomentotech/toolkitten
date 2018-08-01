@@ -3,8 +3,8 @@
 print(1+2)
 print(3)
 
-# print(10%2)
-# print(11%2)
+print(10%2)
+print(11%2)
 
 # for i in range(0,9):
 #   print("bitshift ", i, "times ", 1<<i)
