@@ -19,7 +19,4 @@ def frequency_distribution():
 
 print(frequency_distribution())
 
-def exercise8(arg1, arg2, arg3, arg4):
-	formatter = "{} {} {} {}"
-	return formatter.format(arg1, arg2, arg3, arg4)
 
