@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red49\green49\blue49;\red255\green255\blue255;\red23\green23\blue23;
+}
+{\*\expandedcolortbl;;\cssrgb\c25098\c25098\c25098;\cssrgb\c100000\c100000\c100000;\cssrgb\c11765\c11765\c11765;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The Bank of England has raised the interest rate for only the second time in a decade.\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\b0 \cf2 The rate has risen by a quarter of a percentage point, from 0.5% to 0.75% - the highest level since March 2009.\
+The move will increase the interest costs of more than three-and-a-half million residential mortgages that have variable or tracker rates.\
+But it will be welcomed by savers, who will be hoping to see a rise in their interest rates over the coming months.\
+Some business groups questioned the decision to raise the rate now ahead of the UK agreeing a Brexit deal with the European Union.\
+Suren Thiru, head of economics at the British Chambers of Commerce, said: "While a quarter-point rise may have a limited long-term financial impact on most businesses, it risks undermining confidence at a time of significant political and economic uncertainty."\
+However, the Bank of England Governor Mark Carney told the BBC that the Monetary Policy Committee (MPC) would lower the rate if the situation merited such a move.\
+"There are a variety of scenarios that can happen with Brexit\'85 but in many of those scenarios interest rates should be at least at these levels and so this decision is consistent with that," he said.\
+"In those scenarios where the interest rate should be lower, well then the MPC which meets eight times a year would, I'm confident, take the right decision to adjust interest rates at that time."\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\fs36 \cf4 \strokec4 Why are they doing this now?\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\fs24 \cf2 \strokec2 The Bank's MPC had been expected to raise interest rates in May, but held fire because the economy went through a weak patch at the start of the year - partly because of the harsh weather conditions, dubbed the Beast from the East.\
+The Bank is now confident that the dip was temporary and that economic growth will recover from the 0.2% rate seen in the first quarter, to 0.4% in the second quarter and maintain that pace later in the year.\
+The Bank is sticking to previous guidance that there will be further interest rate rises, but Mr Carney said these will be "limited and gradual".\
+"Rates can be expected to rise gradually. Policy needs to walk, not run, to stand still," he said.\
+However, the Institute of Directors said the Bank had "jumped the gun" by raising the rate now.\
+It said: "The rise threatens to dampen consumer and business confidence at an already fragile time.\
+"Growth has remained subdued, and the recent partial rebound is the least that could be expected after the lack of progress in the year's first quarter."\
+\
+Etc}
