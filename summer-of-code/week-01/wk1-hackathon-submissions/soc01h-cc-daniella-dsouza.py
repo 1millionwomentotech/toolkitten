@@ -6,7 +6,10 @@
 # 1MWTT Week 1 Hackathon
 #Next Steps - Encapsulate to a class
 #              Add Unit Tests
-# Last Updated - 07/26/18          
+# Last Updated - 08/09/18
+# Results from benchmarking
+# Continent Size        Time
+# 
 
 import random
 
@@ -38,7 +41,7 @@ class Civilization():
     def build_world(self):
         """ A 2D worlds that consists of random cells that are either "W" or "L"""
         
-        print("Generating a random world")
+        print("Generating a random world size {}".format(self.dimension))
         choices = ['W', 'L']
         
         row = []
@@ -46,7 +49,7 @@ class Civilization():
            
             row = [random.choice(choices) for i in range(self.dimension)]
                 
-            #print(row)
+            print(row)
                 
             self.civilization.append(row)
 
@@ -55,7 +58,7 @@ class Civilization():
     
     def find_neighbors(self, tile_index, tile, continents):
         """Updates the collection of continents with new pieces of land discovered
-           scans for neighbors
+           scans for neighbours
            A continent is a collection of tuples corresponding to coordinates of each tile
 
            Could be named better - Add tile to a continent
@@ -165,7 +168,7 @@ class Civilization():
     def find_continent(self, tile):
         for index, c in enumerate((self.final_continents)):
             if (tile in c):
-                print("You are on continent {} of size {}".format(index, len(c)))
+                print("You are on a continent {} of size {} ".format(index, len(c)))
                 return index
             
         print("You are in the ocean")
@@ -191,8 +194,7 @@ class Civilization():
 if __name__ == "__main__":
 
     print("In main")
-    world = Civilization(100)
-    
+    world = Civilization(11)
 
     # 1. Randomly generate Civilization III world.
     
@@ -201,16 +203,14 @@ if __name__ == "__main__":
     world.discover_land()
     
     world.find_continents()
-
+    
     message = "Please enter a number between 1 and {} ".format(str(n)) 
     y = 0
     
     while (y < 1 or y > n):
         y = int(input(message))
-       
-        
     
-    print("Let us assume you are standing on tile",y,",", y)
+    print("Let us assume you are standing on tile ({}, {})".format(y, y))
 
     
-    world.find_continent((y-1,y-1))
+    world.find_continent((y-1, y-1))
