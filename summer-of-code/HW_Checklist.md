@@ -3,7 +3,7 @@
 
 ## Submission Guidelines
 
-Create a single file called `soc-wk1-cert-firstname-lastname.py` and include the whole week's exercises in them. Everything from the 'Things to Try' sections. Optional exercises are, well, optional. In case of multiple files, create a single zip called soc-wk5-cert-firstname-lastname.zip and include all your files.
+Create a single file called `soc-wk1-cert-firstname-lastname.py` and include the whole week's exercises in them. Everything from the 'Things to Try' sections. Optional exercises are, well, optional. In case of multiple files, create a single zip called `soc-wk5-cert-firstname-lastname.zip` and include all your files.
 
 **DIY**: send PR to toolkitten repo, under https://github.com/1millionwomentotech/toolkitten/tree/master/summer-of-code/week-01/wk1-homework-submission
 
