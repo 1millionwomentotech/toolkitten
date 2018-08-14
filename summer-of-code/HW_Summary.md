@@ -103,7 +103,11 @@ D3 | Refactor the code above | "Be lazy. Not just lazy but proactively, agressiv
 Day | Assignment | Description | Required/Optional
 :------------: | ------------- | ------------- | :-------------:
 D1 | Basic Exercises |Write a program that tells you the following: Hours in a year. How many hours are in a year? Minutes in a decade. How many minutes are in a decade? Your age in seconds. How many seconds old are you? (I'm not going to check your answer, so be as accurate—or not—as you want.) Cristina Tarantino: 32 yesterday! How many milliseconds old is she hahaha? Calculate @Cristina Tarantino's age in milliseconds. | Required
-D2 | Tougher questions | How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow? How about a 64-bit system? Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday) - you will need JavaScript DateTime functionality. | Required
- | | |
+D1 | Tougher questions | How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow? How about a 64-bit system? | Required
+D1 | Tougher questions -2- | Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday) - you will need JavaScript DateTime functionality. | Required
+D2 | Music  | A 440 Hz, 1 octave is double the frequency, tempered piano A' 880 Hz, Calculate and console.log the frequency, each of the 12 notes between A and A', *Hint: the notes are NOT in a linear scale, but in a geometric scale* | Required
+D2 | Planets | Calculate and console log how many 'minutes' the Moon travels in a day. Hint: first calculate how many degrees the Moons travels in the sky when the Earth returns to the same position during its daily rotation. | Required
+D2 | Operators | Take a look at JavaScript operators, a bit more advanced: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators | Required
+
 
 
