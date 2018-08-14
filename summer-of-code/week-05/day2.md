@@ -114,7 +114,7 @@ console.log(2 * 5)
 console.log('2' * 5)
 console.log('2 * 5')
 10
-22222
+10
 2 * 5
 ```
 
