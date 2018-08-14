@@ -5,6 +5,7 @@ homework.HOURS_IN_DAY = 24;
 homework.MIN_IN_DAY = 60;
 homework.SEC_IN_DAY = 60;
 homework.SEC_IN_MILLISEC = 1000;
+homework.YEARS_IN_DECADE = 10;
 
 // 60 seconds/minute * 60 minutes/hour * 24 hours/day
 homework.SEC_IN_DAY = homework.SEC_IN_DAY * homework.MIN_IN_DAY * homework.HOURS_IN_DAY;
@@ -43,7 +44,7 @@ homework.d1e1 = (function(homework){
 
 //Minutes in a decade. How many minutes are in a decade?
 homework.d1e2 = (function(homework){
-  var min_in_decade = homework.hours_in_year * 10 * homework.MIN_IN_DAY;
+  var min_in_decade = homework.hours_in_year * homework.YEARS_IN_DECADE * homework.MIN_IN_DAY;
   document.querySelector('#d1e2 .solution').innerHTML = min_in_decade + " minutes";
 })(homework);
 
@@ -51,8 +52,8 @@ homework.d1e2 = (function(homework){
 homework.d1e3 = (function(homework){
   homework.attachTimeOut(function () {
     var ms_distance = homework.dateDistanceFromNow(new Date(1986, 7, 12, 18, 45, 0));
-    return Math.floor(ms_distance / 1000);
-  }, '#d1e3 .solution', 'seconds', 1000);
+    return Math.floor(ms_distance / homework.SEC_IN_MILLISEC);
+  }, '#d1e3 .solution', 'seconds', homework.SEC_IN_MILLISEC);
 })(homework);
 
 //Cristina Tarantino: 32 yesterday! How many milliseconds old is she hahaha? Calculate @Cristina Tarantino's age in milliseconds.
@@ -92,6 +93,6 @@ homework.d1e6 = (function(homework){
 homework.d1e7 = (function(homework){
   homework.attachTimeOut(function () {
     var ms_distance = homework.dateDistanceFromNow(new Date(1986, 7, 12, 18, 45, 0));
-    return Math.floor(ms_distance / 1000);
-  }, '#d1e7 .solution', 'seconds', 1000);
+    return Math.floor(ms_distance / homework.SEC_IN_MILLISEC);
+  }, '#d1e7 .solution', 'seconds', homework.SEC_IN_MILLISEC);
 })(homework);
