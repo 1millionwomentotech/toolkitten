@@ -2,7 +2,7 @@
 
 # Functions, parameters
 def moo(n):
-  # print('moo' * n)
+  #print('moo' * n)
   return 'moo' * n
 
 # moo(0)
@@ -17,7 +17,7 @@ def ask_recursively(question):
   reply = input('> ').lower()
   if reply == 'yes':
     return True
-  if reply == 'no':
+  elif reply == 'no':
     return False
   else:
     print('Please answer "yes" or "no".')
@@ -33,7 +33,7 @@ ask_recursively('Do you wet the bed?')
 # Reading and writing files
 
 filename = "alice_in_wonderland.txt"
-file = open(filename, "r")
+file = open(filename, "r",encoding="utf8")
 
 # for line in file:
 #   print(line)
@@ -45,7 +45,7 @@ print('AGAIN: ' + raw[0:65])
 
 print('the length of Alice in Wonderland in this text file is: ' + str(len(raw)) )
 
-#163817
+# #163817
 
 print(raw[163000:])
 

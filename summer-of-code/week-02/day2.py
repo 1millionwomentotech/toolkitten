@@ -44,11 +44,11 @@ world = [
         ]
 
 def continent_counter(world, x, y):
-    if world[y][x] != 'land':
+    if world[x][y] != 'land':
         return 0
 
     size = 1
-    world[y][x] = 'counted land'
+    world[x][y] = 'counted land'
     # ...then we count all of the neighboring eight tiles​
     # (and, of course, their neighbors by way of the recursion).​
     # row above
