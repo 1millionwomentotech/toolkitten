@@ -73,7 +73,7 @@ homework.d1e4 = (function(homework){
 // source https://en.wikipedia.org/wiki/Integer_overflow
 homework.d1e5 = (function(homework){
   var ms_to_overflow = homework.getDaysFromMaxBitReps(32);
-  document.querySelector('#d1e5 .solution').innerHTML = ms_to_overflow + " milliseconds";
+  document.querySelector('#d1e5 .solution').innerHTML = ms_to_overflow + " days";
 })(homework);
 
 // How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow?
@@ -86,7 +86,7 @@ homework.d1e5 = (function(homework){
 // source https://en.wikipedia.org/wiki/Integer_overflow
 homework.d1e6 = (function(homework){
   var ms_to_overflow = homework.getDaysFromMaxBitReps(64);
-  document.querySelector('#d1e6 .solution').innerHTML = ms_to_overflow + " milliseconds";
+  document.querySelector('#d1e6 .solution').innerHTML = ms_to_overflow + " days";
 })(homework);
 
 // Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday) - you will need JavaScript DateTime functionality.
@@ -95,4 +95,32 @@ homework.d1e7 = (function(homework){
     var ms_distance = homework.dateDistanceFromNow(new Date(1986, 7, 12, 18, 45, 0));
     return Math.floor(ms_distance / homework.SEC_IN_MILLISEC);
   }, '#d1e7 .solution', 'seconds', homework.SEC_IN_MILLISEC);
+})(homework);
+
+// Music A 440 Hz 1 octave is double the frequency tempered piano A' 880 Hz Calculate and console.log the frequency each of the 12 notes between A and A'
+// notes are per https://www.intmath.com/trigonometric-graphs/music.php in exponential scale
+homework.d2e1 = (function(homework){
+  var noteList = ["A", "A#","B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A"];
+  // invisible DOM so you don't interact with the DOM too much
+  // because every DOM interaction is a performace hit
+  var fragment = document.createDocumentFragment();
+  var table = document.createElement('table');
+
+  for (var i=0, note = 440; i<noteList.length; i++) {
+    var row = document.createElement('tr');
+    // console.log('note: ' + note, note * Math.pow(2, i/12) );
+    var cell_lx = document.createElement('tr');
+    cell_lx.innerHTML = noteList[i];
+    var cell_rx = document.createElement('td');
+    cell_rx.innerHTML = note * Math.pow(2, i/noteList.length-1);
+
+    row.appendChild(cell_lx);
+    row.appendChild(cell_rx);
+    table.appendChild(row);
+  }
+
+  fragment.appendChild(table);
+  document.querySelector('#d2e1 .solution').appendChild(fragment);
+
+  // document.querySelector('#d1e6 .solution').innerHTML = ms_to_overflow + " milliseconds";
 })(homework);
