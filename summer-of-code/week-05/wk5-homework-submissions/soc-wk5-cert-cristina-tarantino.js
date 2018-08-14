@@ -1,3 +1,7 @@
+// TODO add more comments
+// TODO unit tests
+// TODO add JavaScript Doc
+
 var homework = homework || {};
 
 homework.DAYS_IN_YEAR = 365.2422; //https://en.wikipedia.org/wiki/Year#Variation_in_the_length_of_the_year_and_the_day
@@ -31,6 +35,7 @@ homework.attachTimeOut = function(callback, querySelector, unitString, ms) {
   }, ms);
 };
 
+// helper method for d1e3, d1e4, d1e7
 homework.dateDistanceFromNow = function(distanceDate) {
   var today = new Date();
   return today - distanceDate;
@@ -99,20 +104,31 @@ homework.d1e7 = (function(homework){
 
 // Music A 440 Hz 1 octave is double the frequency tempered piano A' 880 Hz Calculate and console.log the frequency each of the 12 notes between A and A'
 // notes are per https://www.intmath.com/trigonometric-graphs/music.php in exponential scale
+// The frequency needs to double every 12 notes because there are 7 white notes and 5 black notes in each octave.
+// TODO add more comments and dry up
 homework.d2e1 = (function(homework){
-  var noteList = ["A", "A#","B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A"];
+  var noteList = ["A", "A#","B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A'"];
   // invisible DOM so you don't interact with the DOM too much
   // because every DOM interaction is a performace hit
   var fragment = document.createDocumentFragment();
   var table = document.createElement('table');
+  var headRow = document.createElement('tr');
+  var headCI = document.createElement('th');
+  var headCII = document.createElement('th');
+
+  headCI.innerHTML = "Note";
+  headCII.innerHTML = "Frequency in Hz";
+
+  headRow.appendChild(headCI);
+  headRow.appendChild(headCII);
+  table.appendChild(headRow);
 
   for (var i=0, note = 440; i<noteList.length; i++) {
     var row = document.createElement('tr');
-    // console.log('note: ' + note, note * Math.pow(2, i/12) );
     var cell_lx = document.createElement('tr');
     cell_lx.innerHTML = noteList[i];
     var cell_rx = document.createElement('td');
-    cell_rx.innerHTML = note * Math.pow(2, i/noteList.length-1);
+    cell_rx.innerHTML = Math.round(note * Math.pow(2, i/(noteList.length-1)) * 100) / 100;
 
     row.appendChild(cell_lx);
     row.appendChild(cell_rx);
@@ -121,6 +137,4 @@ homework.d2e1 = (function(homework){
 
   fragment.appendChild(table);
   document.querySelector('#d2e1 .solution').appendChild(fragment);
-
-  // document.querySelector('#d1e6 .solution').innerHTML = ms_to_overflow + " milliseconds";
 })(homework);
