@@ -115,12 +115,15 @@ homework.d2e1 = (function (homework) {
   var headRow = document.createElement('tr');
   var headCI = document.createElement('th');
   var headCII = document.createElement('th');
+  var headCIII = document.createElement('th');
 
   headCI.innerHTML = "Note";
   headCII.innerHTML = "Frequency in Hz";
+  headCIII.innerHTML = "Difference";
 
   headRow.appendChild(headCI);
   headRow.appendChild(headCII);
+  headRow.appendChild(headCIII);
   table.appendChild(headRow);
 
   for (var i = 0, note = 440; i < noteList.length; i++) {
@@ -128,10 +131,14 @@ homework.d2e1 = (function (homework) {
     var cell_lx = document.createElement('tr');
     cell_lx.innerHTML = noteList[i];
     var cell_rx = document.createElement('td');
-    cell_rx.innerHTML = Math.round(note * Math.pow(2, i / (noteList.length - 1)) * 100) / 100;
+    var frequency = Math.round(note * Math.pow(2, i / (noteList.length - 1)) * 100) / 100;
+    cell_rx.innerHTML = frequency;
+    var cell_rrx = document.createElement('td');
+    cell_rrx.innerHTML = Math.round((frequency - note)* 100) / 100;
 
     row.appendChild(cell_lx);
     row.appendChild(cell_rx);
+    row.appendChild(cell_rrx);
     table.appendChild(row);
   }
 
@@ -142,8 +149,7 @@ homework.d2e1 = (function (homework) {
 // Planets Calculate and console log how many 'minutes' the Moon travels in a day.
 // Hint: first calculate how many degrees the Moons travels in the sky when the Earth returns to the same position during its daily rotation.
 // http://myscientificbluff.blogspot.com/2009/03/why-moon-rises-50-minutes-later.html
-// TODO Need mentor to check logic
-// 360 degrees : (24 * 60) min/day = 13.2 degrees : x min/day
+// 360 degrees : (24 * 60) min/day = 12.2 degrees : x min/day
 // x = (24 * 60 * 13.2) / 360
 homework.d2e2 = (function (homework) {
   // 360 degrees divided by how long it takes the Moon to return to the same place “in the stars”
