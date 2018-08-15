@@ -141,12 +141,13 @@ homework.d2e1 = (function (homework) {
 
 // Planets Calculate and console log how many 'minutes' the Moon travels in a day.
 // Hint: first calculate how many degrees the Moons travels in the sky when the Earth returns to the same position during its daily rotation.
+// http://myscientificbluff.blogspot.com/2009/03/why-moon-rises-50-minutes-later.html
 // TODO Need mentor to check logic
-// 360 degrees : 365 = 13.2 : x
-// x = (365 * 13.2) / 360
+// 360 degrees : (24 * 60) min/day = 13.2 degrees : x min/day
+// x = (24 * 60 * 13.2) / 360
 homework.d2e2 = (function (homework) {
   // 360 degrees divided by how long it takes the Moon to return to the same place “in the stars”
-  var moon_degrees_per_day = 360/27.322;
-  var min_in_day_moon = (homework.MIN_IN_DAY * homework.HOURS_IN_DAY * homework.DAYS_IN_YEAR * moon_degrees_per_day) / 360;
+  var moon_degrees_per_day = 360/29.5;
+  var min_in_day_moon = (homework.MIN_IN_DAY * homework.HOURS_IN_DAY * moon_degrees_per_day) / 360;
   document.querySelector('#d2e2 .solution').innerHTML = min_in_day_moon;
 })(homework);
