@@ -37,7 +37,7 @@ class TimeMachine():
 
 		return False
 
-	def calc_hours_in_a_year(self, year):
+	def calc_hours_in_a_specific_year(self, year):
 		"""									"""
 		hours = 0
 
@@ -51,21 +51,34 @@ class TimeMachine():
 
 	def calc_minutes_in_a_decade(self, startingyear):
 		"""	Minutes in a decade is the sum of the minutes in each year of the decade """
-		decade = [startingyear + i for i in range(0,10)]
+		""" A decade is a period of ten years beginning with a year whose last digit is zero """
+
+		decade = [startingyear + i for i in range(1,11)]
 
 		print(decade)
 
 		minutes_in_decade = 0
 
-		for j in range(len(decade)):
-			minutes_year = self.calc_hours_in_a_year(decade[j]) * 60
-			minutes_in_decade += minutes_year
+		minutes_decade = [self.calc_hours_in_a_specific_year(decade[j]) * 60 for j in range(10)]
+		print(minutes_decade)
 
-		return minutes_in_decade
+		total = sum(minutes_decade)
 
-	def calc_age_in_seconds(self, age):
-		"""									"""
-		pass
+		return total
+
+	def calc_hours_in_a_year(self, number_years):
+		"""	Calculates the number of hours in number_years	
+		Does not have knowledge of which years in question"""
+
+		hours = number_years * self.days_in_year * 24
+		return hours
+
+	def calc_age_in_seconds(self, number_years):
+		""" Question - Do we need to take leap years into account	
+					   Do we need to take the exact month, day, hour, minute into account"""
+		hours = self.calc_hours_in_a_year(number_years)
+		
+		return hours * 60 * 60
 
 	def days_32bit_timeout(self):
 		"""									"""
