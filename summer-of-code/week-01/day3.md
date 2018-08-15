@@ -67,7 +67,7 @@ Let’s look at what these  methods do (and don’t do) a little more closely:
 var1 = 2
 var2 = ​'5'​
 print(str(var1) + var2)
-print(var1 + int(var2)
+print(var1 + int(var2))
 print(var1)
 print(var2)
 25
