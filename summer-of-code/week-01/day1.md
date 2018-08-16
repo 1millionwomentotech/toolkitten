@@ -10,7 +10,7 @@
 
 Getting Started
 
-Well be using three main tools when we program: a text editor (to write your programs), the Python interpreter (to run your programs), and your command line (which is how you tell your computer which programs you want to run).
+We'll be using three main tools when we program: a text editor (to write your programs), the Python interpreter (to run your programs), and your command line (which is how you tell your computer which programs you want to run).
 
 Although there’s pretty much just one Python interpreter and one command line, there are many text editors to choose from—and some are much better for programming than others. A good text editor can help catch many of those "stupid mistakes" that beginner programmers make... oh, all right, that all programmers make. 
 
