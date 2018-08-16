@@ -16,14 +16,14 @@ The number in the bracket is called the **index** and it starts at zero and grow
 
 You cannot  use negative numbers to count down from the end. `-1` will give you undefined.
 
-<script type="text/javascript">
+```
     name = ""
     console.log(name[0])
     console.log(name[1])
 
     // legal in Python, illegal in JavaScript
     console.log(name[-1])
-</script>
+```
 
 This is so powerful because now you can use numbers, calculations, and any kind of arithmetic to access different parts of a string. We will look at a few now. Especially if you use variables as indeces, we can do very nifty things.
 
@@ -33,7 +33,7 @@ Open a new tab in your Chrome browser and open the JavaScript console. You shoul
 
 However, when you are testing behaviour of methods, this is a quick way, because you don't have to type console.log() all the time. The interpreter will implicitly convert your result to a string and console.log it out for you.
 
-<script type="text/javascript">
+```
     name. // see there are many methods available to you
     name.toUpperCase()
     name.slice(0,3)
@@ -44,7 +44,7 @@ However, when you are testing behaviour of methods, this is a quick way, because
     name.slice(a,-1)
     name.slice(a)
     name // strings are **immutable** they cannot be changed
-</script>
+```
 
 ### Mixing It Up 
 
@@ -54,11 +54,11 @@ We'​ve seen that if we want a program to console.log 25, the following does wo
 
 Note: In Python you can'​t add numbers and strings together, you will get an error message about being naughty with your types.
 
-<script type="text/javascript">
+```
     var1 = 2
     var2 = ​'5'​
     console.log(var1 + var2)
-</script>
+```
 
 Part of the problem is that however, that your computer doesn’t know if you were trying to get `7` (2 + 5) or if you wanted to get `25` ('2' + '5'). It just assumed the latter. But we’ll learn how to do both. 
 
@@ -68,12 +68,12 @@ Before we can add these together, we need some way of getting the string version
 
 To get the string version of an object, we simply use the String() method.
 
-<script type="text/javascript">
+```
     var1 = 2
     var2 = ​'5'​
     console.log(String(var1) + var2)
     // > 25
-</script>
+```
 
 **Vocabulary: programmers will say, we call the String() method on variable var1.**
 
@@ -84,7 +84,7 @@ Similarly, parseInt() gives the integer version of a string literal. parseFloat(
 Let’s look at what these  methods do (and don’t do) a little more closely: 
 
 
-<script type="text/javascript">
+```
     var1 = 2
     var2 = ​'5'​
     console.log(String(var1) + var2)
@@ -95,7 +95,7 @@ Let’s look at what these  methods do (and don’t do) a little more closely:
     7
     2
     5
-</script>
+```
 
 Notice that, even after we got the string version of var1 by calling String(), var1 was always pointing at 2 and never at '2'. 
 
@@ -106,6 +106,7 @@ It's time to bite the bullet and look at the official documentation of JavaScrip
 MDN documentation for JavaScript IS a real joy to read. Finally, a documentation that is readable, usable, and fun.
 
 #####Reference: 
+
 slice():
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 
@@ -114,12 +115,12 @@ Try some more interesting (and a few just weird) conversions:
 
 ```
 parseFloat('15')​
-float(99.999'​)
-int('99.999'​)
+parseFloat(99.999'​)
+parseInt('99.999'​)
 
-int('5 is my favorite number!'​) 
-int('Who asked you about 5 or whatever?'​)
-float('Your momma did.'​)
+parseInt('5 is my favorite number!'​) 
+parseInt('Who asked you about 5 or whatever?'​)
+parseFloat('Your momma did.'​)
 
 String('stringy'​)
 parseInt(3)
@@ -127,7 +128,7 @@ parseInt(3)
 
 So, this probably gave you some surprises. 
 
-Explain what happened: what got converted, which parts got ignored. What do the error messages say?
+Explain what happened: what got converted, which parts got ignored. What do the error messages say, if anything?
 
 Finally, we saw that our last two conversions did nothing at all, just as we would expect. 
 
@@ -154,9 +155,9 @@ This may not seem too exciting now, but JavaScript has many, many kinds of objec
 
 #### The prompt() Method
 
-If console.log() means console.log a string, I’m sure you can guess what input() stands for. And just as console.log() always spits out strings, input() retrieves only strings. And whence does it get them? 
+If console.log() means console.log a string, I’m sure you can guess what input() stands for. And just as console.log() always spits out strings, prompt() retrieves only strings. And whence does it get them? 
 
-From you! Well, from your keyboard, anyway. And since your keyboard makes only strings, that works out beautifully. What actually happens is that input() just sits there, reading what you type until you press Enter. 
+From you! Well, from your keyboard, anyway. And since your keyboard makes only strings, that works out beautifully. What actually happens is that prompt() just sits there, reading what you type until you press Enter. 
 
 Let’s try it: 
 
@@ -175,7 +176,7 @@ Maybe you didn’t need any help installing JavaScript, so you skipped Chapter 1
 
 Maybe you’ve done a little programming before, so you skipped Chapter 2. That’s fine. 
 
-The only thing is that you missed some stuff there that you didn’t really need until now. If you haven’t been running your programs from the command line, then you’ll almost certainly have problems with input(), and we’re going to be using it a lot from now on. So, if you saved your program as example.py, you should really run your program by typing `JavaScript example.py` into your command line. If you’re having trouble getting around on your command line, check out Chapter 1, ​Getting Started​. 
+The only thing is that you missed some stuff there that you didn’t really need until now. If you haven’t been running your programs from the console, then you’ll almost certainly have problems with prompt(), and we’re going to be using it a lot from now on. So, if you saved your program as example.py, you should really run your program by opening day1.html in your browser. If you’re having trouble getting around on your console, check out day 1, ​Getting Started​. 
 
 #### A Few Things to Try
 
@@ -189,23 +190,6 @@ When writing a program, I always try to have a good feel for what each variable 
 
 And name the variables so it’s easy to tell what they are at a glance. If I had a variable for someone’s name, I might call it name, and I would just assume it was a string. If I had someone’s age in a variable, I might call it age, and I’d assume it was an integer. So if I needed to have the string version of someone’s age, I’d try to make that obvious by calling it something like `age_string` or `age_as_string`. 
 
-I’m not sure you know, but this book started out as an online tutorial. (It was much shorter back then.) I’ve gotten hundreds of emails from people getting stuck. In most of those cases, the problem was a conversion problem. And usually, it was just someone trying to add an integer and a string together. Let’s look at that error a bit more closely:
-
-```
-my_birth_month = ​'August'​
-my_birth_day = 3
-console.log(my_birth_month + my_birth_day)
-
-Traceback (most recent call last):
-  File "love.py", line 47, in <module>
-    console.log(my_birth_month + my_birth_day)
-TypeError: Can't convert 'int' object to String implicitly
-```
-
-What is this error telling us?
-
-So, it can’t convert an integer into a string. Well, you know it can convert an integer into a string, but it doesn’t want to without your explicit instructions. (Eh...it’s only a computer, after all, and computers aren’t exactly known for their independent thinking and initiative.) Honestly, it’s probably a good thing, because maybe you don’t want to convert the integer into a string, you know? Maybe you want to convert the string into an integer. It’s the whole “2 plus 5 adding up to 7 or 25” problem we covered here. 
-
 It’s easy to get frustrated when your program has errors. I try not to think of them as errors, though. I try to think of them as the pathetic attempts of a socially inept non-native English speaker (your computer) asking for help. If only your computer were a bit more cultured, it might say something more like, “Excuse me, but I’m unclear as to just one small point... did you want me to convert the integer to a string here, or vice versa? Although it’s probably obvious to any human what you are trying to do, I’m just not that bright.” Then it would laugh nervously. Someday our computers will do just that, but in the meantime, pity the poor fool. 
 
 Reference: 
@@ -213,7 +197,7 @@ Reference:
 JavaScript style guides, naming variables:
 https://www.JavaScript.org/dev/peps/pep-0008/?#id45
 
-Recommended naming is with underscore between words, all small letters: `my_pet`
+Recommended naming is with capitalized letters, except the first one which is small `myPet`. This is called camelCase and is a convention among JavaScript developers.
 
 ### More About Methods
 
@@ -278,20 +262,6 @@ Then try to generate your random Civilization III world by generating a land 'X'
 https://www.w3schools.com/jsref/jsref_obj_string.asp
 
 
-### Flow Control
-
-#### Comparison
-
-#### Branching
-
-#### Looping
-
-#### A Little Bit of Logic
-
-#### A Few Things to Try
-
-
-
 ## Helpful links
 
 Problem solving
@@ -299,8 +269,3 @@ Problem solving
 - Video: https://www.coursera.org/lecture/duke-programming-web/a-seven-step-approach-to-solving-programming-problems-AEy5M
 - https://github.com/gwhorleyGH/java-coursera/wiki/Seven-step-approach-to-solving-programming-problems
 - Book: The Algorithm Design Manual by Steven S Skiena
-
-
-
-
-
