@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>1mwtt SOC Hackathon Week 5</title>
+  <script type="text/javascript">
+    // 1mwtt Summer of Code, Week 5
+    // Continent Counter javascript by Paula Hoare
+    // --------------------------------------------
+
+    // function: console_heading
+    // write the heading to the console
+    function console_heading(clear = true) {
+      if (clear) console.clear();
+      console.log('Summer of Code, Week 5, Javascript Continent Counter');
+    }
+
+    // function: run_test_grid
+    // Runs the Continent Counter with a hard-coded 11x11 grid
+    function run_test_grid() {
+      console_heading();
+      console.log('Run Test Grid.......................');
+      console.log('Create my standard 11 x 11 grid');
+      // Use a hard-coded 11 x 11 test grid
+      var grid11 = create_test_grid();
+      display_world(grid11);
+      var num_land_cells = count_land_cells(grid11, 11, 1);
+      console.log('Number of land cells = ' + num_land_cells);
+
+      // Find the area of the continent at given coordinates in the grid
+      console.log('Test with some predefined coordinates...');
+      // var test_coords = [(0,0),(4,2),(0,10),(1,3),(10,1),(3,3),(10,10)]
+      var test_coords = new Array([0, 0], [4, 2]);
+      var grid11_test = create_test_grid();
+      for (var test_num = 1; test_num <= test_coords.length; test_num++) {
+        console.log('*** Test ' + test_num);
+        var continent_num = test_num + 1;
+        console.log('Find the continent containing the coordinates ' + test_coords[test_num - 1] + ' and map it with the number ' + continent_num);
+        map_continent(grid11_test, 11, test_coords[test_num - 1][0], test_coords[test_num - 1][1], continent_num);
+        display_world(grid11_test);
+        var continent_area = count_land_cells(grid11_test, 11, continent_num);
+        console.log('Area of continent at ' + test_coords[test_num - 1] + ' is ' + continent_area);
+      }
+
+      // Find all the continents and their areas
+      console.log('Now find all the continents in our test grid...');
+      var num_continents = find_continents(grid11, 11);
+      display_world(grid11);
+      display_continents(grid11, 11, num_continents);
+      console.log('Test Grid DONE!\n');
+    }
+
+    // function: generate_grid
+    // Prompts for custom grid sise
+    // Then runs the Continent Counter with generated grid
+    function generate_grid() {
+      console_heading();
+      console.log('Generate Grid.......................');
+      var grid_size = parseInt(prompt('What size grid?\nEnter a number from 5 to 20.\nDefault size = 11'));
+      if (isNaN(grid_size) || grid_size < 5 || grid_size > 20) {
+        console.log('Input invalid, use grid size = 11');
+        grid_size = 11;
+      }
+      console.log('Create a ' + grid_size + ' x ' + grid_size + ' grid with random land and water cells...');
+      var grid = create_grid(grid_size);
+      display_world(grid);
+      console.log('Now find all the continents...');
+      var num_continents = find_continents(grid, grid_size);
+      display_world(grid);
+      display_continents(grid, grid_size, num_continents);
+      console.log('Generated Grid DONE!\n');
+    }
+
+    // function: create_test_grid
+    // create hard-coded 11x11 grid for testing
+    function create_test_grid() {
+      var mygrid = [
+        [1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1],
+        [1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1],
+        [1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+        [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+        [0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1],
+        [0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0]
+      ];
+      return mygrid;
+    }
+
+    // function: display_world
+    // print out the world to the console
+    function display_world(grid) {
+      console.log('--- GRID START ---');
+      for (var i = 0; i < grid.length; i++) {
+        console.log(grid[i]);
+      }
+      console.log('--- GRID END ---');
+    }
+
+    // function: create_grid
+    // generates a grid of the specified size
+    // 1 = land, 0 = water
+    // Limits amount of land to try to get more discrete continents
+    function create_grid(grid_size) {
+      var grid = new Array();
+      var land_counter = 0;
+      var cell_value = 0;
+      var last_cell_value = 0;
+      var water_i = Math.floor(Math.random() * (grid_size - 3)) + 1; // all water row
+      console.log('Water at row ', water_i);
+      var water_j = Math.floor(Math.random() * (grid_size - 3)) + 1; // all water column
+      console.log('Water at column ', water_j);
+      for (var i = 0; i < grid_size; i++) {
+        var row = new Array();
+        for (var j = 0; j < grid_size; j++) {
+          // assign 0 or 1 to the cell
+          if (i == water_i || j == water_j) {
+            // water row/column
+            cell_value = 0;
+          } else {
+            // get random value 0 or 1
+            cell_value = Math.floor(Math.random() * 2);
+            if (cell_value == 1) {
+              // limit how much land
+              ++land_counter;
+              if (last_cell_value == 1) {
+                if (land_counter > 3) {
+                  console.log('Limit land at ' + i + ', ' + j);
+                  cell_value = 0; // reset to water
+                }
+              }
+            }
+          }
+          if (cell_value == 0) {
+            // reset land_counter for water
+            land_counter = 0;
+          }
+          row.push(cell_value);
+          last_cell_value = cell_value;
+        }
+        grid.push(row);
+      }
+      return (grid);
+    }
+
+    // function: count_land_cells
+    // count the number of land cells matching the specified map_num
+    function count_land_cells(myworld, grid_size, map_num = 1) {
+      var num_land_cells = 0;
+      for (var i = 0; i < grid_size; i++) {
+        for (var j = 0; j < grid_size; j++) {
+          if (myworld[i][j] == map_num) {
+            // we have land
+            num_land_cells += 1;
+          }
+        }
+      }
+      return (num_land_cells);
+    }
+
+    // function: find_continents
+    // finds the continents and maps them with numbers
+    // returns: number of continents found
+    function find_continents(myworld, grid_size) {
+      var start_numbering = 2; // start at 2 because 1 represents unmapped land
+      var map_num = start_numbering - 1;
+      // map the continents
+      for (var i = 0; i < grid_size; i++) {
+        for (var j = 0; j < grid_size; j++) {
+          if (myworld[i][j] == 1) {
+            // we have found unmapped land
+            // map the continent
+            map_num += 1;
+            map_continent(myworld, grid_size, i, j, map_num);
+          }
+        }
+      }
+      // reset the map numbers, so that 1 is the first continent
+      for (var i = 0; i < grid_size; i++) {
+        for (var j = 0; j < grid_size; j++) {
+          if (myworld[i][j] > 1) {
+            myworld[i][j] -= 1;
+          }
+        }
+      }
+      // return number of continents found
+      return (map_num - 1);
+    }
+
+    // function: map_continent
+    // maps the continent containing the given coordinates
+    function map_continent(myworld, grid_size, i, j, map_num) {
+      var is_land = false;
+      if (myworld[i][j] == 1) {
+        // we have land that has not yet been counted
+        is_land = true;
+        // set cell to indicate that it has been counted
+        myworld[i][j] = map_num;
+        // look for surrounding land
+        // ... row above (i-1)
+        if (i > 0) {
+          if (j > 0 && myworld[i - 1][j - 1] == 1) map_continent(myworld, grid_size, i - 1, j - 1, map_num);
+          if (myworld[i - 1][j] == 1) map_continent(myworld, grid_size, i - 1, j, map_num);
+          if (j < (grid_size - 1) && myworld[i - 1][j + 1] == 1) map_continent(myworld, grid_size, i - 1, j + 1, map_num);
+        }
+        // same row (i) left and right
+        if (j > 0 && myworld[i][j - 1] == 1) map_continent(myworld, grid_size, i, j - 1, map_num);
+        if (j < (grid_size - 1) && myworld[i][j + 1] == 1) map_continent(myworld, grid_size, i, j + 1, map_num);
+        // row below (i+1)
+        if (i < (grid_size - 1)) {
+          if (j > 0 && myworld[i + 1][j - 1] == 1) map_continent(myworld, grid_size, i + 1, j - 1, map_num);
+          if (myworld[i + 1][j] == 1) map_continent(myworld, grid_size, i + 1, j, map_num);
+          if (j < (grid_size - 1) && myworld[i + 1][j + 1] == 1) map_continent(myworld, grid_size, i + 1, j + 1, map_num);
+        }
+      }
+      return (is_land);
+    }
+
+    // function display_continents
+    // displays info about the continents
+    function display_continents(grid, grid_size, num_continents) {
+      console.log('There are ' + num_continents + ' continents');
+      for (var c_num = 1; c_num <= num_continents; c_num++) {
+        console.log('Continent #' + c_num + ': Area = ' + count_land_cells(grid, grid_size, c_num));
+      }
+    }
+  </script>
+</head>
+
+<body onload="console_heading(false);">
+  <h1>Javascript Continent Counter</h1>
+  <p>Run continent counter in the console, click below to run</p>
+  <ul>
+    <li><a href="#" onclick="run_test_grid(); return false;">Run Test Grid</a><br> Runs the continent counter with a pre-set 11x11 grid.</li>
+    <li><a href="#" onclick="generate_grid(); return false;">Generate Grid</a><br> Generates a random grid to a specified size and runs the continent counter.</li>
+  </ul>
+</body>
+
+</html>
