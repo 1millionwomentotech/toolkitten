@@ -1,0 +1,135 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	  body{
+        	text-align:center;
+
+	  }
+
+	</style>
+</head>
+<body>
+	<h1>Continent Counter</h1>
+	<span>
+		<label for="n">Area of your N x N world:</label>
+		<input type="number" id="n">
+		<button type="button" onclick="displayLand();">generate world</button>
+		<div id="land" style="text-align: center;"></div>
+	</span>
+
+	<span>
+		Enter the co-ordinates<br>
+		<label for="x">x</label>
+		<input type="number" id="x"><br>
+		<label for="y">y</label>
+		<input type="number" id="y"><br>
+		<button type="button" onclick="myfun();">submit</button>
+	</span>
+
+	<p>
+		This will give the area of all continents:
+		<button type="button" onclick="myfunall();">get all area</button>
+	</p>
+	<div id="ans" style="text-align: center;"></div>
+
+  <script>
+    const land=[0];
+    var vis=[0];
+    function displayLand(){
+		n = document.querySelector("#n").value;
+		for (var i = 0 ; i < n; i++) {
+	    land[i] = [];
+	    for (var j = 0; j < n; j++) {
+	        land[i][j] = Math.round((Math.random()*1)+0) ;
+	    }
+	}
+	 for (var i = 0 ; i < n; i++) {
+	    vis[i] = [];
+	    for (var j = 0; j < n; j++) {
+	        vis[i][j] = 0 ;
+	    }
+	}
+	var html = "<table border=solid align=center>";
+	    for (var i = 0; i <n; i++) {
+	      html+="<tr>";
+	      for(var j=0;j<n;j++){
+	          html+="<td>"+land[i][j]+"</td>";
+	      }
+	      html+="</tr>";
+	    }
+	    html+="</table>";
+	    document.querySelector("#land").innerHTML = html;
+	}
+	var area=0,x,y;
+
+	function countarea(x,y){
+	  if(x<0 || x>=n || y<0 || y>=n){
+	    return ;
+	  }
+	  if(land[x][y]==0){
+	    return ;
+	  }
+	  if(vis[x][y]==1){
+	    return ;
+	  }
+	  vis[x][y]=1;
+
+	  area=area+1;
+
+	  countarea(x+1,y);
+	  countarea(x-1,y);
+	  countarea(x,y+1);
+	  countarea(x,y-1);
+	  countarea(x+1,y+1);
+	  countarea(x-1,y-1);
+	  countarea(x+1,y-1);
+	  countarea(x-1,y+1);
+	}
+
+	function myfun(){
+		x = parseInt(document.querySelector("#x").value);
+	    y = parseInt(document.querySelector("#y").value);
+	    if(land[x][y]==0){
+	  	  console.log("You landed on an ocean!");
+	  	  document.querySelector("#ans").innerHTML+="This is ocean. <br>";
+	    }
+	    else if(land[x][y]==1){
+	      countarea(x,y);
+	      console.log("The area of the continent is "+area);
+	      document.querySelector("#ans").innerHTML+="The area of your continent is "+area+".<br>";
+	    }
+	    area=0;
+	    for (var i = 0 ; i < n; i++) {
+		    vis[i] = [];
+		    for (var j = 0; j < n; j++) {
+		        vis[i][j] =0 ;
+	    	}
+	    }
+	}
+
+	function myfunall() {
+	  for(var i=0;i<n;i++){
+	    for(var j=0;j<n;j++){
+	      area=0;
+	      if (land[i][j]==1 && vis[i][j]==0){
+	        countarea(i,j);
+	        console.log("area "+ area);
+	        document.querySelector("#ans").innerHTML+="The area of other continents "+area+"<br>";
+	      }
+
+	    }
+	  }
+	  for (var i = 0 ; i < n; i++) {
+	    vis[i] = [];
+	    for (var j = 0; j < n; j++) {
+	        vis[i][j] = 0 ;
+	    }
+	  }
+	}
+
+//displayLand();
+  </script>
+
+</body>
+</html>
