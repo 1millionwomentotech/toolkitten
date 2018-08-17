@@ -259,7 +259,7 @@ Then try to generate your random Civilization III world by generating a land 'X'
 
 #### The Math Object - Optional
 
-https://www.w3schools.com/jsref/jsref_obj_string.asp
+https://www.w3schools.com/jsref/jsref_obj_math.asp
 
 
 ## Helpful links
