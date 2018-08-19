@@ -28,7 +28,7 @@ var6 = input()
 var6 = int(var6) + 1
 print("Better Favourite Number for you is: " + str(var6))
 
-#uppercase 
+#uppercase
 print("Enter the new string: ")
 var7 = input()
 print(var7.upper())
@@ -36,19 +36,24 @@ print(var7.upper())
 #grandma listens loud
 print("Type something so that Grandma listens.")
 var8 = input()
-if var8.islower() : 
-	print("HUH?! SPEAK UP, GIRL!")
-else : 
-    print("NO, NOT SINCE 1938!")     
+if var8.islower() :
+    print("HUH?! SPEAK UP, GIRL!")
+else :
+	print("NO, NOT SINCE 1938!")
 
 #sorting the lists...
 var9 = list()
 num = input("Enter the number of elements you want to enter: ")
-print("Enter the letters: ")
+print("Enter the numbers: ")
 for i in range(int(num)):
-	n = input("Number: ")
-	var9.append(str(n))
+    n = input("Number: ")
+    var9.append(str(n))
 print('ARRAY: ', var9)
 
 var9.sort()
 print('SORTED ARRAY: ', var9)
+
+#Angry Boss
+print("Say something to your boss!!!")
+var10 = input()
+print('Boss replies: WHADDAYA MEAN "' + var10.upper() + '"?!? YOU\'RE FIRED!!')
