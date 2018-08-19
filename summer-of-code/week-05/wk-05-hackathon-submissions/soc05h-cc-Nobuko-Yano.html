@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<h1>#1millionwomentotech #SummerOfCode</h1>
+
+<h2>Week 05:Intro to JavaScript Day 1</h2>
+
+<h3>Hackathon challenge</h3>
+
+  <script type="text/javascript">
+    //randomly generate n * n worlds
+    var createWorld = function(n){
+        var newWorld = new Array(n);
+        var w = []
+        var x = 0
+        //1 is Land, 0 is Water
+
+        for(var i = 0; i < n; i++){ //row
+        	newWorld[i] = new Array(n);
+            for(var j = 0; j < n; j++){ //y
+                x = parseInt(Math.random()*2)
+                w.push(x)
+                newWorld[i][j] = x;
+            }
+
+            //newWorld.push(w)
+            w=[]
+        }
+        return newWorld;
+    }
+
+    //print world
+    var printWorld = function(world) {
+		var arrText = '';
+		for (var i = 0; i < world.length; i++) {
+            for (var j = 0; j < world[i].length; j++) {
+                arrText+=world[i][j]+' ';
+            }
+            console.log(arrText);
+            arrText='';
+        }
+	}
+
+	// count lands(=1) from landed position (=row, col)
+    var continent_counter = function(world, row, col){
+		size = 0 ;
+
+		if (world[row][col] != 1){
+			// Either it's water or we already counted it,
+			// but either way, we don't want to count it now.
+			return 0
+		} else {
+			// So first we count this tile...
+			size = 1;
+			world[row][col] = 'counted land';
+			// ...then we count all of the neighboring eight tiles
+			// (and, of course, their neighbors by way of the recursion).
+			//console.log("###row:"+row+" ###col:"+col);
+			if (row != 0 && col !=0){
+				size = size + continent_counter(world, row-1, col-1)
+			}
+			if (col != 0){
+				size = size + continent_counter(world, row, col-1)
+			}
+			if (row+1 < world.length && col != 0){
+				size = size + continent_counter(world, row+1, col-1)
+			}
+			if (row != 0){
+				size = size + continent_counter(world, row-1, col)
+			}
+			if (row+1 < world.length){
+				size = size + continent_counter(world, row+1, col)
+			}
+			if (col+1 < world.length && row != 0){
+				size = size + continent_counter(world, row-1, col+1)
+			}
+			if (col+1 < world.length){	
+				size = size + continent_counter(world, row, col+1)
+			}
+			if (row+1 < world.length && col+1 < world.length){
+				size = size + continent_counter(world, row+1, col+1)
+			}
+			return size;
+		}
+	}
+
+	console.log('The continent is:')
+	var w1 = createWorld(11)
+	printWorld(w1)
+	console.log('The Size of continent is:')
+	console.log(continent_counter(w1, 1, 4));  
+  
+  </script>
+
+</body>
+</html>
