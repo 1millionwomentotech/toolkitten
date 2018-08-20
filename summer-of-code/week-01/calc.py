@@ -1,5 +1,3 @@
-# calculator
-
 # print(1+2)
 # print(3)
 
@@ -30,7 +28,7 @@
 # print('2 * 5')
 
 # print('12' + 12)
-#print('12' + str(12))
+# print('12' + str(12))
 
 # print('2' * '5')
 
@@ -41,10 +39,3 @@ print('You\'re swell!')
 print('backslash at the end of a string: \\')
 print('up\\down')
 print('up\down')
-
-
-
-
-
-
-
