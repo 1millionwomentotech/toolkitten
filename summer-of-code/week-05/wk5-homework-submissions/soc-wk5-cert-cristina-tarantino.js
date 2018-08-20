@@ -157,3 +157,10 @@ homework.d2e2 = (function (homework) {
   var min_in_day_moon = (homework.MIN_IN_DAY * homework.HOURS_IN_DAY * moon_degrees_per_day) / 360;
   document.querySelector('#d2e2 .solution').innerHTML = min_in_day_moon;
 })(homework);
+
+// Angry boss. Write an angry boss program that rudely asks what you want. Whatever you answer, the angry boss should yell it back to you and then fire you. For example, if you type in I want a raise, it should yell back like this:
+// WHADDAYA MEAN "I WANT A RAISE"?!? YOU'RE FIRED!!
+homework.d3e1 = (function (homework) {
+
+  document.querySelector('#d3e1 .solution').innerHTML = ;
+})(homework);

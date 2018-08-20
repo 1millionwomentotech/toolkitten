@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Continent Counter</title>
+
+  <!--Import Google Icon Font-->
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">-->
+  <link rel="stylesheet" href="soc05h-cc-cristina-tarantino.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+<div>
+  <h1>Continent Counter</h1>
+  <div class="row">
+    <form id="worldSize" class="resettable">
+      <p>
+        <input id="x" type="number" name="x" min="1" max="20" required>
+        <label for="x">Width of the world</label>
+      </p>
+      <p>
+        <input id="y" type="number" name="y" min="0" max="20">
+        <label for="y">Height of the world</label>
+      </p>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+
+  <div class="row">
+    <table id="world"></table>
+  </div>
+
+  <div class="row">
+    <button id="continents_counter" class="waves-effect waves-light btn resettable hide">Count Continents</button>
+  </div>
+
+  <div class="row resettable hide" id="continents_counter_result">
+    <div>
+      <h3>Countries List</h3>
+      <ol id="country_list">
+      </ol>
+    </div>
+    <div>
+      <h3>Top 2 Biggest Countries</h3>
+      <ol id="top_2">
+      </ol>
+    </div>
+  </div>
+</div>
+
+<script type="application/javascript" src="soc05h-cc-cristina-tarantino.js"></script>
+</body>
+
+</html>
