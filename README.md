@@ -21,14 +21,23 @@ You will need the following
   - https://guides.github.com/features/mastering-markdown/
   - https://github.github.com/gfm/
 
-# FAQ Bot
+# FAQ Bot Development
 
-- https://medium.com/crowdbotics/how-to-create-your-very-own-facebook-messenger-bot-with-dialogflow-and-node-js-in-just-one-day-f5f2f5792be5
-- https://developers.facebook.com/products
-- https://blog.hartleybrody.com/fb-messenger-bot/
-- https://wit.ai/
-- https://messenger.fb.com/developers
-- https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start
+## Messenger Chatbots
+- FB Resources https://developers.facebook.com/products
+- Messenger Resources https://messenger.fb.com/developers
+
+## NodeJS
+- How To NodeJS https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start
+- Boilerplate NodeJS https://github.com/howdyai/botkit 
+- How To NodeJS and DialogFlow https://medium.com/crowdbotics/how-to-create-your-very-own-facebook-messenger-bot-with-dialogflow-and-node-js-in-just-one-day-f5f2f5792be5
+
+## Python
+- How To Python https://blog.hartleybrody.com/fb-messenger-bot/
+
+## NLP
+- Chatbot NLP https://wit.ai/
+
 
 # User Story
 
