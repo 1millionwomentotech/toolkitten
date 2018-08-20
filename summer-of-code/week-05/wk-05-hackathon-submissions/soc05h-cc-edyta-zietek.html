@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hackathon JavaScript</title>
+
+</head>
+<body>
+    <h1>Hackathon</h1>
+    <script>
+'use strict';
+
+(function (){
+var width = 11;
+var len = 11;
+var clivilization_world = [];
+    function worldGenerator(){
+        for (var i=0; i< width; i++){
+            var row = [];
+            for (var x=0; x< len; x++){
+                row.push(Math.random()<0.5 ? 0: 1)
+            }
+            clivilization_world.push(row);
+        }  
+    }
+worldGenerator();
+clivilization_world[5][5] = 1;   
+   
+    // var clivilization_world = [
+    //     //0 1 2 3 4 5 6 7 8 9 10
+    //     [0,0,0,0,0,0,0,0,0,1,0], //0
+    //     [0,0,0,0,1,0,0,0,0,0,0], //1
+    //     [0,0,0,0,1,0,0,0,1,0,0], //2
+    //     [0,0,0,0,1,1,0,1,1,0,0], //3
+    //     [0,0,0,1,1,1,0,1,0,0,0], //4
+    //     [1,1,1,1,1,1,1,1,0,0,0], //5
+    //     [0,0,0,0,1,0,0,0,0,1,0], //6
+    //     [0,0,0,0,1,0,0,0,0,1,0], //7
+    //     [0,0,0,0,1,0,0,1,1,1,0], //8
+    //     [0,1,0,0,0,0,0,0,1,1,1], //9
+    //     [0,0,0,0,0,0,0,0,0,0,0], //10
+    // ];
+
+
+var visited = [];
+visitedGenerator();
+
+    function visitedGenerator(){
+        for (var i=0; i< width; i++){
+            var row = [];
+            for (var x=0; x< len; x++){
+                row.push(0);
+            }
+            visited.push(row);
+        }  
+    }
+
+    // var visited = [
+    //     //0 1 2 3 4 5 6 7 8 9 10
+    //     [0,0,0,0,0,0,0,0,0,0,0], //0
+    //     [0,0,0,0,0,0,0,0,0,0,0], //1
+    //     [0,0,0,0,0,0,0,0,0,0,0], //2
+    //     [0,0,0,0,0,0,0,0,0,0,0], //3
+    //     [0,0,0,0,0,0,0,0,0,0,0], //4
+    //     [0,0,0,0,0,0,0,0,0,0,0], //5
+    //     [0,0,0,0,0,0,0,0,0,0,0], //6
+    //     [0,0,0,0,0,0,0,0,0,0,0], //7
+    //     [0,0,0,0,0,0,0,0,0,0,0], //8
+    //     [0,0,0,0,0,0,0,0,0,0,0], //9
+    //     [0,0,0,0,0,0,0,0,0,0,0], //10
+    // ];
+
+    var queue = [[5,5]];
+    var continent_counter = 0
+
+    function civilization(x,y){
+        if (visited[x][y] == 1){
+            return;
+        } else if (clivilization_world[x][y] == 0){
+            return;
+        }
+        visited[x][y] = 1
+        continent_counter += 1
+
+        if (x<10){
+            queue.push([x+1, y]);
+        }
+        if (x>0){
+            queue.push([x-1, y]);
+        }
+        if(y<10){
+            queue.push([x, y+1]);
+        }
+        if(y>0){
+            queue.push([x,y-1]);
+        }
+        if(x<10 && y<10){
+            queue.push([x+1,y+1]);
+        }
+        if(x>0 && y>0){
+            queue.push([x-1, y-1]);
+        }
+        if(y<10 && x >0){
+            queue.push([x-1, y+1]);
+        }
+        if(y>0 && x < 10){
+            queue.push([x+1, y-1]);
+        }
+    }
+
+    while ((queue.length) >0){
+        var point = queue.pop(0);
+        var x = point[0];
+        var y = point[1];
+        civilization(x, y);
+    }
+    console.log(continent_counter);
+})();
+    </script>
+</body>
+</html>
