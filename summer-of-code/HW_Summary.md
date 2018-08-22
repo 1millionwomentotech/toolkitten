@@ -131,5 +131,10 @@ D4 | “Modern” Roman numerals | Eventually, someone thought it would be terri
 
 Day | Assignment | Description | Required/Optional
 :------------: | ------------- | ------------- | :-------------:
+D1 | Loop Bug | How do we fix loop bug in closures? *see code in day1.js* | Required
+D1 | Countdown Exercise | https://github.com/advanced-js/countdown | Required
+| | |
+| | |
+| | |
 | | |
 
