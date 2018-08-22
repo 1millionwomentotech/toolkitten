@@ -260,7 +260,7 @@ Using the [Advanced JavaScript](https://github.com/advanced-js/syllabus#course-o
 
 August 27 - 31    Mobile Prototyping (UI/UX) in InvisionApp
 
-Using Invision's [Getting Started](https://github.com/advanced-js/syllabus#course-outline) guides.
+Using Invision's [Getting Started](https://support.invisionapp.com/hc/en-us/categories/115000098263-Getting-Started) guides.
 
 1. Introduction to InvisionApp
 1. Boards
