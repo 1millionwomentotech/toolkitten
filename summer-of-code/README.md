@@ -61,6 +61,7 @@ Table of Contents
          * [Week 10](#week-10)
          * [Week 11](#week-11)
          * [Week 12](#week-12)
+         * [Week 13](#week-13)
       * [Schedule](#schedule)
          * [Project Pitches](#project-pitches)
          * [Live Lectures](#live-lectures)
@@ -252,15 +253,38 @@ https://www.amazon.co.uk/JavaScript-JQuery-Interactive-Front-End-Development/dp/
 
 ### Week 6
 
-August 20 - 24    Advanced JavaScript
+August 20 - 24 Advanced JavaScript
 
 Using the [Advanced JavaScript](https://github.com/advanced-js/syllabus#course-outline) open courseware from NYW.
 
 ### Week 7
 
-August 27 - 31    Mobile Prototyping (UI/UX) in InvisionApp
+August 27 - 31  Self-care Week
 
-Using Invision's [Getting Started](https://github.com/advanced-js/syllabus#course-outline) guides.
+Naming credits :)
+
+Virginia Balseiro Self-care week
+Marta Bodojra​ Rest and empower week!
+Rox Arten​ Self Grounding and Empowerment
+Gillian Newton​ "Week of Sanity" "Week of Empowerment", "Re-factor Your Code"
+Krystal​ Re-Code Week?
+Catch-up week (Ketchup week)
+Paula Bernal Inner Coding Week
+Bituin Callanta​ Recalibration Week
+
+The first benefit of a self-care week is that you have time for yourself and your coding.
+
+There will be **NO** classes during this week, however, you are welcome to continue on material from previous weeks or to study ahead.
+
+The second benefit is that the deadlines of the Week 6 hackathon and the Month 2 hackathon to reflect the addition of a week's time.
+
+The third benefit is that Week 8 will be the mobile app prototyping week and you will have until Week 13 to giving you 5 weeks instead of just 1 week polish your mobile app, and work on your JavaScript skills before we dive into React.js. This is perhaps the greatest benefit.
+
+### Week 8
+
+September 3 - 7 Mobile Prototyping (UI/UX) in InvisionApp
+
+Using Invision's [Getting Started](https://support.invisionapp.com/hc/en-us/categories/115000098263-Getting-Started) guides.
 
 1. Introduction to InvisionApp
 1. Boards
@@ -268,12 +292,6 @@ Using Invision's [Getting Started](https://github.com/advanced-js/syllabus#cours
 1. Working Together
 1. Feedback and Development
 
-
-### Week 8
-
-September 3 - 7 Mobile App Development with React.JS
-
-Using the Facebook React.JS [tutorial](https://reactjs.org/tutorial/tutorial.html) and [Learning JavaScript Design Patters](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
 ### Week 9
 
@@ -337,6 +355,13 @@ October 1 - 5 TBD (best suited for senior developers with a broad skill set)
 
 - [VOLUNTEER NEEDED] An introduction to collaboration using Github.
 - [VOLUNTEER NEEDED] Community engagement course.
+
+### Week 13
+
+October 8 - 12 Mobile App Development with React.JS
+
+Using the Facebook React.JS [tutorial](https://reactjs.org/tutorial/tutorial.html) and [Learning JavaScript Design Patters](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+
 
 ## Schedule
 
