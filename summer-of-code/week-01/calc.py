@@ -46,4 +46,3 @@ print('up\down')
 
 
 
-
