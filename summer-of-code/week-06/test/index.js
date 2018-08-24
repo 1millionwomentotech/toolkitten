@@ -1,12 +1,7 @@
 var fs = require('fs');
 var util = require('util');
 
-var boggle = [
-  ['G', 'I', 'Z', 'D'],
-  ['U', 'E', 'K', 'H'],
-  ['Q', 'S', 'E', 'L'],
-  ['M', 'N', 'O', 'P']
-];
+// TODO dry code and performance improvement
 
 var Node = function () {
   this.keys = new Map();
@@ -102,7 +97,7 @@ function findWordsUtil(dictionaryTrie, board, visited, y, x, word) {
 
   var letter = board[y][x];
 
-  word += (letter === 'Q' ? 'QU' : letter); // account for the "Qu" die
+  word += (letter === 'q' ? 'qu' : letter); // account for the "qu" die
 
   if (dictionaryTrie.isWord(word)) {
     result.push(word);
@@ -148,31 +143,6 @@ function findWordsUtil(dictionaryTrie, board, visited, y, x, word) {
   }
 
   visited[y][x] = false; // un-mark this as visited so other paths can visit it
-
-
-  // visited[i][j] = true;
-  // str = str + board[i][j];
-  //
-  // // If str is present in dictionary, then return it
-  // if (dictionaryTrie.isWord(str)) {
-  //   console.log("test", str);
-  //   return str;
-  // }
-
-  // Traverse 8 adjacent cells of boggle[i][j]
-  // for (var row = i - 1; row >= 0 && row <= i + 1 && row < height; row++) {
-  //   for (var col = j - 1; col >= 0 && col <= j + 1 && col < width; col++) {
-  //     console.log(row,  col);
-  //     // console.log(visited[row][col], row,  col);
-  //     // if (!visited[row][col]) {
-  //     //   console.log(str);
-  //     //   return findWordsUtil(dictionaryTrie, board, visited, row, col, str);
-  //     // }
-  //   }
-  // }
-
-  // str = str.length -1;
-  // visited[i][j] = false;
 }
 
 function findWords(board) {
@@ -198,4 +168,42 @@ function findWords(board) {
   return Array.from(new Set(result));
 }
 
-console.log(findWords(boggle));
+
+function generate_board(alphabet, width, height) {
+  height = height || width;
+
+  var board = new Array(height).fill('').map(function () {
+    return new Array(width).fill('');
+  });
+
+  for (var i = 0; i < height; i++) {
+    for (var j = 0; j < width; j++) {
+      var randomInRange = Math.floor(Math.random() * alphabet.length);
+      board[i][j] = alphabet[randomInRange];
+    }
+  }
+
+  return board;
+}
+
+
+function generateScores(words) {
+  var result = {
+      "score": 0,
+      "words": words
+  };
+
+  words.forEach(function (word) {
+    result["score"] += word.length === 1 ? 0 : word.length - 2;
+  });
+
+  return result;
+}
+
+var boggleBoard = generate_board('abcdefghijklmnopqrstuvwxyz', 4, 4);
+
+console.log(boggleBoard);
+var words = findWords(boggleBoard);
+console.log(words);
+
+console.log(generateScores(words));
