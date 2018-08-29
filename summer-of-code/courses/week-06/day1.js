@@ -1,4 +1,4 @@
-// parameters during function declaration
+// //parameters during function declaration
 // function myFunction(p1, p2) {
 //     return p1 ** p2
 // }
@@ -33,13 +33,17 @@ function showName (firstName, lastName) {
 
 document.getElementById("anavirginia").innerHTML = showName("Ashcan", "Consortia")
 
-// $(function() {
-//   var selections = []
-//   $(".myButton").click(function() {
-//     selections.push(this.prompt("name"))
-//   })
-// });
+$(function() {
+  var selections = []
+  $(".myButton").click(function() {
+    selections.push(prompt("name"))
+    document.getElementById("anavirginia").innerHTML = selections.pop()
+  })
+});
 
+$( "p" ).click(function() {
+  console.log( "You clicked a paragraph!" );
+});
 // create a button to click above and update #anavirginia to be selections
 
 function celebrityID () {

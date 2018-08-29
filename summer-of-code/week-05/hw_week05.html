@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<h1>#1millionwomentotech #SummerOfCode</h1>
+
+<h2>Homework</h2>
+
+<h3>Week 5</h3>
+
+<h4 style="color:blue;margin-left:30px;">Day 1</h4>
+
+<p>
+  Hours in a year. How many hours are in a year? <div id="q1"></div>
+</p>
+
+<p>
+  Minutes in a decade. How many minutes are in a decade? <div id="q2"></div>
+</p>
+
+<p>
+  Your age in seconds. How many seconds old are you? <div id="q3"></div>
+</p>
+
+<p>
+  Cristina Tarantino: 32 yesterday! How many milliseconds old is she? <div id="q4"></div>
+</p>
+
+<p>
+  How many days does it take for a 32-bit system to timeout, if it 
+  has a bug with integer overflow? <div id="q5"></div>
+</p>
+
+<p>
+  How about a 64-bit system? <div id="q6"></div>
+</p>
+
+<p>
+  Calculate your age accurately based on your birthday 
+  (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday) - 
+  you will need JavaScript DateTime functionality. 
+  <br /> 
+  <table>
+       <tr>
+          <td>Years:<div id="q7y"></div></td>
+          <td>Months: <div id="q7m"></div></td>
+          <td>Days: <div id="q7d"></div></td>
+       </tr>
+    </table>
+ 
+</p>
+
+
+<h4 style="color:blue;margin-left:30px;">Day 2</h4>
+
+<p>
+Music
+  A 440 Hz
+  1 octave is double the frequency
+  tempered piano
+  A' 880 Hz
+  Calculate and console.log the frequency each of the 12 notes between A and A'
+  Hint: the notes are NOT in a linear scale, but in a geometric scale
+</p>
+<!-- Research by Christina Tarantino:
+  https://www.intmath.com/trigonometric-graphs/music.php -->
+<table>
+  <tr>
+    <td><b>Note</b></td>
+    <td><b>Frequency in Hz</b></td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>440 </td>
+  </tr>
+  <tr>
+     <td>A#</td>
+     <td><div id="q8A1"></div></td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td><div id="q8B"></td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td><div id="q8C"></div></td>
+  </tr>
+  <tr>
+    <td>C#</td>
+    <td><div id="q8C1"></div></td>
+  </tr>
+  <tr>
+      <td>D</td>
+      <td><div id="q8D"></div></td>
+  </tr>
+  <tr>
+    <td>D#</td>
+    <td><div id="q8D1"></div></td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td><div id="q8E"></div></td>
+  </tr>
+  <tr>
+      <td>F</td>
+      <td><div id="q8F"></div></td>
+  </tr>
+  <tr>
+      <td>F#</td>
+      <td><div id="q8F1"></div></td>
+  </tr>
+  <tr>
+      <td>G</td>
+      <td><div id="q8G"></div></td>
+  </tr>
+  <tr>
+      <td>G#</td>
+      <td><div id="q8G1"></div></td>
+  </tr>
+  <tr>
+      <td>A'</td>
+      <td>880</td>
+  </tr>
+</table>
+
+<p>
+Planets
+  Calculate and console log how many 'minutes' the Moon travels in a day.
+  Hint: first calculate how many degrees the Moons travels in the sky when 
+  the Earth returns to the same position during its daily rotation.
+  <div id="q9"></div>
+</p>
+  
+
+<!--The Moon moves around the Earth in an approximately circular orbit,
+going once around us in approximately 27.3 days, or one sidereal period of revolution.
+Since there are 360 degrees in a circle, the Moon moves (on the average) 
+360 / 27.3 or 13.2 degrees per day relative to the stars, 
+which is just over half a degree per hour, and approximately equal to its apparent size.
+-->
+<h4 style="color:blue;margin-left:30px;">Day 3</h4>
+<p>
+Full name greeting. </br>
+Write a program that asks for a person’s first name, then middle, and then last. 
+Finally, it should greet the person using their full name. 
+</p>
+<table>
+    <tr>
+      <td><b>Welcome to 1mwtt</b></td>
+      <td><div id="q10"></div></td>
+    </tr>
+</table>
+
+<p>
+Bigger, better favorite number.</br> 
+Write a program that asks for a person’s favorite number. 
+Have your program add 1 to the number, and then suggest the result as a bigger and 
+better favorite number. (Do be tactful about it, though.) 
+</p>
+
+<p>
+Angry boss. </br>
+Write an angry boss program that rudely asks what you want. 
+Whatever you answer, the angry boss should yell it back to you and then fire you. 
+For example, if you type in I want a raise, it should yell back like this: 
+```
+WHADDAYA MEAN "I WANT A RAISE"?!? YOU'RE FIRED!!
+``` 
+</p>
+
+<p>
+Table of contents. </br>
+Here’s something for you to do in order to play 
+around more with center, ljust, and rjust: write a program that will display 
+a table of contents so that it looks like this: </br>
+
+Table of Contents </br>
+     
+Chapter 1: Getting Started        page 1</br>
+Chapter 2: Numbers                page 9</br>
+Chapter 3: Letters                page 13</br>
+
+Optional: in JS we may prefer to 'print' these to the HTML file itself 
+    rather than the console.
+
+<p id="title"><b>Table of Contents:</b></p></br>
+
+<p>
+  <div id="ch1" style="display:inline; float:left; width:200px;">Chapter 1: Getting Started</div>
+  <div id="pg1" style="display:inline;">page 1</div>
+</p>
+
+
+<p>
+<div id="ch2" style="display:inline; float:left; width:200px;">Chapter 2: Numbers</div>
+<div id="pg2" style="display:inline-block;">page 9</div></p>
+
+<p>
+<div id="ch3" style="display:inline; float:left; width:200px;">Chapter 3: Letters</div>
+<div id="pg3" style="display:inline-block;">page 13</div></p>
+
+<button type="button" onclick="myFunction()">Align table of content</button>    
+</p>
+
+  
+<p>Random number between 1 and 10? <div id="rand1"></div></p>
+<p>Random number between 1 and 100? <div id="rand2"></div></p>
+<p>Random number between 1930 and 1950? <div id="rand3"></div></p>
+
+<p>
+  Then try to generate your random Civilization III world by generating a land 'X' 
+  tile or a water 'o' tile randomly:
+
+  - oooXXXoo
+  - oooXoXoo
+  - XXXooXoo
+</p>
+
+<script src="hw_week05.js"></script>
+
+</body>
+</html>
