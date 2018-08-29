@@ -1,12 +1,40 @@
 # 1 Million Women To Tech (1MWTT) Code Review #HOWTO
 
+**How to be a successful Mentor**
+
 This document is to help you Give and Receive code reviews. Mentors are the ones giving the code reviews, while Students receive them.
 
 It is important for reviewers to be kind, and for receivers to be, well, receptive to suggestions.
 
+# STEP 1
 
+Read the [best practices here](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/)
 
-# Format
+# STEP 2
+
+While reading the template below, please watch the example here where Ilona does a code review for Rocio on Week 01 homework:
+- https://www.youtube.com/watch?v=7VSaq0dPPSw
+(you may wish to watch at 2x speed)
+
+# STEP 3
+
+Study the template below.
+
+1. Start with an encouraging sentence. Remember the struggle was probably real for many to get to the point of submitting a project, so be positive and encourage them to improve their work, if necessary.
+ 
+Example: You have done great so far! Really nice work. Just a couple of suggestions for topic xyz, then we are good to go 🙌🏻
+
+2. Positive-to-negative ratio: Negative isn’t the right word but let’s be real, nobody likes to have made mistakes. So we suggest a ratio of 2-1 of pointing out the great things about their code (code structure, functions, styling etc.) to suggesting improvements on other areas.
+Remember: the aim is to have a student read this and feel empowered and supported to do better, not to feel deflated about their mistakes!
+
+Suggesting improvements;
+- Must haves; check whether the code runs correctly, gives correct output for edge cases, etc
+- Nice to haves; Give feedback on readability, efficiency, extendibility, etc
+- For detailed technical checklist see below.
+
+3. Be precise and add a screenshot: Most students will be giving their absolute best and will only get so far with their current knowledge. So be precise about your feedback. Each note, whether positive or a suggestion for improvement, should have a screenshot attached
+
+4. Additional resources: Include additional resources to external websites or to course material, where you think the student could get valuable information to improve
 
 ### Praise
 
@@ -90,12 +118,21 @@ OOAD
 Like in the openining you want to give encouragment and appreciation. e.g. You have come so far, well done! Great work! BRAVO. Impressive. Great sense of humour! ;)
 
 
-(# previous feedback)
+## older code review example
 
 https://github.com/CristyTarantino/toolkitten/projects/1
 https://github.com/CristyTarantino/toolkitten/pull/3
 
-# Resources
+
+# Step 4
+
+Make sure you are familiar with the week's homework assignments. E.g. for Week 01 https://github.com/1millionwomentotech/soc-cert-week01/blob/master/README.md (private repo, you will need to request access to the GitHub classroom to see it)
+
+Beginners should only use tools and methods that they learned during the lecture. They should NOT be shown the shiniest, best, newest, most elegant libraries or the most elegant solution IF they have not heard about them before, because the goal of the exercise is to drill that which they learned. Drilling is what's missing from many online tutorials, so it is your responsibility as a Mentor to make the correct judgement call about how much (or how little) improvement to suggest.
+
+Students are also allowed and in fact encouraged to work on their own problems and projects, so you may be asked to give genuine code reviews on unseen problems.
+
+### Resources
 
 checklist
 - https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/
