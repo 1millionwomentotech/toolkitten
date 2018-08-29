@@ -133,8 +133,14 @@ Day | Assignment | Description | Required/Optional
 :------------: | ------------- | ------------- | :-------------:
 D1 | Loop Bug | How do we fix loop bug in closures? *see code in day1.js* | Required
 D1 | Countdown Exercise | https://github.com/advanced-js/countdown | Required
-| | |
-| | |
-| | |
-| | |
+D2 | Person and Coder classes  | coded as shown on the video | Required
+D2 | underscore.js library's | Re-implement the underscore.js library's following three methods in plain JavaScript
+using only for loops, forEach (https://underscorejs.org/#each): 1. each   2. map  3. reduce | Required
+D3 | exercise Advanced JS | choose 1 of the exercises on Advanced-JS from the NYU courseware (https://github.com/advanced-js/syllabus#course-outline) echo , blink,  Memory (any version v1 v2 v3) | Required
+D3 | Mini-Project | choose your own mini-project just keep in mind that a one-week's submission should be ~400 LOC | Optional
+D4 | Promise1 | Handle success and error case of promise1. | Required
+D4 | Implement Promise | Implement promise examples from https://github.com/advanced-js/deck/tree/gh-pages/demos/ajax/promises | Required
+D4 | You Don't Know JS Chapter 4 | https://github.com/getify/You-Dont-Know-JS/blob/31e1d4ff600d88cc2ce243903ab8a3a9d15cce15/es6%20%26%20beyond/ch4.md | Required
+D4 | Promise drill exercise | Please submit an interesting exercise to drill Promises. | Required
+
 
