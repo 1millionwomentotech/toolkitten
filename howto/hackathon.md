@@ -87,6 +87,8 @@ Treat these bullets like a checklist. Projects that think about themselves in te
 
 If you know what projects are going to be worked on at the event, the earlier you can get those projects thinking about this the better. Meet with project leads and talk about these components of their project ahead of time if possible. As a Mentor, having this information about projects can also help you route participants to projects they may want to work on.
 
+A great resource to read is the Google Summer of Code Guide on **Defining a Project (Ideas List)** https://google.github.io/gsocguides/mentor/defining-a-project-ideas-list
+
 ## Open Ended Hackathons
 
 Each hackathon will have an open ended category to allow for those with pre-existing ideas to work on them and attract teammates to them. It is the Stakeholder's responsiblity to ensure that the project is explained, there is a clear project question, and that resources are available e.g. datasets.
