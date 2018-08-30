@@ -142,3 +142,40 @@ function Coder(name, age, favFood, codingSkill, codingLang) {
 var coder1 = new Coder('jaro', 40, 'pizza', 99, ['PHP', 'Java'])
 console.log(coder1)
 coder1.add2numb(2,3)
+
+
+// function each(collection, iterator) {
+//     if (Array.isArray(collection)) {
+//       for (var i = 0; i < collection.length; i++){
+//         iterator(collection[i], i, collection);
+//       }
+//     } else {
+//       for (var key in collection){
+//         iterator(collection[key], key, collection);
+//       }
+//     }
+//   };
+
+var each_array = function(){
+    var people = ["polona", "nina", "jana"]
+
+    _.each(people, function(name,key){
+        console.log(name);
+        console.log(key);
+       }
+    })
+
+ }
+each_array();
+
+var each_array = function(){
+    var people = ["polona", "nina", "jana"]
+
+    _.each(people, function(name,key){
+        console.log(name);
+        console.log(key);
+       }
+    })
+
+ }
+each_array();

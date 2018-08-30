@@ -145,3 +145,4 @@ function selectFrom(lowerValue, upperValue) {
     return Math.floor(Math.random() * choices + lowerValue);
 }
 document.querySelector("#rand3").innerHTML = selectFrom(1930, 1950);
+
