@@ -41,7 +41,7 @@ We ask for 10 hours minimum in total, however it can be at any time that you are
 
 When checking your availability, we recommend that you also make sure that your skill set matches the Summer of Code programme in the week when you are planning to volunteer:
 
-[Syllabus with dates](/summerofcode/README.md#Syllabus)
+[Syllabus with dates](/summer-of-code/README.md#Syllabus)
 
 ### What exactly does “mentoring” entail?
 
