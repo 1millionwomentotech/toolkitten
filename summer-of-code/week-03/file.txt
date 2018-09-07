@@ -1,0 +1,14 @@
+# file.txt
+
+loving
+eclipsing i don't have the file.
+contemplating coding coding typing LOL creating
+
+# test the split() method
+# testing non-alphabetical characters
+
+filing.file
+commaing,comma
+
+innovating-waterskiing!smiling.panicking marvellous
+pythoning
