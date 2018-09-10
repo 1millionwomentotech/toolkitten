@@ -16,7 +16,19 @@ Calculate your age accurately based on your birthday (maybe use time of day e.g.
 you will need Python modules."""
 
 class TimeMachine():
-	"""									"""
+	"""Time Machine answers questions like
+
+	Hours in a year. How many hours are in a year?
+	Minutes in a decade. How many minutes are in a decade?
+	Your age in seconds. How many seconds old are you? (I'm not going to check your answer, so be as accurate—or not—as you want.)
+	Andreea Visanoiu​: I'm 48618000 seconds old hahaha. Calculate @Andreea Visanoiu's age.
+	Here are some tougher questions:
+
+	How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow?
+	How about a 64-bit system?
+	Calculate your age accurately based on your birthday (maybe use time of day e.g. 8:23am if you know it, use 12:00 noon midday) - 
+	you will need Python modules
+	"""
 
 	def __init__(self):
 		"""		"""
@@ -91,5 +103,25 @@ class TimeMachine():
 	def calc_age(self, birthdate_time):
 		"""									"""
 		pass
+
+if __name__ == "__main__" :
+    
+    print("I can calculate the Hours in a year.")
+    year = 0
+    while (year == 0):
+        year_s = input("Please enter a year : ")
+        year = int(year_s)
+
+    tm = TimeMachine();
+    message = ""
+
+    # Using C-stryle string formatting. The "%" operator is used to enclose the tuple of arguments
+    # %d, %s argument specifiers
+    
+    print("The number of hours in %d is %d hours " % (year, tm.calc_hours_in_a_specific_year(year)))
+                   
+    
+    
+    
 
 
