@@ -269,3 +269,10 @@ Problem solving
 - Video: https://www.coursera.org/lecture/duke-programming-web/a-seven-step-approach-to-solving-programming-problems-AEy5M
 - https://github.com/gwhorleyGH/java-coursera/wiki/Seven-step-approach-to-solving-programming-problems
 - Book: The Algorithm Design Manual by Steven S Skiena
+
+Fun video about type conversion
+- https://www.destroyallsoftware.com/talks/wat
+
+Cool in-depth article about JavaScript type coercion
+- https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839
+

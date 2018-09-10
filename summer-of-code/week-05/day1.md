@@ -158,5 +158,3 @@ Create a single file called `soc-wk5-cert-firstname-lastname.zip` and include th
 
 MDN (my favourite documentation of all time(!))
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview
-
-
