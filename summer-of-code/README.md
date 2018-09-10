@@ -297,9 +297,7 @@ Using Invision's [Getting Started](https://support.invisionapp.com/hc/en-us/cate
 
 September 10 - 14 Blockchain
 
-Tentative: Using Oxford BlocSoc's intro to Blockchain course
-
-Alternative is a Solidity intro course
+Solidity intro course
 - https://solidity.readthedocs.io/en/v0.4.24/
 - https://codeburst.io/build-your-first-ethereum-smart-contract-with-solidity-tutorial-94171d6b1c4b
 
@@ -316,7 +314,7 @@ Udemy mixed
 - https://www.udemy.com/ethereum-developer/?siteID=TnL5HPStwNw-nCw82GtamM7cQibgpwRgeA&LSNPUBID=TnL5HPStwNw
 - https://www.udemy.com/ethereum-blockchain-game-development/
 - https://www.udemy.com/build-a-blockchain-in-javascript/
-- https://www.udemy.com/hyperledger/
+- **https://www.udemy.com/hyperledger/**
 - https://www.udemy.com/build-your-blockchain-az/
 - https://www.udemy.com/blockchain-developer/
 

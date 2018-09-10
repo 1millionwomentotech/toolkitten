@@ -2,6 +2,8 @@
 
 ## Week 8 Mobile Prototyping (UI/UX) in InvisionApp
 
+## Day 1
+
 Using Invision's [Getting Started](https://support.invisionapp.com/hc/en-us/categories/115000098263-Getting-Started) guides.
 
 1. Introduction to InvisionApp - day 1
