@@ -56,30 +56,36 @@ import gc
 # print(s3.discord_id)
 
 # class Student():
-#     def __init__(self, firstname, lastname, email, country_code, phone_number, github, country, discord_id, fav_food, dream):
+# def __init__(self, firstname, lastname, email, country_code,
+# phone_number, github, country, discord_id, fav_food, dream):
 
 class Student():
+
     def __init__(self, name, discord_id, fav_food, dream):
-        self.name       = name
+        self.name = name
         self.discord_id = discord_id
-        self.fav_food   = fav_food
-        self.dream      = dream
+        self.fav_food = fav_food
+        self.dream = dream
 
     def my_print(self):
-        print(self.name + " " + self.discord_id + " " + self.fav_food + " " + self.dream)
+        print(self.name + " " + self.discord_id +
+              " " + self.fav_food + " " + self.dream)
 
-    #courtesy of Deb Cupitt's great question!
+    # courtesy of Deb Cupitt's great question!
     def my_iter(self):
         for attr, value in self.__dict__.items():
             print(attr, value)
 
-# instantiate using our shiny new Constructor function that we got for 'free' from the Class
+# instantiate using our shiny new Constructor function that we got for
+# 'free' from the Class
 
-s1 = Student("Virginia Balseiro", "yesvirginia [Gold] [Volunteer]", "pasta", "moving to Europe")
+s1 = Student("Virginia Balseiro",
+             "yesvirginia [Gold] [Volunteer]", "pasta", "moving to Europe")
 
 s2 = Student("Deb Cupitt", "deb[Gold]", "chocolate", "gender equity")
 
-s3 = Student("Marta Bodojra", "marta [Gold] [Volunteer]", "dark chocolate", "become a developer and help all of you to do it together!😉")
+s3 = Student("Marta Bodojra", "marta [Gold] [Volunteer]", "dark chocolate",
+             "become a developer and help all of you to do it together!😉")
 
 # for attr, value in s1.__dict__.items():
 #     print(attr, value)
@@ -107,7 +113,8 @@ for obj in gc.get_objects():
 
 # del s1.fav_food
 # s1.my_print()
-# you will error out because my_print() will try to access a non-existant property/attribute
+# you will error out because my_print() will try to access a non-existant
+# property/attribute
 
 # del s1
 
@@ -116,13 +123,3 @@ for obj in gc.get_objects():
 
 # print(s2.discord_id)
 # print(s3.dream)
-
-
-
-
-
-
-
-
-
-
