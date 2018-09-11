@@ -144,38 +144,100 @@ console.log(coder1)
 coder1.add2numb(2,3)
 
 
-// function each(collection, iterator) {
-//     if (Array.isArray(collection)) {
-//       for (var i = 0; i < collection.length; i++){
-//         iterator(collection[i], i, collection);
-//       }
-//     } else {
-//       for (var key in collection){
-//         iterator(collection[key], key, collection);
-//       }
-//     }
-//   };
+
+
+//trying  https://underscorejs.org/ _.each
+//each from 
+//_.each(list, iteratee, [context]) 
+//Alias: forEach
+//Iterates over a list of elements, yielding each in turn to an iteratee function. 
+//The iteratee is bound to the context object, if one is passed. Each invocation of iteratee
+// is called with three arguments: (element, index, list). If list is a JavaScript object, 
+//iteratee's arguments will be (value, key, list). Returns the list for chaining. 
+
 
 var each_array = function(){
     var people = ["polona", "nina", "jana"]
-
+    
     _.each(people, function(name,key){
         console.log(name);
         console.log(key);
-       }
-    })
+       }) 
+  }
 
- }
 each_array();
 
-var each_array = function(){
-    var people = ["polona", "nina", "jana"]
-
-    _.each(people, function(name,key){
+var each_object = function(){
+    var people_object = {name : "nina", age : "33", gender : "female"}
+    
+  _.each(people_object, function(name,key){
         console.log(name);
         console.log(key);
-       }
-    })
+       })
+  }
 
- }
-each_array();
+ 
+each_object();
+
+
+// Call iterator(value, key, collection) for each element of collection.
+// Accepts both arrays and objects.
+//
+// Note: _.each does not have a return value, but rather simply runs the
+// iterator function over each item in the input collection.
+_ = {};
+_.each = function(collection, callBack) {
+    if (Array.isArray(collection)) {
+      for (var i = 0; i < collection.length; i++) {
+        callBack(collection[i], i, collection);
+      }
+    } else {
+      for (var key in collection) {
+        callBack(collection[key], key, collection);
+      }
+    }
+};
+
+_.each(["polona", "nina", "jana"], console.log);
+_.each({name : "nina", age : "33", gender : "female"}, console.log);
+
+//trying  https://underscorejs.org/ _.map
+//_.map(list, iteratee, [context])
+// Alias: collect
+//Produces a new array of values by mapping each value in list through a transformation function (iteratee). 
+//The iteratee is passed three arguments: the value, then the index (or key) of the iteration, and finally a reference 
+//to the entire list.
+
+//_.map([1, 2, 3], function(num){ return num * 3; });
+//=> [3, 6, 9]
+//_.map({one: 1, two: 2, three: 3}, function(num, key){ return num * 3; });
+//=> [3, 6, 9]
+//_.map([[1, 2], [3, 4]], _.first);
+//=> [1, 3]
+
+
+// Return the results of applying an iterator to each element.
+  _.map = function(collection, callBack) {
+    var mapped = [];
+    _.each(collection, function(item) {
+      mapped.push(callBack(item));
+    });
+    return mapped;
+};
+console.log(_.map([1, 2, 3], function(num){ return num * 3; }));
+console.log(_.map({one: 1, two: 2, three: 3}, function(num, key){ return num * 3; }))
+
+// reduce
+//_.reduce(list, iteratee, [memo], [context]) 
+//Aliases: inject, foldl
+//Also known as inject and foldl, reduce boils down a list of values into a single value. Memo is the initial state of the 
+//reduction, and each successive step of it should be returned by iteratee. The iteratee is passed four arguments: the memo, 
+//then the value and index (or key) of the iteration, and finally a reference to the entire list.
+
+//If no memo is passed to the initial invocation of reduce, the iteratee is not invoked on the first element of the list. 
+//The first element is instead passed as the memo in the invocation of the iteratee on the next element in the list.
+
+//var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+//=> 6
+//https://gist.github.com/freddiecabrera/a1b13b68427c4ed641ec
+//https://underscorejs.org/docs/underscore.html
