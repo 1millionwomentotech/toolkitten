@@ -236,6 +236,10 @@ print(my_string)
 ```
 
 
+## Few things to try
+
+- Music
+- Planets
 
 
 

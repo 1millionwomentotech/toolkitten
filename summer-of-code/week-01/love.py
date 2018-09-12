@@ -1,4 +1,4 @@
-#love affair
+# love affair
 
 name = "Rebecca Fillier"
 result = ""
@@ -15,13 +15,14 @@ print('result: ' + result)
 # print(len("Rebecca Fillier"))
 
 for i in range(0, len(name)):
-  # print(name[i])
-  if i % 2 == 0:
-    print(name[i])
-    result = result + name[i]
-    print('result just changed to: ' + result)
+    # print(name[i])
+    if i % 2 == 0:
+        print(name[i])
+        result = result + name[i]
+        print('result just changed to: ' + result)
 
-print('The final result for all even indexed letters in name is: ' + result + '! Drumroll please!!! Thank you. I would like to thank the Academy. (Little bow)')
+print('The final result for all even indexed letters in name is: ' + result +
+      '! Drumroll please!!! Thank you. I would like to thank the Academy. (Little bow)')
 
 # "X" land, "o" water
 world = "X"
@@ -45,4 +46,3 @@ world = "o"
 my_birth_month = "August"
 my_birth_day = 3
 print(my_birth_month + my_birth_day)
-
