@@ -83,6 +83,10 @@ Advanced Questions
 - Read **THE** Ethereum Whitepaper
   - https://github.com/ethereum/wiki/wiki/White-Paper
 
+### Optional homework
+- Finish the voting example (in Remix is fine, Remix is the browser based IDE) and suggest improvements: Currently, many transactions are needed to assign the rights to vote to all participants. Can you think of a better way?
+- Add tests to the voting example
+
 ### Other links
 - https://github.com/ethereum/web3.js/
 
