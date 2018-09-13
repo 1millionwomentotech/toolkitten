@@ -142,7 +142,6 @@ NaN
 :)
 
 
-
 Finally, what if we want a program to console.log out `You’re swell!?` We can try this:
 
 ```
