@@ -2,7 +2,7 @@
 
 ## Week 10 Virtual reality
 
-## Day 3 UI design and interaction
+## Day 3 UI design and interaction - moving our player around the scene
 
 
 

@@ -1,3 +1,5 @@
+Open this favourites at the beggining of the class
+https://unity3d.com/es/unity/features/multiplatform
 
 # 1 Million Women To Tech 
 
@@ -6,21 +8,24 @@
 ## Day 1
 
 Small talk about VR hardware , VR applications
+Google Cardboard - One fun example : https://www.youtube.com/watch?v=bDoEYULinMU
 Unity can be installed on both Mac and Windows. As well as android Studio 
+Unity is a crossplatform engine 
 
 ### Prerequisites 
-* Unity 3D - Try to pick one of the LTS releases : https://unity3d.com/es/unity/qa/lts-releases<br /> **Important** Check the box to allow the installation of Vuforia (Week11)
+* Enable developer mode on your Android phone; this method is different depending on your smarthphone brand. Sometimes its Taping the Build number seven times(Settings > About > Software information > More > Build number). After the first few taps, you should see the steps counting down until you unlock the developer options. Once activated, you will see a message that reads, “You are now a developer!” .... sometimes you may just find it under Settings > Developer options
+* Unity 3D - Try to pick one of the LTS releases : https://unity3d.com/es/unity/qa/lts-releases<br /> **Important** Check the box to allow the installation of Vuforia (Week11) <br /> Also make sure that you check the Android Build support option (or iOS build support if you want to build for iPhone/iPad)
 I am using 2017.4.7f1<br /> 2017.2.0f3 is the version we used the last time I tested 
 #### For andorid deploy :
 Follow the Unity documentation :https://docs.unity3d.com/Manual/android-sdksetup.html
 
 * JDK - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-* Android studio https://developer.android.com/studio/- Emulator is optional if you dont have to much space in your disk
-
-#### For iOS deploy :
-You need a Mac to build apps for iOS
+* Android studio https://developer.android.com/studio/- Emulator is optional if you dont have to much space in your disk 
+* Ignore NDK installation
+*For iOS deploy:*
+You need a Mac to build apps for iOS<br />
 https://unity3d.com/es/learn/tutorials/topics/mobile-touch/building-your-unity-game-ios-device-testing
-
+*
 * We are going to use an online modeling tool with basic functions :  online  https://www.tinkercad.com
 
 * *optional* - 3D modeling software (Paint 3D in windows 10)  <br />
@@ -28,13 +33,15 @@ https://unity3d.com/es/learn/tutorials/topics/mobile-touch/building-your-unity-g
 	* https://www.sketchup.com/
 	* https://www.blender.org/
 
+* Google VR developers - Unity package
+
 
 ### Install Android environment in unity
 
 **Hit** Sometimes the latest version of unity has problems identifying the android SDK during compiling. If you followed all the instructions and nothing seems to work, downgrate to another Unity version.
 
 ### Covering the basics
-
+It is important to keep in mind that Unity *units* are in meters, this becames particularly important when developing Augemented and Mixed Reality applications
 #### Unity layout
 * Asset windows
 * Hierarchy panel
@@ -53,18 +60,31 @@ Here some useful resources:
 * https://www.cgtrader.com/free-3d-models
 * My personal favourite https://grabcad.com/
 
-#### Customizing materials
+### Import unity packages
+GvrReticlePointer
+### Good practices :
+ * Organize your Asset folders : You can create folders with any name you like, **Keep in mind** there are some names that are reserved by unity : https://docs.unity3d.com/Manual/ScriptCompileOrderFolders.html
+ * A good habit is to start a project always creating the folders *Models*, *Prefabs* , *Scenes* , *Scripts*
+ * Keep Scripts at the Scripts folder (or *Editor* for more advanced configurations)
+
+#### If we have time - Customizing materials 
 * Standart shader
 * Textures : An overview 
  <br /> This requires UVs previusly generated with the model
 
 #### Deploy in emulator 
 
-### Homework
 
-Install all the Tools adn download some obj or make your own so that on day 2 we can start installing our apps :) 
-- Create design in tinkerCAD and share the link
+#### Summary
+We created our first VR app for google CardBoard !! :D :D Congratulations
+### Homework
+* Setting up all the tools can be a lot of work, sometimes unexpected issues can come across: <br />
+ Install all the Tools . Get a simple app running on your device or emulator
+
+* Create design in tinkerCAD and share the link
 
 ## Author
 Discord ID : Mara Catalina Ag_Ca[GOLD]
 github : maguileracanon
+
+// It took me 15 min to build the app once the tools were installed
