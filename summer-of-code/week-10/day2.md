@@ -27,7 +27,9 @@ Now lets pass some orders to our objects
  * First - lets pass the message to just one object
  * Now lets reuse this Script for several objects - Unity scripts are reusable as long as the code inside them can be  the same for all the cases! :D - Instances of a class 
  * Now lets pass some arguments to other objects script
-
+   ```csharp
+   objectOnView.collider.gameObject.SendMessage("MyOwnFunction");
+    ```
 * We can also implement the dinamics a cinematics examples on the Objects, and customize it so that each one would have a different bevhaviour. 
 
 
