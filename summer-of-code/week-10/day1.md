@@ -49,7 +49,11 @@ It is important to keep in mind that Unity *units* are in meters, this becames p
 * Scene view
 
 #### Lights and camera
-In VR/AR expereinces it is good practice to have ONLY one main Camera
+In VR/AR expereinces it is good practice to have ONLY one main Camera.<br />
+The two main types are
+* Directional lights : Their possition in the scene is not relevant, oly its direction has an effect on the lighting
+* Point lights
+
 #### Importing assets from your computer
 
 If you have Windows 10, you probably already have Paint3D installed. 
@@ -61,7 +65,11 @@ Here some useful resources:
 * My personal favourite https://grabcad.com/
 
 ### Import unity packages
-GvrReticlePointer
+
+### Objects Hierarchy
+* Parents
+* Children
+
 ### Good practices :
  * Organize your Asset folders : You can create folders with any name you like, **Keep in mind** there are some names that are reserved by unity : https://docs.unity3d.com/Manual/ScriptCompileOrderFolders.html
  * A good habit is to start a project always creating the folders *Models*, *Prefabs* , *Scenes* , *Scripts*
@@ -80,8 +88,8 @@ We created our first VR app for google CardBoard !! :D :D Congratulations
 ### Homework
 * Setting up all the tools can be a lot of work, sometimes unexpected issues can come across: <br />
  Install all the Tools . Get a simple app running on your device or emulator
-
 * Create design in tinkerCAD and share the link
+* Explore resources in the asset store
 
 ## Author
 Discord ID : Mara Catalina Ag_Ca[GOLD]
