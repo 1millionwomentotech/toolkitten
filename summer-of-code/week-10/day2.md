@@ -80,9 +80,6 @@ Lets test this with Logs - Unity console
 * Monobehaviour vs classes
 
 
-## Author
-Discord ID : Mara Catalina Ag_Ca[GOLD]
-github : maguileracanon
 
 
 

@@ -15,7 +15,8 @@ Unity is a crossplatform engine
 ### Prerequisites 
 * Enable developer mode on your Android phone; this method is different depending on your smarthphone brand. Sometimes its Taping the Build number seven times(Settings > About > Software information > More > Build number). After the first few taps, you should see the steps counting down until you unlock the developer options. Once activated, you will see a message that reads, “You are now a developer!” .... sometimes you may just find it under Settings > Developer options
 * Unity 3D - Try to pick one of the LTS releases : https://unity3d.com/es/unity/qa/lts-releases<br /> **Important** Check the box to allow the installation of Vuforia (Week11) <br /> Also make sure that you check the Android Build support option (or iOS build support if you want to build for iPhone/iPad)
-I am using 2017.4.7f1<br /> 2017.2.0f3 is the version we used the last time I tested 
+I am using 2017.4.11f1 is the version we used the last time I tested 
+
 #### For andorid deploy :
 Follow the Unity documentation :https://docs.unity3d.com/Manual/android-sdksetup.html
 
@@ -91,8 +92,3 @@ We created our first VR app for google CardBoard !! :D :D Congratulations
 * Create design in tinkerCAD and share the link
 * Explore resources in the asset store
 
-## Author
-Discord ID : Mara Catalina Ag_Ca[GOLD]
-github : maguileracanon
-
-// It took me 15 min to build the app once the tools were installed

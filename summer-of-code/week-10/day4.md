@@ -4,5 +4,29 @@
 
 ## Day 4  
 
-### Add music to your VR experience
 ### Create and run animations
+
+## Moving our player around the scene
+We cannot move our Main camera ,  '*If the mountain will not come to Muhammad, then Muhammad must go to the mountain*'
+
+### The transfor component
+* Position
+* Rotation
+* Scale
+
+### Add an animation controller to the objects we eant to move/rotate
+* Add animator component to the scene
+* Add an animation
+* Get animator component from other object and enabled on ButtonClick
+
+
+### Create several animations
+
+
+
+### Connect your annimations
+
+### Trigger your animations
+
+
+### Now lets taste our VR app!!! 
