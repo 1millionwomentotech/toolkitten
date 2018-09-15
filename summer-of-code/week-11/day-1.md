@@ -45,3 +45,14 @@ We can pack objects as prefabs so that we can instantiate them later.
 Every vuforia application needs to validate its licence on the server before runnig. We can get a free developing licence at the developers portal 
 
 * The image target that we uploaded was processed by the engine and its features were extracted, now is ready to be imported as a unity package
+
+* 
+
+### Vumarks
+
+Official documentation : https://library.vuforia.com/articles/Solution/Working-with-VuMarks.html
+
+* Adding some UI elements to our AR app
+
+
+### If we have time here - Virtual buttons

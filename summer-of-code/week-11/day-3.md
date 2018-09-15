@@ -3,4 +3,9 @@
 
 ## Week 11 Augmented reality
 
-## Day 3 - scanned object
+## Day 3 - Scanned object
+
+
+### Downloading the scanning app - android
+
+
