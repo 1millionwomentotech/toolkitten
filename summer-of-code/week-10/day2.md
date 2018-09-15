@@ -30,12 +30,12 @@ Components also have properties that we can easily access. A good guide to each 
 ### Comunication between objects
 #### Simple kinematics
 Now lets make our objects spinn 
-   ```csharp
+```csharp
    // To translate the object in in the y / green axis
    objectOnView.transform.Translate(Vector3.up * Time.deltaTime , Space.World);
    // We can also rotate objects
    objectOnView.transform.Rotate( Vector3.up * Time.deltaTime * 30);
-    ```
+```
 
 #### Simple Dinamics
 Lets put some gravity on our app.. first we need a floor :P. Otherwise our objects would fall forever <br />
