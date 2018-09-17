@@ -132,19 +132,27 @@ From insde of the prefabs sub folder
 
 #### Deploy in emulator 
 
+
+### Build the app
+
+Under the the player settings pick and app name and company, then add enable Virtual reality support and add Google cardboard to the list of SDKs
+
 #### If we have time - Customizing materials 
 * Standart shader
 * Textures : An overview 
  <br /> This requires UVs previusly generated with the model
 
 
-
-
 #### Summary
 We created our first VR app for google CardBoard !! :D :D Congratulations
-### Homework
+### A few things to try
 * Install all the Tools . Get a simple app running on your device or emulator
 * Create design of 5 figures minimum in tinkerCAD, at least 2 of them to be a character with legs and arms. Explore all the available basic shapes and challange your creativity 
 * Import the models into your scene and place them around the camera object 
 * Explore resources in the asset store 
 
+### Other SDKs to explore
+
+* Oculus SDK: https://developer.oculus.com/downloads/package/oculus-utilities-for-unity-5/
+* HTC vive - Steam VR: https://assetstore.unity.com/packages/templates/systems/steamvr-plugin-32647
+* Mixed reality toolkit (VR and AR headsets): https://github.com/Microsoft/MixedRealityToolkit-Unity
