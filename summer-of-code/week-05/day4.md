@@ -125,9 +125,9 @@ NO, NOT SINCE 1938!
 To make your program really believable, have Grandma shout a different year each time, maybe any year at random between 1930 and 1950. (This part is optional and would be much easier if you read the section on JavaScript’s random number generator under the Math Object.) You can’t stop talking to Grandma until you shout BYE. 
 
 
-- Hint: Try to think about what parts of your program should happen over and over again. All of those should be in your while loop. 
+  - Hint: Try to think about what parts of your program should happen over and over again. All of those should be in your while loop. 
 
-- Hint: People often ask me, “How can I make random give me a number in a range not starting at zero?” But you don’t need it to. Is there something you could do to the number random returns to you? 
+  - Hint: People often ask me, “How can I make random give me a number in a range not starting at zero?” But you don’t need it to. Is there something you could do to the number random returns to you? 
 
 - Deaf grandma extended. What if Grandma doesn’t want you to leave? When you shout BYE, she could pretend not to hear you. Change your previous program so that you have to shout BYE three times in a row. Make sure to test your program: if you shout BYE three times but not in a row, you should still be talking to Grandma. 
 
@@ -145,7 +145,7 @@ var students = ["", "", ""]
 
 var students = new Array("", "", "")
 
-var student1 = students[0]
+var student1 = students[1]
 
 students.length()
 students.sort()
@@ -157,34 +157,7 @@ students.join()
 Try fancy Array methods: 
 - https://www.w3schools.com/js/js_array_methods.asp
 
-#### Loops on arrays
 
-
-#### More List Methods
-
-Method  Description
-
-append()  Adds an element at the end of the list
-
-clear() Removes all the elements from the list
-
-copy()  Returns a copy of the list
-
-count() Returns the number of elements with the specified value
-
-extend()  Add the elements of a list (or any iterable), to the end of the current list
-
-index() Returns the index of the first element with the specified value
-
-insert()  Adds an element at the specified position
-
-pop() Removes the element at the specified position
-
-remove()  Removes the first item with the specified value
-
-reverse() Reverses the order of the list
-
-sorted()  Sorts the list and creates a new list without modifying the original
 
 #### A Few Things to Try
 
