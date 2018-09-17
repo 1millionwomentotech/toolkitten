@@ -46,13 +46,17 @@ Every vuforia application needs to validate its licence on the server before run
 
 * The image target that we uploaded was processed by the engine and its features were extracted, now is ready to be imported as a unity package
 
-* 
+* The gameobjects that we want to include in our AR experience must be attached as a child of the image target so that they can get a 
 
-### Vumarks
+### Vumarks and cloud recognition
 
 Official documentation : https://library.vuforia.com/articles/Solution/Working-with-VuMarks.html
 
-* Adding some UI elements to our AR app
+
 
 
 ### If we have time here - Virtual buttons
+
+
+
+### Extended tracking 
