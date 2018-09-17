@@ -10,7 +10,7 @@
 	* Create some basic 3D model to include in our VR experience
 * Day 2: Unity scripting - essential concepts for VR development
 	* Learn the basics of the unity *Monobehaviour* class and how can we create scripts to animate our gameobjects
-	* Learn how to include dinamic calculations in our app
+	* Learn how to include dynamic calculations in our app
 * Day 3: UI design and interaction - moving our player around the scene
 	* Create scripts to perform interactions with UI elements based on the user's gaze
 	* Learning advance concepts in Unity Scripting and the Google VR SDK
