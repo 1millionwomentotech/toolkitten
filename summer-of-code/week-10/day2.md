@@ -4,6 +4,30 @@
 
 ## Day 2
 
+
+Today we will cover
+
+* Basic Scripting in unity
+* Position and orientation transformation of objects in realtime
+* Identify when and object is in front of our view and run some function on them
+* Include dynamic behaviour on objects (gravity, mass, drag, forces)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Create some interaction scripts.
 
 Before starting, be sure that you saved a copy of your current scene as a new one. It is good practice and it helps you keeps track of your progress
