@@ -108,7 +108,7 @@ Now lets pass some orders to our objects
 
 * In your project you should have 5 objects. Implement a several cinematics examples on them, and customize them so that each one would have a different bevhaviour (one would rotate around a specific axis, other would translate, or scale in some direction.
 * We can also store and access the amount of distance covered by a translation since the beginning of the app, create some thresholds so that after your model has moved Xm it starts returning to is original position.
-* Explore the Unity documentation function https://docs.unity3d.com/ScriptReference/Quaternion.FromToRotation.html, and create a unity script that makes all objects look in the direction of the camera at all time.
+* optional : Explore the Unity documentation function https://docs.unity3d.com/ScriptReference/Quaternion.FromToRotation.html, and create a unity script that makes all objects look in the direction of the camera at all time.
 
 
 #### Deploy your app inside the editor
