@@ -3,9 +3,23 @@
 
 ## Week 11 Augmented reality
 
-## Day 3 - Scanned object
+## Day 3 - Object tarjets and more UI elements interactions
+
+# Object tarjet scaninng and creating
 
 
-### Downloading the scanning app - android
+# REcognizing touch events 
+
+# Navigating through scenes
+We need this for the hackaton
+
+
+Official Vuforia Documentation
+https://library.vuforia.com/articles/Solution/Smart-Terrain-Workflow-in-Unity.html
+
+
+# Opening URL elements 
+
+
 
 

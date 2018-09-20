@@ -3,7 +3,7 @@
 
 ## Week 11 Augmented reality
 
-## Day 1 - Image tracker
+## Day 1 - Image and cilinder targets
 
 ### Introdution
 
