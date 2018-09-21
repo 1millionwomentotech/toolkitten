@@ -80,7 +80,7 @@ We cannot move our Main camera ,  '*If the mountain will not come to Muhammad, t
 
 ## A few things to try
 
-* Create an animation for  each one of your models that will only start when the user gazes at a "next" Button inside the panel that you already created. For the character models, each body-part must have a different movement. :) Be creative and have fun
+* Create an animation for  each one of your models that will only start when the user gazes at a "ANimate" Button inside the panel that you already created. For the character models, each body-part must have a different movement. :) Be creative and have fun
 
 * Create animations and an animator controller for the camera object and trigger each animation to move around our 3D models musseum and interact with the panels when the Maximum reticle distance is not big enought to reach them as they are far away.
 
