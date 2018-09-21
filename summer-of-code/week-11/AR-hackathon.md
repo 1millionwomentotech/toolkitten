@@ -30,7 +30,7 @@ The app must be composed of 3 scenes linked betwen each other and the user must 
 ### Ideas for the third screen
 
 * Redirect the user to the 1mwtt Website /Onboarding webinar video /member portal : https://docs.unity3d.com/ScriptReference/Application.OpenURL.html
-* 
+* Show several links that will redirect user to the videos
 
 
 **Hint** : Remember that you only have 1000 cloud recognitions per month with the Vuforia Developer Licence. Try to leave a couple for us to test your app ;)

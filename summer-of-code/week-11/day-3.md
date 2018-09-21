@@ -21,5 +21,8 @@ https://library.vuforia.com/articles/Solution/Smart-Terrain-Workflow-in-Unity.ht
 # Opening URL elements 
 
 
+# To test eventLoadscene manager, the scens must be in the build settings
+
+
 
 
