@@ -3,7 +3,8 @@
 
 ## Week 11 Augmented reality
 
-## Day 4 open cv - Face masking OR smart terrain 
+## Day 4 Asset bundles in Unity - Create, download and add to target
 
-Official Vuforia Documentation
-https://library.vuforia.com/articles/Solution/Smart-Terrain-Workflow-in-Unity.html
+
+
+

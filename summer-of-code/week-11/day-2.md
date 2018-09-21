@@ -3,12 +3,12 @@
 
 ## Week 11 Augmented reality
 
-## Day 2 - Cilinder and Multitarget objectives 
+## Day 2 -  cloud targets
 
 ### Creating Cilinder objectives 
 
 
-### Multitarge objectives
-
-
 ### Interaction between rigid bodies
+
+
+### C
