@@ -320,26 +320,18 @@ Udemy mixed
 
 ### Week 10
 
-September 17 - 21 Virtual Reality
-
-Using Facebook [VR stack](https://developers.facebook.com/products#virtual-reality)
-
-- https://facebook.github.io/react-360/docs/setup.html
-
-- 3D Posts
-Create immersive 3D posts and content for the Facebook News Feed.
-
-- Facebook 360
-Create and share immersive stories, places and experiences.
-
-- Oculus
-Create compelling VR experiences and reach passionate VR audiences.
-
-- Quill
-A VR illustration and animation tool built to help empower artists and creators.
-
-- React 360
-Use web tech to create content for audiences across mobile, web and VR.
+September 17 - 21 Virtual Reality Using Unity:
+- Day 1: Getting the tools and building our first VR app
+We are going to set up our computer to develop VR apps based on google cardboard. The google VR SDK is also compatible with iPhone/iPad development, but you will need to install the tools on MacOS to be able to do so
+Create some basic 3D model to include in our VR experience
+- Day 2: Unity scripting - essential concepts for VR development
+Learn the basics of the unity Monobehaviour class and how can we create scripts to animate our gameobjects
+Learn how to include dinamic calculations in our app
+- Day 3: UI design and interaction - moving our player around the scene
+Create scripts to perform interactions with UI elements based on the user's gaze
+Learning advance concepts in Unity Scripting and the Google VR SDK
+- Day 4 : Advanced animation controller:
+Create advanced animation effect and set up communication between the objects to trigger after a specific action has occured
 
 ### Week 11
 
