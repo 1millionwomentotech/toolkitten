@@ -15,11 +15,9 @@
 AssetBundles are exported prefabs that can created in one instance of Unity in offline time and loaded in another one at runtime. They have to be prefabs, not individual components.
 
 
-<<<<<<< HEAD
+
 Go to the projet you want to export assets from, inside the project view select it and assign label a category and object label.
-=======
-Go to the projet you want to export assets from,  inside the project view select it and assign label a category and object label.
->>>>>>> b98fbba48a8164bd3f8d18ac91adac799d2f3b2b
+
 
 
 Create the script
@@ -44,7 +42,7 @@ public class ExportAssets : MonoBehaviour {
 	#endif
 }
 ```
-We can access our asset bundles from any server we may access. In our case we can use Github.
+We can access our AssetBundles from any server we may have access to. In our case we can use Github.
 
 Access the link to download the raw files by right click, copy link address (on the Download Button)
 
