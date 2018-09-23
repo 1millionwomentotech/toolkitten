@@ -5,7 +5,7 @@
 
 ## Day 4 Asset bundles in Unity - Create, download and add to target
 
-AssetBundles are exported prefabs that can created in one instance of unity in offline time and loaded in another one at runtime. They can include 3D models, materials, scripts, etc
+AssetBundles are exported prefabs that can created in one instance of unity in offline time and loaded in another one at runtime. They have to be prefabs, not individual components.
 
 
 Go to the proget you want to export assets from,  inside the project view select it and assign label a category and object label.
