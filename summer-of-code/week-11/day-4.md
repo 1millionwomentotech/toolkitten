@@ -6,16 +6,16 @@
 ### Today we will learn
 
 * How to create an AR app that takes the marker and the objects from a server
-* How to create and later download unity AssetsBundles, wich are a format of unity to pack information of an specific prefabs in a lighter way
+* How to create and later download Unity AssetsBundles, wich are a format of unity to pack information of a specific prefabs in a lighter way
 
 ## Day 4 Asset bundles in Unity - Create, download and add to target
 
 *First a quick review of how to export unitypackage*
 
-AssetBundles are exported prefabs that can created in one instance of unity in offline time and loaded in another one at runtime. They have to be prefabs, not individual components.
+AssetBundles are exported prefabs that can created in one instance of Unity in offline time and loaded in another one at runtime. They have to be prefabs, not individual components.
 
 
-Go to the proget you want to export assets from,  inside the project view select it and assign label a category and object label.
+Go to the projet you want to export assets from, inside the project view select it and assign label a category and object label.
 
 
 Create the script
@@ -30,7 +30,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 public class ExportAssets : MonoBehaviour {
-	#if UNITY_EDITOR // dont need this if the script is inside the "Editor" folder
+	#if UNITY_EDITOR // you don't need this if the script is inside the "Editor" folder
 	[MenuItem("Example/Build Asset Bundles")] // We need to add this to the menu.
 	static void BuildABs()
 	{
@@ -40,9 +40,9 @@ public class ExportAssets : MonoBehaviour {
 	#endif
 }
 ```
-We can access our asset bundles from any server we may found. In our case we can use github.
+We can access our asset bundles from any server we may access. In our case we can use Github.
 
-Access the link to download the raw files by right click, copy link adress (on the Download Button)
+Access the link to download the raw files by right click, copy link address (on the Download Button)
 
 
 Now to download the models and instantiate them 

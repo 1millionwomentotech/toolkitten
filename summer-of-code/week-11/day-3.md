@@ -8,20 +8,20 @@
 Today we will learn:
 
 * How to create cloud recognition targets and implement them in unity
-* How to update the information of a target without changin any information in our app
+* How to update the information of a target without changing any information in our app
 * How to process the target metadata with a simple c# string tokenizer
 
 ### Create Cloud target databases
 
-Cloud targets are targets that exist on your account database rather than on the device. Right now, everytime you want to update an image target or want to include another target to your databas, you would have to download the .unitypackage file and reimport it. Cloud targets allow the users of your app to get your target updates without requiring to reinstall the app.
+Cloud targets are targets that exist on your account database rather than on the device. Right now, everytime you want to update an image target or want to include another target to your database, you would have to download the .unitypackage file and reimport it. Cloud targets allow the users of your app to get your target updates without requiring you to reinstall the app.
 
-Uploading the image target works similar as for device databases. However, this time the target manager will allow you to include some motedata on it. This can be a string that we will process later
+Uploading the image target works similar to device databases. However, this time the target manager will allow you to include some motedata on it. This can be a string that we will process later.
 
 ### Setting up a cloud target in Unity
 
-* Insert a cloud recognition object and a Cloud image target
+* Insert a Cloud Recognition Object and a Cloud image target
 * Set up the keys of the database
-* Create a scritp to handle the cloud-reco behaviour 
+* Create a scritp to handle the CloudRecoBehaviour 
 
 ```csharp
 

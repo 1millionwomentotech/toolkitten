@@ -21,16 +21,16 @@ A pairing of 2 objects, one has to be the trigger and have a rigidbody inside (K
 Triggers dont involve physics collisions. They just recognize when two objects are overlaping
 
 * You can trigger events in the object that owns the script or on the other collider.
-* **OnTriggerEnter** is called when the Collider other enters the trigger.
-* **OnTriggerExit** is called when the Collider other has stopped touching the trigger.
-* **OnTriggerStay** is called almost all the frames for every Collider other that is touching the trigger. The function is on the physics timer so it won't necessarily run every frame.
+* **OnTriggerEnter** is called when the other Collider enters the trigger.
+* **OnTriggerExit** is called when the  other Collider has stopped touching the trigger.
+* **OnTriggerStay** is called almost all the frames for every  other Collider  that is touching the trigger. The function is on the physics timer so it won't necessarily run every frame.
 
-When a trigger collision is recognized we can call any function that we want through scripting..
+When a trigger collision is recognized we can call any function that we want through scripting.
 
 
 ### Creating an UI-only screen
 
-* Create a screenspace camera and add a sprite renderer to cover all of the camera view. Even without implementing the AR camera prefab, when using vuforia, the AR behaviour will be forced in all scenes.
+* Create a screenspace camera and add a sprite renderer to cover all of the camera view. Even without implementing the AR camera prefab, when using Vuforia, the AR behaviour will be forced in all scenes.
 * Play around inserting Buttons, input fields, images etc.
 
 
