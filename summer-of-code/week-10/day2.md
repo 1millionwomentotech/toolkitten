@@ -4,6 +4,30 @@
 
 ## Day 2
 
+
+Today we will cover
+
+* Basic Scripting in unity
+* Position and orientation transformation of objects in realtime
+* Identify when and object is in front of our view and run some function on them
+* Include dynamic behaviour on objects (gravity, mass, drag, forces)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### Create some interaction scripts.
 
 Before starting, be sure that you saved a copy of your current scene as a new one. It is good practice and it helps you keeps track of your progress
@@ -84,7 +108,7 @@ Now lets pass some orders to our objects
 
 * In your project you should have 5 objects. Implement a several cinematics examples on them, and customize them so that each one would have a different bevhaviour (one would rotate around a specific axis, other would translate, or scale in some direction.
 * We can also store and access the amount of distance covered by a translation since the beginning of the app, create some thresholds so that after your model has moved Xm it starts returning to is original position.
-* Explore the Unity documentation function https://docs.unity3d.com/ScriptReference/Quaternion.FromToRotation.html, and create a unity script that makes all objects look in the direction of the camera at all time.
+* optional : Explore the Unity documentation function https://docs.unity3d.com/ScriptReference/Quaternion.FromToRotation.html, and create a unity script that makes all objects look in the direction of the camera at all time.
 
 
 #### Deploy your app inside the editor

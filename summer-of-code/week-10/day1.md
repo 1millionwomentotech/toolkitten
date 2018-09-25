@@ -137,11 +137,15 @@ From insde of the prefabs sub folder
 
 Under the the player settings pick and app name and company, then add enable Virtual reality support and add Google cardboard to the list of SDKs
 
+* From Q&A : please make sure your bild system option is set to *Internal*
+
 #### If we have time - Customizing materials 
 * Standart shader
 * Textures : An overview 
  <br /> This requires UVs previusly generated with the model
-
+* **Logo colours** : 
+	* Hair : R241 G55 B155
+	* Hair Border R143 G65 B103
 
 #### Summary
 We created our first VR app for google CardBoard !! :D :D Congratulations
