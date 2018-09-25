@@ -3,7 +3,7 @@
 
 ## Week 11 Augmented reality
 
-## Day 3 - Cloud targets and UI elements for mobile devices
+## Day 3 - Cloud targets 
 
 Today we will learn:
 
