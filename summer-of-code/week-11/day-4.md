@@ -75,6 +75,8 @@ public class DownloadAsset : MonoBehaviour {
 Notice that not only the 3D mesh got imported, but also material, rigidbodies and colliders.
 
 
+### Opening URL elements 
+
 
 
 

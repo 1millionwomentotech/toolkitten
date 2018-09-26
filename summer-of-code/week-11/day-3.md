@@ -119,4 +119,6 @@ https://library.vuforia.com/content/vuforia-library/en/reference/unity/interface
 
 
 
+### A few thing sto try
 
+* Create an app that will recognize one cloud target,after you are happy with your app please add at least 5 other targets to your databe (inside the Vuforia developer portal). Please also include metadata
