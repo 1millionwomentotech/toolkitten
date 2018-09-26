@@ -7,9 +7,11 @@
 
 Today we will learn:
 
+* More UI elements in unity
 * How to create cloud recognition targets and implement them in unity
 * How to update the information of a target without changing any information in our app
 * How to process the target metadata with a simple c# string tokenizer
+* Trigger a function to open urls in the external explorer 
 
 ### Create Cloud target databases
 
@@ -21,7 +23,8 @@ Uploading the image target works similar to device databases. However, this time
 
 * Insert a Cloud Recognition Object and a Cloud image target
 * Set up the keys of the database
-* Create a scritp to handle the CloudRecoBehaviour 
+* Create a script to handle the CloudRecoBehaviour following the documentation
+https://library.vuforia.com/content/vuforia-library/en/reference/unity/interfaceVuforia_1_1ICloudRecoEventHandler.html#details
 
 ```csharp
 
@@ -30,13 +33,7 @@ Uploading the image target works similar to device databases. However, this time
 	private string mTargetMetadata = "";
 	public ImageTargetBehaviour ImageTargetTemplate;
 	ObjectTracker m_ObjectTracker;
-	string[] tokenized;
-	string inputedUsername;
-	public GameObject scessfulLoggin;
-	public GameObject unsucessfulLogin;
-	public Text fullName;
-	public Text role;
-	public Text membership;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -103,6 +100,8 @@ Uploading the image target works similar to device databases. However, this time
 			unsucessfulLogin.SetActive (true);
 		}
 
+
+		//I found it in the cloud, now I am going to tell unity that an image target is in my view
 
 		if (ImageTargetTemplate) {
 			// enable the new result with the same ImageTargetBehaviour:
