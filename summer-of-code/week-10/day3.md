@@ -21,6 +21,7 @@
 Good news:
 * Gravity
 * We can import colours form thinkercad
+* On the Q&A we fixed the error : Vector3.forward =! camera.main.forward
 
 We will create a new gameObject in our scene of the type UI - > Panel, you will notice that when we create any UI element, Unity automatically generates the Canvas and event manager for us.
 <br /> 
@@ -131,7 +132,13 @@ public class MyNewInteraction : MonoBehaviour {
 }
 
 ```
+
+**Careful** : Unable the property "Raycast Target" on any other UI element that you dont want to make interactive
+
 ## Importing images as textures or sprites 
+
+Images can be imported as a texture or a Sprite. 
+We can place them in our scene and linked them to a new UI-> Image Object
 
 
 ## A few things to try
