@@ -1,15 +1,15 @@
-# 1 Million Women To Tech 
+# 1 Million Women To Tech
 
 ## Week 10 Virtual reality
 
-## Day 4  
+## Day 4
 
 ### Create and run animations
 
 ## Moving our player around the scene
-We cannot move our Main camera ,  '*If the mountain will not come to Muhammad, then Muhammad must go to the mountain*'
+We cannot move our Main camera: '*If the mountain will not come to Muhammad, then Muhammad must go to the mountain*'
 
-### The transfor component
+### The transfer component
 * Position
 * Rotation
 * Scale
@@ -22,8 +22,6 @@ We cannot move our Main camera ,  '*If the mountain will not come to Muhammad, t
 
 ### Create several animations
 
-
-
 ### Connect your annimations
 
 ### Trigger your animations
@@ -32,4 +30,4 @@ We cannot move our Main camera ,  '*If the mountain will not come to Muhammad, t
 ### Where to go from here
 Usefull links
 
-### Now lets taste our VR app!!! 
+### Now lets taste our VR app!!!
