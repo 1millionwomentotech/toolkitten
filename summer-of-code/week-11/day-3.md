@@ -115,8 +115,6 @@ https://library.vuforia.com/content/vuforia-library/en/reference/unity/interface
 
 
 
-### Opening URL elements 
-
 
 
 ### A few thing sto try
