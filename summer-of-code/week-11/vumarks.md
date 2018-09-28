@@ -12,56 +12,24 @@ using Vuforia;
 ```csharp
 
 
-    VuMarkManager m_VuMarkManager;
-    VuMarkTarget m_ClosestVuMark;
-    VuMarkTarget m_CurrentVuMark;
+   using Vuforia;
+public class DecodeStrings : MonoBehaviour {
 
-  
+	public TextMesh vumarkinfo;
+	VuMarkManager myManager;
 
-	public TextMesh vumarkData;
+	// Use this for initialization
+	void Start () {
+		myManager = TrackerManager.Instance.GetStateManager ().GetVuMarkManager ();
+		myManager.RegisterVuMarkDetectedCallback (OnVumarkDetection);
+	}
+	
 
+	void OnVumarkDetection( VuMarkTarget target){
+		Debug.Log( "This vumark says:" + target.InstanceId.StringValue);
+		vumarkinfo.text = target.InstanceId.StringValue;
+	}
+}
 
-    void Start()
-    {
-    
-        // register callbacks to VuMark Manager
-        m_VuMarkManager = TrackerManager.Instance.GetStateManager().GetVuMarkManager();
-        m_VuMarkManager.RegisterVuMarkDetectedCallback(OnVuMarkDetected);
-       
-    }
-
-    void OnDestroy()
-    {
-        // unregister callbacks from VuMark Manager
-        m_VuMarkManager.UnregisterVuMarkDetectedCallback(OnVuMarkDetected);
-
-    }
-
-
-
-    /// <summary>
-    /// This method will be called whenever a new VuMark is detected
-    /// </summary>
-    public void OnVuMarkDetected(VuMarkTarget target)
-    {
-        Debug.Log("New VuMark: " + GetVuMarkId(target));
-		vumarkData.text = GetVuMarkId (target);
-    }
-
-
-
-    string GetVuMarkId(VuMarkTarget vumark)
-    {
-        switch (vumark.InstanceId.DataType)
-        {
-            case InstanceIdType.BYTES:
-                return vumark.InstanceId.HexStringValue;
-            case InstanceIdType.STRING:
-                return vumark.InstanceId.StringValue;
-            case InstanceIdType.NUMERIC:
-                return vumark.InstanceId.NumericValue.ToString();
-        }
-        return string.Empty;
-    }
 ```
 
