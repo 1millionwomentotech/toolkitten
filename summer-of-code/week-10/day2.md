@@ -88,7 +88,7 @@ Now lets make our objects spinn
 Lets put some gravity on our app.. first we need a floor :P. Otherwise our objects would be falling forever <br />
 
 * Lets add a Quad object
-* Lets add rigidBodies to our models, these comoponent tells unity taht we are ready to include forces in our model - disable use gravity (for now)
+* Lets add rigidBodies to our models, these comoponent tells Unity that we are ready to include forces in our model - disable use gravity (for now)
 * Lets create a new script this time from the Project explorer - inside a Scripts folder
 
 
