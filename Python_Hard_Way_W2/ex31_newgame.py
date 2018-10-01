@@ -5,7 +5,7 @@ door = input("> ")
 
 if door == "1":
 
-	print("There's a drawbridge that isn't open. What will you do to get across?")
+	print("There's a drawbridge that isn't open.")
 	print("What will you do to get across?")
 	print("1. Jump and hope you land in a window.")
 	print("2. Throw throwing stars and hope you land on them to get to an open window.")
