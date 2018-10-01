@@ -25,7 +25,7 @@ if door == "1":
 			print("You see something light in the darkness. What would you like it to be?")
 			print("1. Someone ready to pull you into the castle and help you.")
 			print("2. An octopus ready to put tentacles on you so you can survive.")
-			print("3. A glowing potion that give you the ability to turn you into a mermaid or merman and back whenever you want and still know how to swim like a mermaid or merman.")
+			print("3. A glowing potion that gives you the ability to turn you into a mermaid or merman and back to a human whenever you want and still know how to swim like a mermaid or merman.")
 
 			light = input("> ")
 
