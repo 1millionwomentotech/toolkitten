@@ -2,6 +2,10 @@
 
 ## Visit the registration page
 
+https://memberportal.1millionwomentotech.com/diy
+
+![diy-page](./images/diy-page.jpg)
+
 ## Fill in the registration form
 
 ## Confirm your email address
