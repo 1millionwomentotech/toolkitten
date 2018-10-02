@@ -30,6 +30,7 @@ We use the `import` keyword to gain access to functions and variables from other
 
 Check pip
 `$ pip list`
+https://pypi.org/project/pip/
 
 Install NLTK
 http://www.nltk.org/install.html
@@ -45,3 +46,16 @@ http://jupyter.org/install
 #### Optional / Advanced
 
 - http://jfine-python-classes.readthedocs.io/en/latest/subclass-int.html
+
+
+
+
+CAT
+AXX
+TXX
+
+CAT
+CAT
+CAC
+
+
