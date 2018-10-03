@@ -46,6 +46,9 @@ However, when you are testing behaviour of methods, this is a quick way, because
     name // strings are **immutable** they cannot be changed
 ```
 
+Reading
+- https://codeburst.io/js-by-example-8-distinct-uses-of-javascript-array-slice-4e4e95a470e4
+
 ### Mixing It Up 
 
 We'​ve looked at a few kinds of objects (integers, floats, and strings), and we made variables point to them. Now it’s time for them all to play nicely together. 
