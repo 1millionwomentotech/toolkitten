@@ -61,6 +61,7 @@ Table of Contents
          * [Week 10](#week-10)
          * [Week 11](#week-11)
          * [Week 12](#week-12)
+         * [Week 13](#week-13)
       * [Schedule](#schedule)
          * [Project Pitches](#project-pitches)
          * [Live Lectures](#live-lectures)
@@ -252,15 +253,38 @@ https://www.amazon.co.uk/JavaScript-JQuery-Interactive-Front-End-Development/dp/
 
 ### Week 6
 
-August 20 - 24    Advanced JavaScript
+August 20 - 24 Advanced JavaScript
 
 Using the [Advanced JavaScript](https://github.com/advanced-js/syllabus#course-outline) open courseware from NYW.
 
 ### Week 7
 
-August 27 - 31    Mobile Prototyping (UI/UX) in InvisionApp
+August 27 - 31  Self-care Week
 
-Using Invision's [Getting Started](https://github.com/advanced-js/syllabus#course-outline) guides.
+Naming credits :)
+
+Virginia Balseiro Self-care week
+Marta Bodojra​ Rest and empower week!
+Rox Arten​ Self Grounding and Empowerment
+Gillian Newton​ "Week of Sanity" "Week of Empowerment", "Re-factor Your Code"
+Krystal​ Re-Code Week?
+Catch-up week (Ketchup week)
+Paula Bernal Inner Coding Week
+Bituin Callanta​ Recalibration Week
+
+The first benefit of a self-care week is that you have time for yourself and your coding.
+
+There will be **NO** classes during this week, however, you are welcome to continue on material from previous weeks or to study ahead.
+
+The second benefit is that the deadlines of the Week 6 hackathon and the Month 2 hackathon to reflect the addition of a week's time.
+
+The third benefit is that Week 8 will be the mobile app prototyping week and you will have until Week 13 to giving you 5 weeks instead of just 1 week polish your mobile app, and work on your JavaScript skills before we dive into React.js. This is perhaps the greatest benefit.
+
+### Week 8
+
+September 3 - 7 Mobile Prototyping (UI/UX) in InvisionApp
+
+Using Invision's [Getting Started](https://support.invisionapp.com/hc/en-us/categories/115000098263-Getting-Started) guides.
 
 1. Introduction to InvisionApp
 1. Boards
@@ -269,19 +293,11 @@ Using Invision's [Getting Started](https://github.com/advanced-js/syllabus#cours
 1. Feedback and Development
 
 
-### Week 8
-
-September 3 - 7 Mobile App Development with React.JS
-
-Using the Facebook React.JS [tutorial](https://reactjs.org/tutorial/tutorial.html) and [Learning JavaScript Design Patters](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
-
 ### Week 9
 
 September 10 - 14 Blockchain
 
-Tentative: Using Oxford BlocSoc's intro to Blockchain course
-
-Alternative is a Solidity intro course
+Solidity intro course
 - https://solidity.readthedocs.io/en/v0.4.24/
 - https://codeburst.io/build-your-first-ethereum-smart-contract-with-solidity-tutorial-94171d6b1c4b
 
@@ -298,32 +314,24 @@ Udemy mixed
 - https://www.udemy.com/ethereum-developer/?siteID=TnL5HPStwNw-nCw82GtamM7cQibgpwRgeA&LSNPUBID=TnL5HPStwNw
 - https://www.udemy.com/ethereum-blockchain-game-development/
 - https://www.udemy.com/build-a-blockchain-in-javascript/
-- https://www.udemy.com/hyperledger/
+- **https://www.udemy.com/hyperledger/**
 - https://www.udemy.com/build-your-blockchain-az/
 - https://www.udemy.com/blockchain-developer/
 
 ### Week 10
 
-September 17 - 21 Virtual Reality
-
-Using Facebook [VR stack](https://developers.facebook.com/products#virtual-reality)
-
-- https://facebook.github.io/react-360/docs/setup.html
-
-- 3D Posts
-Create immersive 3D posts and content for the Facebook News Feed.
-
-- Facebook 360
-Create and share immersive stories, places and experiences.
-
-- Oculus
-Create compelling VR experiences and reach passionate VR audiences.
-
-- Quill
-A VR illustration and animation tool built to help empower artists and creators.
-
-- React 360
-Use web tech to create content for audiences across mobile, web and VR.
+September 17 - 21 Virtual Reality Using Unity:
+- Day 1: Getting the tools and building our first VR app
+We are going to set up our computer to develop VR apps based on google cardboard. The google VR SDK is also compatible with iPhone/iPad development, but you will need to install the tools on MacOS to be able to do so
+Create some basic 3D model to include in our VR experience
+- Day 2: Unity scripting - essential concepts for VR development
+Learn the basics of the unity Monobehaviour class and how can we create scripts to animate our gameobjects
+Learn how to include dinamic calculations in our app
+- Day 3: UI design and interaction - moving our player around the scene
+Create scripts to perform interactions with UI elements based on the user's gaze
+Learning advance concepts in Unity Scripting and the Google VR SDK
+- Day 4 : Advanced animation controller:
+Create advanced animation effect and set up communication between the objects to trigger after a specific action has occured
 
 ### Week 11
 
@@ -337,6 +345,13 @@ October 1 - 5 TBD (best suited for senior developers with a broad skill set)
 
 - [VOLUNTEER NEEDED] An introduction to collaboration using Github.
 - [VOLUNTEER NEEDED] Community engagement course.
+
+### Week 13
+
+October 8 - 12 Mobile App Development with React.JS
+
+Using the Facebook React.JS [tutorial](https://reactjs.org/tutorial/tutorial.html) and [Learning JavaScript Design Patters](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+
 
 ## Schedule
 
