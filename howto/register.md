@@ -9,5 +9,5 @@ https://memberportal.1millionwomentotech.com/diy
 ## Fill in the registration form
 
 ## Confirm your email address
-
+## After confirmation
 ## Log into the Memberportal with your new username and password
