@@ -142,4 +142,8 @@ D4 | Implement Promise | Implement promise examples from https://github.com/adva
 D4 | You Don't Know JS Chapter 4 | https://github.com/getify/You-Dont-Know-JS/blob/31e1d4ff600d88cc2ce243903ab8a3a9d15cce15/es6%20%26%20beyond/ch4.md | Required
 D4 | Promise drill exercise | Please submit an interesting exercise to drill Promises. | Required
 
+# Week 8 Mobile Prototyping (UI/UX) in InvisionApp
 
+Day | Assignment | Description | Required/Optional
+:------------: | ------------- | ------------- | :-------------:
+|||
