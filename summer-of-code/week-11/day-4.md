@@ -6,7 +6,7 @@
 ### Today we will learn
 
 * How to create an AR app that takes the marker and the objects from a server
-* How to create and later download Unity AssetsBundles, which are a format of unity to pack information of a specific prefabs in a lighter way
+* How to create and later download Unity AssetsBundles, wich are a format of unity to pack information of a specific prefabs in a lighter way
 
 ## Day 4 Asset bundles in Unity - Create, download and add to target
 
@@ -16,7 +16,7 @@ AssetBundles are exported prefabs that can created in one instance of Unity in o
 
 
 
-Go to the project you want to export assets from, inside the project view select it and assign label a category and object label.
+Go to the projet you want to export assets from, inside the project view select it and assign label a category and object label.
 
 
 
@@ -74,8 +74,9 @@ public class DownloadAsset : MonoBehaviour {
 
 Notice that not only the 3D mesh got imported, but also material, rigidbodies and colliders.
 
-From Rox Arten to Everyone: (11:58 AM)
- I have not used any of them, BUT,  for those who run screaming from illustrator or photoshop (they are professional level programs so can have some steep learning curves)  this link lists alternatives for illustrator https://www.nyfa.edu/student-resources/six-free-alternatives-to-adobe-illustrator/  and gimp is the most welel known for photoshop
+
+### Opening URL elements 
+
 
 
 
