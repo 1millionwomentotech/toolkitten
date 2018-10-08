@@ -43,5 +43,47 @@ Bonuses:
 
 Friday of Week 2: 27th of July, 2018 at 9:00am British Time
 
+# Submission guidlines
+
+Your code should return an object in the following format:
+
+```python
+result = {
+    "score": 143,
+    "words": [ "" , "", "", "", ... , ""]
+}
+```
+
+
+Where there are two key-value pairs. The first pair has key = "score", and the value should be an integer. The second par has key = "words", and the value should be an alphabetically SORTED list of words.
+
+# Dictionary
+
+https://raw.githubusercontent.com/jonbcard/scrabble-bot/master/src/dictionary.txt
+
+# Dice distribution
+
+Use the ***New Version***:
+https://www.boardgamegeek.com/thread/300565/review-boggle-veteran-and-beware-different-version
+
+New Version | Old Version
+   AAEEGN   |   AACIOT
+   ELRTTY   |   AHMORS
+   AOOTTW   |   EGKLUY
+   ABBJOO   |   ABILTY
+   EHRTVW   |   ACDEMP
+   CIMOTU   |   EGINTV
+   DISTTY   |   GILRUW
+   EIOSST   |   ELPSTU
+   DELRVY   |   DENOSW
+   ACHOPS   |   ACELRS
+   HIMNQU   |   ABJMOQ
+   EEINSU   |   EEFHIY
+   EEGHNW   |   EHINPS
+   AFFKPS   |   DKNOTU
+   HLNNRZ   |   ADENVZ
+   DEILRX   |   BIFORX
+
+
 
 
