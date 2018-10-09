@@ -23,12 +23,16 @@ When submitting your work please send:
 ## Judging Criteria 
 
 There are a number of criteria that OUP will use to judge the winner of the challenge, these are:
-Quality of the code 
-• Efficiency of the code / understanding of the framework.
-• Well commented and readable.
-• Evidence of tests in place to validate functionality.
-• The performance (speed and usability) of the user interface for end users. 
+Quality of the code: 
+* Efficiency of the code / understanding of the framework.
+* Well commented and readable.
+* Evidence of tests in place to validate functionality.
+* The performance (speed and usability) of the user interface for end users. 
 
 ## Prizes
 
 Will be announced by Oxford University Press next week during the live Q&A.
+
+## Deadline
+
+Oct 28, 2018 before midnight (23:59) British Time
