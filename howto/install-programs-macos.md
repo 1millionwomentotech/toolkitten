@@ -29,6 +29,7 @@ This document will detail how to install the applications and modules used durin
 * [Gimp](#Install-Gimp)
 * [Gitkracken](#Install-Gitkracken)
 * [Sourcetree](#Install-Sourcetree)
+* [React.js](#Install-React.js)
 * [](#Install)
 * [](#Install)
 
@@ -132,3 +133,48 @@ https://unity3d.com/unity/qa/lts-releases
 ## Install Gitkracken
 
 ## Install Sourcetree
+
+## Install React.js
+There are two ways to work with React.js: you may work from your web browser or install to your computer.
+
+Option 1:
+To work with react in your browser, go to https://snack.expo.io/. To save your progress, select save, which will give you a permanent link.
+
+![expo_1](images/expo-signup-1.png)
+
+2. You may also crreate an account to easily track your project.
+
+![expo_2](images/expo-signup-2.png)
+
+3. You will recieve an email asking you to confirm your address.
+
+![expo_3](images/expo-signup-3.png)
+
+Option 2: Create React App
+This app will allow you to create an app with minimal installation, however the project size is limited to a one page app.
+
+This installation requires you to have Node on your computer. If you did not install it during the Javascript course, please go back to the week 7 Node install.
+
+1. In your terminal, change your directory to the location where you want your react project.
+
+2. In your terminal, type: **npx create-react-app my-app**.
+
+3. Change your directory to the location where you want your react project **cd .../my-app**.
+
+4. Type: **npm start**.
+
+Option 3: Expo CLI
+This app is a command line environment will allow you to build projects.
+
+This installation requires you to have Node on your computer. If you did not install it during the Javascript course, please go back to the week 7 Node install.
+
+![expo_4](images/Expo_install_4.png)
+
+1. In your terminal, change your directory to the location where you want your react project: **cd .../my-app**..
+
+2. Type **npm install -g expo-cli -- global**, this will install the Expo CLI command line utility.
+
+3. Next, create a new project, type **expo init Project_Name**.
+
+
+4. In your terminal change your directory to the new folder: **cd Project_Name**. Then **expo start**.
