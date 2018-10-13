@@ -168,8 +168,6 @@ This app is a command line environment will allow you to build projects.
 
 This installation requires you to have Node on your computer. If you did not install it during the Javascript course, please go back to the week 7 Node install.
 
-![expo_4](images/Expo_install_4.png)
-
 1. In your terminal, change your directory to the location where you want your react project: **cd .../my-app**..
 
 2. Type **npm install -g expo-cli -- global**, this will install the Expo CLI command line utility.
