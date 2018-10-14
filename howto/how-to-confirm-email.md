@@ -13,7 +13,7 @@ For the last step of your registration, you need to **confirm your email address
 - If you don't see it in your inbox, be sure to check your email's **spam box** and add the Summer of Code email to your contact list.
 - Scroll down and click on the **CONFIRM EMAIL** button, or the link next to this button
 
-![Confirm your email](images/how-to-confirm-email-1.png.png "Confirm your email")
+![Confirm your email](images/how-to-confirm-email-1.png "Confirm your email")
 ![Click on the Confirm Email button](images/how-to-confirm-email-2.png "Click on the Confirm Email button")
 
 2. A new page will open up to confirm you have successfully completed your registration!
