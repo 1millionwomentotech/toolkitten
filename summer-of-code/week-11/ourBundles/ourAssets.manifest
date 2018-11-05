@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2332853134
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: toexport.cake
+      Dependencies: {}
