@@ -9,7 +9,7 @@ def isleapyear(year):
     return False
 year =int(input('Enter a year:'))
 if isleapyear(year):
-    print('There are {} hours in year {}.'.format(366*24, year))
+    print(f"There are {366*24} hours in year {year}.")
 else:
     print('There are {} hours in year {}.'.format(365*24, year))
 
