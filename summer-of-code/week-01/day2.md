@@ -33,6 +33,7 @@ print('Good-bye.')
 
 ```
 Hello, world!
+
 Good-bye.
 ```
 
@@ -47,7 +48,7 @@ print('I like' + 'apple pie.')
 I likeapple pie.
 ```
 
-Snap! I forgot to put a space between `I like` and `apple pie.`. 
+Snap! I forgot to put a space between `I like` and `apple pie`. 
 
 Spaces don’t usually matter much in your code, but they matter inside strings. (You know what they say: computers don’t do what you want them to do, only what you tell them to do.) 
 
@@ -62,7 +63,7 @@ I like apple pie.
 
 (As you can see, it didn’t matter to which string I added the space.)
 
-So, you can add strings, but you can also multiply them! (And I know you wanted to... you were all like, “But, Ilona, can we multiply them?” Yes. Yes, you can.) Watch this:
+So, you can add strings, but you can also multiply them! (And I know you wanted to... you were all thinking, “But, Ilona, can we multiply them?” Yes. Yes, you can.) Watch this:
 
 ```
 print('blink ' * 4)
@@ -99,7 +100,7 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
 ```
 
-No, can no do, I'm afraid.
+No, can do, I'm afraid.
 
 #### 12 vs. '12'
 
@@ -137,7 +138,7 @@ print('12' + 12)
 Traceback (most recent call last):
   File "calc.py", line 32, in <module>
     print('12' + 12)
-TypeError: Can't convert 'int' object to str implicitly
+TypeError: must be str, not int
 
 print('2' * '5')
 Traceback (most recent call last):
@@ -215,15 +216,13 @@ print('...you can say that again...')
 
 **Principle: "When coding be lazy. Not just lazy, but agressively, proactively lazy."**
 
-It would be nice if we could just type it in once and then hang on to it... store it somewhere. Well, we can, of course. It would have been insensitive to bring
-it up otherwise.
+It would be nice if we could just type it in once and then hang on to it... store it somewhere. Well, we can, of course. It would have been insensitive to bring it up otherwise.
 
 To store the string in your computer’s memory for use later in your program, you need to give the string a name.
 
 Programmers often refer to this process as assignment, and they call the names variables. 
 
-A variable name can usually
-be just about any sequence of letters and numbers, but in Python the first character of this name needs to be a lowercase letter. 
+A variable name can be just about any sequence of letters, numbers and underscore(_), but in Python the first character of this name cannot be a number, and is customarily a lowercase letter.  No spaces are allowed. Words may be separated by underscores. 
 
 Let’s try that last program again, but this time I will give the string the name `my_string` (though I could just as well have named it str or myOwnLittleString or henry_the_8th):
 
@@ -235,18 +234,48 @@ print(my_string)
 ...you can say that again...
 ```
 
+We an also assign an object to a variable and then reassign a different object to that variable
 
-## Few things to try
+```
+composer = 'Mozart'
+print(composer)
 
-- Music
-- Planets
+composer = 'Tchaikovsky'
+print('But I prefer ' + composer + ', personally.')
+```
+Variables can point to any sort of object, not just strings:
 
+username = 'Ilona ' + 'gold'<br />
+print(username)
 
+score = 5 * (1+8)<br />
+print(score)<br />
+print('score')<br />
 
-## Submission Guidelines
+```
+Ilona gold
+45
+score
+```
+Variables cannot point to other variables.  Let's see what will happen if we try?
 
-Create a single file called `soc-wk1-cert-firstname-lastname.py` and send PR to the Gold and VIP private repo.
+old_var = 8<br />
+new_var = old_var<br />
+print(old_var)<br />
+print(new_var)<br />
 
+print('')
 
+old_var = 'eight cats'<br />
+print(old_var)<br />
+print(new_var)<br />
 
+```
+8
+8
 
+eight cats
+8
+```
+We tried to point new_var to old_var, it really pointed to 8 instead (just like old_var was pointing to). Then we had old_var point to 
+'eight cats', but since new_var was never really pointing at old_var, it stays pointing at 8. This is called **assignment by value**.
