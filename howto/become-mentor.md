@@ -37,7 +37,7 @@ You will also receive a Leadership Certificate from Oxford Entrepreneurs, and be
 
 ### How much time do I need to commit?
 
-We ask for 10 hours minimum in total, however it can be at any time that you are available and it can be done remtely. (If you can do even more than one week, we will be extremely grateful!) You can select which times of the day work best for you: as our participants come from all around the world, someone will be online and needing help all around the clock.
+We ask for 10 hours minimum in total, however it can be at any time that you are available and it can be done remotely. (If you can do even more than one week, we will be extremely grateful!) You can select which times of the day work best for you: as our participants come from all around the world, someone will be online and needing help all around the clock.
 
 When checking your availability, we recommend that you also make sure that your skill set matches the Summer of Code programme in the week when you are planning to volunteer:
 
