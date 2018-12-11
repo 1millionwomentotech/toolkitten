@@ -73,5 +73,5 @@ Thank you for your amazing contribution and we will answer/add/edit accordingly!
 
 
 ## Mentor #HOWTO
-- [Code of Conduct](code-of-condut.md)
+- [Code of Conduct](code-of-conduct.md)
 - [Code Review](code-review.md)
