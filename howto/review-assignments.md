@@ -1,6 +1,6 @@
 ## Reviewing Assignments for SOC
 
-- Ensure that you are a part of the 'mentors' team in the '1mwtt-soc1' organisation.
+Please ensure that you are a part of the 'mentors' team in the '1mwtt-soc1' organisation, and then follow the steps below;
 
 1. Go to [https://github.com/1mwtt-soc1](https://github.com/1mwtt-soc1)
 2. In the `Find a repository...` search field search for assignments with the  'to-review' topic by typing in **to-review**, or [click here](https://github.com/1mwtt-soc1?utf8=%E2%9C%93&q=to-review&type=&language=) where it's done for you. Bookmark this page.
@@ -23,7 +23,7 @@
 - If the learner has not satisfied all the requirements of the assignment (for example if a Question is unanswered or not answered to the required degree of quality) and further changes are required for completion, please; 
   - Select 'REQUEST CHANGES'.
   - Submit the review.
-  - Close the pull request. (The learner will submit the required changes via a new pull request) - TODO: trigger on a new push instead of new pull request.
+  - Close the pull request. (The learner will re-submit the assignment by reopening the pull request.)
 ![requesting changes vs approving](./images/approve-vs-requestchanges.jpg)
 
 
