@@ -2,6 +2,10 @@
 
 ## Submitting assignments for SOC2018 #HOWTO
 
+If you have previously submitted SOC HW through Github, please visit https://github.com/1mwtt-soc1 and check whether your homework is visisble. If it is, you do not have to resubmit :)
+
+Otherwise, please follow the instructions below;
+
 * Click on the respective week's assignment link and accept the assignment
 
 * Wait for a couple of minutes - a new branch called 'develop' should appear. Do your work in this branch
