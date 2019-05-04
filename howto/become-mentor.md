@@ -7,17 +7,17 @@ https://github.com/1millionwomentotech/toolkitten/tree/master/summer-of-code
 
 # How do I sign up to mentor?
 
-- Step 1: Complete the 30-minute volunteer Mentor application at https://1millionwomentotech.com/mentor and consent to a reference check and interview.
+- Step 1: Complete the 30-minute volunteer Mentor application and consent to a reference check and interview.
 - Step 2: Complete the web-based volunteering and mentoring training.
 - Step 3: Take your first volunteering shift and start changing lives!
 
 ### What is the timeline?
 
-Most Mentors will spend about 2 weeks as applicants, and 6 weeks as trainees. The recommended volunteering is 2-4 hours per week until your commitment of 60 hours is reached. If you are able to volunteer more, especially if you are staying with us long term and return year to year, your experience and seniority will increase and so will your impact.
+Most Mentors will spend about 20 minutes to half-hour per learner. The recommended volunteering is at least 1 and not more than 4 hours per week. If you are able to volunteer for the whole extent of your employer's Volunteer program, we really appreciate it, as every hour counts! If you are staying with us long term and return year to year, your experience and seniority will increase and so will your impact.
 
 ### What kind of mentors are you looking for?
 
-We are looking for passionate volunteers who are fluent in English and have expert knowledge in at least one of the following areas: JavaScript, Python, Machine Learning, Natural Language Processing, Augmented Reality, Virtual Reality, or Blockchain. Furthermore, since most of our participants are completely new to coding, it would be great if you were a person who is kind, patient, and positive in the feedback you provide! All genders are welcome to mentor, although we want to particularly encourage women and enbies.
+We are looking for passionate volunteers who are fluent in English and have expert knowledge in at least one of the following areas: JavaScript, Python, Machine Learning, Natural Language Processing, Augmented Reality, Virtual Reality, or Blockchain especially Hyperledger and EVM, C++, Java, Project Management, or Product Management. Furthermore, since most of our participants are completely new to coding, it would be great if you were a person who is kind, patient, and positive in the feedback you provide! All genders are welcome to mentor, although we want to particularly encourage women and enbies.
 
 ### What can I get out of it?
 
@@ -38,6 +38,8 @@ When checking your availability, we recommend that you also make sure that your 
 We operate a GitHub classroom where the participants can send Pull Request, which we will ask the mentors to review. You will receive detailed training on how to give help with homework and do code reviews.
 
 If you have prior experience mentoring in hackathons or courses, especially in online environments, we would welcome your ideas, suggestions, or even your help coordinating the mentoring process.
+
+For those who are adventurous and kind enough based on the written code reviews, there is always a need for a senior set of eyes to pair program with beginners, especially around loops and variables, and translating word problems into basic data structures such as lists, matrices and objects.
 
 ### What is your onboarding process?
 
