@@ -1,0 +1,173 @@
+# Day1
+
+hours_in_a_year = 1 * 365 * 24
+print("In a Year there is " + str(hours_in_a_year) + " hours")
+print("")
+
+minutes_in_a_decade = 10 * 365 * 24 * 60
+print("In a decade there is " + str(minutes_in_a_decade) + " minutes")
+print("")
+
+your_age_in_seconds = input("What is your age in years to get it in seconds? ")
+your_age_seconds = int(your_age_in_seconds) * 365 * 24 * 60 * 60
+print("Your age in seconds is " + str(your_age_seconds))
+print("")
+
+
+print("Andreea Visanoiu​: I'm 48618000 seconds old hahaha. what is my agent in years")
+print(str(48618000 / (365 * 24 * 60 * 60)) + " years")
+print("")
+
+ 
+
+# Day2
+
+print("Escape characters must always escape themselves. Why?")
+print("The backslash is the escape character. In other words, if you have a backslash and another character, they are sometimes translated into a new character. ")
+
+
+
+# Day3
+
+# 1st few things to try
+	# a 
+first_name = input("What is your first name? ")
+middle_name = input("What is your middle name? ")
+last_name = input("What is your last name? ")
+greeting = "Hi lovely, %s %s %s"
+print (greeting % (first_name, middle_name, last_name))
+
+	 # b
+favorite_name = input("What is your favorite number? ")
+bigger_number = 1 + int(favorite_name)
+print("No your bigger and better favorite number is " + str(bigger_number))
+
+# 2nd few things to try
+angry_boss = input("What do you want? ")
+print('WHADDAYA MEAN "' + (angry_boss).upper() + '"?!? YOU\'RE FIRED!!')
+
+
+
+# Day4
+
+# 1st few things to try
+
+# * “99 Bottles of Beer on the Wall.” Write a program that prints out the lyrics to that beloved classic, “99 Bottles of Beer on the Wall.”)
+for x in range(99, 0, -1):
+	if x > 1:
+		print(str(x) + " Bottles of Beer on the Wall " + str(x) + " Bottles of Beer on the Wall.")
+
+
+# * Deaf grandma. Whatever you say to Grandma (whatever you type in), she should respond with this: HUH?! SPEAK UP, GIRL!
+text = ""
+while text == text.lower():
+	text = input("Say something to Grandm : ")
+	if text != text.upper():
+		print("HUH?! SPEAK UP, GIRL! :")
+	else:
+		print("NO, NOT SINCE 1930!")
+
+
+# * Deaf grandma extended. What if Grandma doesn’t want you to leave? When you shout BYE, she could pretend not to hear you. Change your previous program so that you have to shout BYE three times in a row. Make sure to test your program: if you shout BYE three times but not in a row, you should still be talking to Grandma.
+text = 0
+while text < 3:
+	text = input("Say something to Grandm : ")
+	if text != "bye bye bye".upper():
+		text = 2
+		print("HUH?! SPEAK UP, GIRL! :")
+	else:
+		text = 3
+		print("NO, NOT SINCE 1930!")
+
+
+# * Leap years. Write a program that asks for a starting year and an ending year and then puts all the leap years between them (and including them, if they are also leap years). Leap years are years divisible by 4 (like 1984 and 2004). However, years divisible by 100 are not leap years (such as 1800 and 1900) unless they are also divisible by 400 (such as 1600 and 2000, which were in fact leap years). What a mess!
+staring_year = int(input("Give me the first year: "))
+ending_year = int(input("Give me the last year: "))+1
+for year in range(staring_year, ending_year):
+	if (year % 4) == 0:
+	   if (year % 100) == 0:
+	       if (year % 400) == 0:
+	           print("{0}".format(year))
+	       else:
+	           print("")
+	   else:
+	       print("{0}".format(year))
+	else:
+	   print("")
+
+
+# * Find something today in your life, that is a calculation. Go for a walk, look around the park, try to count something. Anything! And write a program about it. e.g. number of stairs, steps, windows, leaves estimated in the park, kids, dogs, estimate your books by bookshelf, toiletries, wardrobe.
+running_dist = int(input("In KM how long can you run in a day? "))
+running_days = int(input("How many times do you run a weel "))+1
+distance = running_dist * running_days
+print("Weekly you run " + str(distance) + "KM, go girl")
+
+
+# 2nd few things to try
+# Building and sorting an array. Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second?
+word = " "
+text = [] 
+maxLengthList = 6
+while word != "":
+    word = input("Please type as many words as we want: ")
+    text.append(word)
+    text.sort()
+	# if not word:
+	#    	break
+print("This is your word list")
+print(text)
+
+
+# Table of contents. Write a table of contents program here. Start the program with a list holding all of the information for your table of contents (chapter names, page numbers, and so on). Then print out the information from the list in a beautifully formatted table of contents. Use string formatting such as left align, right align, center.
+A = "Chapter 1"
+Aa = "1-1 Introduction"
+Ab = "1-2 Theoretical Background"
+B = "Chapter 2"
+Ba = "2-1 Civil Eng"
+Bb = "2-2 Computer Eng"
+
+
+print("Table of contents:")
+print("{:10}".format(A));
+print("{:>20}".format(Aa));
+print("{:>30}".format(Ab));
+print("{:10}".format(B));
+print("{:>17}".format(Ba));
+print("{:>20}".format(Bb));
+
+# 2nd few things to try
+
+#Old-school Roman numerals. In the early days of Roman numerals, the Romans didn’t bother with any of this new-fangled subtraction “IX” nonsense.
+num_map = [(1000, 'M'), (500, 'D'), (100, 'C'), (50, 'L'), (10, 'X'), (5, 'V'), (1, 'I')]
+ 
+num = int(input("Pleae enter a number between 1 and 3000 to get it in the Old-school Roman numerals: "))
+ 
+def int_to_roman(num):
+    result = []
+    for (arabic, roman) in num_map:
+        (factor, num) = divmod(num, arabic)
+        result.append(roman * factor)
+        if num == 0:
+            break
+    return "".join(result)
+ 
+print(int_to_roman(num))
+
+
+# “Modern” Roman numerals. Eventually, someone thought it would be terribly clever if putting a smaller number before a larger one meant you had to subtract the smaller one. As a result of this development, you must now suffer. Rewrite your previous method to return the new-style Roman numerals so when someone calls roman_numeral 4, it should return 'IV', 90 should be 'XC' etc.
+num_map = [(1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'), (100, 'C'), (90, 'XC'),
+           (50, 'L'), (40, 'XL'), (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')]
+ 
+num = int(input("Pleae enter a number between 1 and 3000 to get it in the Old-school Roman numerals: "))
+ 
+def int_to_roman(num):
+    result = []
+    for (arabic, roman) in num_map:
+        (factor, num) = divmod(num, arabic)
+        result.append(roman * factor)
+        if num == 0:
+            break
+    return "".join(result)
+ 
+print(int_to_roman(num))
+
