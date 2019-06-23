@@ -1,0 +1,33 @@
+import time
+import datetime
+
+seconds = time.time()
+print(seconds)
+minutes = seconds/60
+print(minutes)
+hours=minutes/60
+print(hours)
+days=hours/24
+print(days)
+years=days/365.25
+print(years)
+
+#no of hours in a year
+
+hours=24*365.25
+
+print(hours)
+
+#minutes in a decade
+
+minutes = 24 * 365.25 * 10 * 60 
+
+print(minutes)
+
+# my age in seconds
+
+age = 38
+
+seconds = age * 60 * 365.25 * 24 
+
+print(seconds)
