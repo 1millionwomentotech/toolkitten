@@ -67,7 +67,7 @@ Let’s look at what these  methods do (and don’t do) a little more closely:
 var1 = 2
 var2 = ​'5'​
 print(str(var1) + var2)
-print(var1 + int(var2)
+print(var1 + int(var2))
 print(var1)
 print(var2)
 25
@@ -102,7 +102,7 @@ Try some more interesting (and a few just weird) conversions:
 
 ```
 float('15')​
-float(99.999'​)
+float(99.999​)
 int('99.999'​)
 
 int('5 is my favorite number!'​) 
