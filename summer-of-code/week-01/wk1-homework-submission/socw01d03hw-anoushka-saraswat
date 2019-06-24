@@ -1,0 +1,20 @@
+"homework for week 1 day 3"
+
+first=input("type your first name ")
+
+middle=input("Type your middle name ")
+
+last=input("Type your last name ")
+
+name=first+' '+middle+' '+last
+print("Hi "+name)
+
+
+num=int(input("What is your favorite number? "))
+print(str(num+1)+" is your new favorite number.")
+
+
+"ANGRY BOSS!!"
+
+want=input("What do you want ")
+print('what do you mean "'+want+'" you\'re fired!!')
