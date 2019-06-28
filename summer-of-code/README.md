@@ -226,7 +226,7 @@ August 13 - 17 Introductory JavaScript
 
 We will repeat [Learn to Program](https://pine.fm/LearnToProgram/) this time for JavaScript. 
 
-1. Getting Started: Installing Python on Windows, Mac
+1. Getting Started: Installing JavaScript on Windows, Mac
 1. Numbers
 1. Letters
 1. Variables and Assignment
