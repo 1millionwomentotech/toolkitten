@@ -8,8 +8,13 @@ def moo(n):
 # moo(0)
 # moo(1)
 # moo(2)
+# moo(3)
+# moo(4)
 
 # for i in range(3):
+#   moo(i)
+
+# for i in range(10):
 #   moo(i)
 
 def ask_recursively(question):
