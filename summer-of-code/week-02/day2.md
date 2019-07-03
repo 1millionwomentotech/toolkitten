@@ -69,10 +69,10 @@ world[0][0] read as world-subindex-zero-subindex-zero or just world-zero-zero, w
 
 ```python
 def​ continent_counter(world, x, y):
-    if​ world[y][x] != ​'land'​
+    if​ world[y][x] != ​'land':​
  ​   # Either it's water or we already counted it,​
  ​   # but either way, we don't want to count it now.​
- ​   return​ 0
+ ​      return​ 0
   
     # So first we count this tile...​
     size = 1
