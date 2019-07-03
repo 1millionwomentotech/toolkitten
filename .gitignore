@@ -56,6 +56,14 @@ typings/
 
 # dotenv environment variables file
 .env
+venv
 
 # next.js build output
 .next
+
+# PyCharm IDE project files
+*.iml
+.idea/
+
+# Python bytecode
+__pycache__/
