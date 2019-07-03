@@ -1,0 +1,14 @@
+{
+  "name": "hackathon-week6-boggle-solver",
+  "version": "1.0.0",
+  "description": "Boggle Solver for 1mwtt hackathon week 6 in Node.js",
+  "main": "soc06h-cc-cristina-tarantino.js",
+  "scripts": {
+    "start": "node soc06h-cc-cristina-tarantino.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
