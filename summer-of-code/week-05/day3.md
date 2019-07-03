@@ -179,7 +179,7 @@ Maybe you didn’t need any help installing JavaScript, so you skipped Chapter 1
 
 Maybe you’ve done a little programming before, so you skipped Chapter 2. That’s fine. 
 
-The only thing is that you missed some stuff there that you didn’t really need until now. If you haven’t been running your programs from the console, then you’ll almost certainly have problems with prompt(), and we’re going to be using it a lot from now on. So, if you saved your program as example.py, you should really run your program by opening day1.html in your browser. If you’re having trouble getting around on your console, check out day 1, ​Getting Started​. 
+The only thing is that you missed some stuff there that you didn’t really need until now. If you haven’t been running your programs from the console, then you’ll almost certainly have problems with prompt(), and we’re going to be using it a lot from now on. So, if you saved your program as example.js, you should really run your program by opening day1.html in your browser. If you’re having trouble getting around on your console, check out day 1, ​Getting Started​. 
 
 #### A Few Things to Try
 
@@ -238,9 +238,9 @@ Optional: in JS we may prefer to 'print' these to the HTML file itself rather th
 #### More Arithmetic - Optional
 
 **
-pow(base, power)
-365%7
-abs(-7)
+- pow(base, power)
+- 365%7
+- abs(-7)
 
 #### Random Numbers - Optional
 
