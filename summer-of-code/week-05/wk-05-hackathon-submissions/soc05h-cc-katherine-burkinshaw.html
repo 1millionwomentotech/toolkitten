@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    // CONTINENT COUNTER for 11 x 11 WITH RANDOMLY GENERATED WORLD
+
+    // generate randomly populated row
+    // generate a row of size 15
+    function makeRow() {
+      // initialise array
+      var array = []
+      // state possible values
+      var possible = [
+        'land',
+        'water',
+        'land',
+        'water'
+      ];
+      // add water buffer to left edge
+      array.push('water', 'water');
+      // generate random value from possible values and push to array
+      for (var i = 2; i < 13; i++) {
+        var randomIndex = Math.floor(Math.random() * possible.length);
+        var randomElement = possible[randomIndex];
+        array.push(randomElement);
+      }
+      // add water buffer to right edge
+      array.push('water', 'water');
+      return array;
+    }
+
+    // construct full 11 x 11 world with water buffer
+    function makeWorld() {
+      // initialise outer array
+      var worldInner = []
+      // insert inner arrays to make a 2d array of size 15 x 15
+      for (i = 0; i < 15; i++) {
+        worldInner.push([])
+      }
+      // make arrays world[0] and world[1] into water buffers for top edge
+      for (j=0; j<15; j++) {
+        worldInner[0].push('water')
+      }
+      for (j=0; j<15; j++) {
+        worldInner[1].push('water')
+      }
+      // populate world[2] to world[12] with randomly generated rows
+      for (i = 2; i<13; i++) {
+        worldInner[i] = (makeRow());
+      }
+      // make arrays wrorl[13] and world[14] water buffers for bottom edge
+      for (j=0; j<15; j++) {
+        worldInner[13].push('water')
+      }
+      for (j=0; j<15; j++) {
+        worldInner[14].push('water')
+      }
+      // return full world
+      return worldInner
+    }
+
+    // assign to variable worldFull
+    var worldFull = makeWorld();
+
+    // regererate world if world[7][7] isn't land
+    while (worldFull[7][7] != "land") {
+      worldFull = makeWorld();
+      console.log(worldFull)
+    }
+
+    // print full world to console for debugging
+    console.log(worldFull);
+
+    // initialise function to count tiles with parameters world, x(row) and y(column)
+    function continentCounter(world, x, y) {
+      // conditional - if 'water' or already counted and marked, doesn't need counting
+      if (world[x][y] != 'land') {
+        return 0
+      }
+      // count this tile
+      var size = 1;
+      // mark this tile as counted
+      world[x][y] = 'counted land';
+      // recursively check each of 8 tiles around current tile
+      size = size + continentCounter(world, x-1, y-1);
+      size = size + continentCounter(world, x, y-1);
+      size = size + continentCounter(world, x+1, y-1);
+      size = size + continentCounter(world, x-1, y);
+      size = size + continentCounter(world, x+1, y);
+      size = size + continentCounter(world, x-1, y+1);
+      size = size + continentCounter(world, x, y+1);
+      size = size + continentCounter(world, x+1, y+1);
+      // return size value
+      return size;
+      }
+
+    // print size of continent to console
+    console.log(continentCounter(worldFull, 7, 7));
+    </script>
+
+
+
+
+    <script type="text/javascript">
+
+    // CONTINENT COUNTER FOR RANDOMLY GENERATED n x n WORLD
+
+    // construct randomly generated row size n
+    function makeRow(column) {
+      // initialise array
+      var array = []
+      // state possible values
+      var possible = [
+        'land',
+        'water',
+        'land',
+        'water'
+      ];
+      // add water buffer to left edge
+      array.push('water', 'water');
+      // generate random value from possible values and push to array
+      // column+2 to account for water buffer left
+      for (var i = 2; i < column+2; i++) {
+        var randomIndex = Math.floor(Math.random() * possible.length);
+        var randomElement = possible[randomIndex];
+        array.push(randomElement);
+      }
+      // add water buffer to right edge, total array length column+4
+      array.push('water', 'water');
+      return array;
+    }
+
+    // construct full n x n world with water buffer
+    function makeWorld(row, column) {
+      // initialise outer array
+      var worldInner = []
+      // insert inner arrays to make a 2d array of size row+4
+      for (var i = 0; i < row+4; i++) {
+        worldInner.push([])
+      }
+      // make arrays world[0] and world[1] into water buffers for top edge
+      for (var j=0; j<column+4; j++) {
+        worldInner[0].push('water')
+      }
+      for (var j=0; j<column+4; j++) {
+        worldInner[1].push('water')
+      }
+      // populate world[2] to world[12] with randomly generated rows
+      // row+2 to account for water buffer top
+      for (var i = 2; i<row+2; i++) {
+        worldInner[i] = (makeRow(column));
+      }
+
+      // make arrays wrorl[13] and world[14] water buffers for bottom edge
+      for (var j=0; j<column+4; j++) {
+        worldInner[row + 2].push('water')
+      }
+      for (var j=0; j<column+4; j++) {
+        worldInner[row + 3].push('water');
+      }
+      // return full world
+      return worldInner
+    }
+
+
+    // initialise function to count tiles with parameters world, x(row) and y(column)
+    function continentCounter(world, row, column) {
+      // conditional - if 'water' or already counted and marked, doesn't need counting
+      var tile = world[row][column];
+      if (tile != 'land') {
+        return 0
+      }
+      // count this tile
+      var size = 1;
+      // mark this tile as counted
+      world[row][column] = 'counted land';
+      // recursively check each of 8 tiles around current tile
+      size = size + continentCounter(world, row-1, column-1);
+    	size = size + continentCounter(world, row, column-1);
+    	size = size + continentCounter(world, row+1, column-1);
+    	size = size + continentCounter(world, row-1, column);
+      size = size + continentCounter(world, row+1, column);
+      size = size + continentCounter(world, row-1, column+1);
+    	size = size + continentCounter(world, row, column+1);
+      size = size + continentCounter(world, row+1, column+1);
+      // return size value
+    	return size;
+    }
+
+
+    function createAndCount(row, column) {
+      // generate world size row x column
+      var world = makeWorld(row, column)
+      // print to console for debugging
+      console.log(world)
+      // declare center tile
+      var centerRow = Math.ceil(world.length/2)
+      var centerColumn = Math.ceil((world[0].length)/2)
+      var center = world[centerRow][centerColumn]
+      // if center tile isn't 'land', regenerate the world until it does
+      if (center != 'land') {
+        createAndCount(row, column)
+        return 0
+      }
+      // run continentCounter to get world size.
+      var worldSize = continentCounter(world, centerRow, centerColumn)
+      console.log(worldSize)
+    }
+
+    createAndCount(5, 5)
+    </script>
+
+  </body>
+</html>
