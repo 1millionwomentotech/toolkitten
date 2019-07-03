@@ -6,6 +6,7 @@
 import unittest
 
 from day1 import moo
+from '.\wk2-hackathon-submissions\soc01h-cc-karen-alonso' import alice_dictionary
 
 # moo(2)
 
@@ -19,5 +20,11 @@ class TestMoo(unittest.TestCase):
     self.assertEqual(moo(2), 'moomoo')
   def test3(self):
     self.assertEqual(moo(3), 'moomoomoo')
+
+class TestCreateDictionary(object):
+	"""docstring for TestCreateDictionary"""
+	def test0(self):
+		self.assertEqual(createDictionary("a"), 9083)
+		
 
 unittest.main()
