@@ -8,28 +8,28 @@
 
 ### Install Fest
 
-Well be using three main tools when we program: a text editor (to write your programs), the Python interpreter (to run your programs), and your command line (which is how you tell your computer which programs you want to run).
+We'll be using three main tools when we program: a text editor (to write your programs), the Python interpreter (to run your programs), and your command line (which is how you tell your computer which programs you want to run).
 
 Although there’s pretty much just one Python interpreter and one command line, there are many text editors to choose from—and some are much better for programming than others. A good text editor can help catch many of those "stupid mistakes" that beginner programmers make... oh, all right, that all programmers make. 
 
 It makes your code much easier for yourself and others to read in a number of ways: by helping with indentation and formatting, by letting you set markers in your code (so you can easily return to something you are working on), by helping you match up your parentheses, and most important by syntax coloring (coloring different parts of your code with different colors according to their meanings in the program). You’ll see syntax coloring in the examples in this book.
 
 ```
-Syntax coloring is also called **syntax highlighing**.
+Syntax coloring is also called **syntax highlighting**.
 ```
 
-With so many good editors (and so many bad ones), it can be hard to know which to choose. I'll tell you which one I use, though; that will have to be good enough for now. But whatever you choose as your text editor, do not use a word processor! Aside from being made for an entirely different purpose, they usually don't produce plain text, and your code must be in plain text for your programs to run.
+With so many good editors (and so many bad ones), it can be hard to know which one to choose. I'll tell you which one I use, though; that will have to be good enough for now. But whatever you choose as your text editor, do not use a word processor! Aside from being made for an entirely different purpose, they usually don't produce plain text, and your code must be in plain text for your programs to run.
 
 Since setting up your environment differs somewhat from platform to platform (which text editors are available, how to install Python, how your command line works...), we’ll look at setting up each platform covered in this course, one at a time.
 
 If you are ready to get started, here are the download and install links:
-- [Sublime Text 3](https://www.sublimetext.com/3)
-- [Python 3.7.0](https://wiki.python.org/moin/BeginnersGuide/Download)
+- [Sublime Text 3] (https://www.sublimetext.com/3)
+- [Python 3.7.0] (https://wiki.python.org/moin/BeginnersGuide/Download)
 
 
 #### 1.1 Windows 
 
-First, let’s install Python. Go get the One-Click Installer from the website [https://wiki.python.org/moin/BeginnersGuide/Download](https://wiki.python.org/moin/BeginnersGuide/Download) by clicking Download and then clicking the highest-numbered version of Python you see there (version 3.7.0 as of this writing). When you run it, it will ask you where you want to install Python and which parts of it you want installed. Just accept all the defaults.
+First, let’s install Python. Go get the One-Click Installer from the website (https://wiki.python.org/moin/BeginnersGuide/Download) by clicking Download and then selecting the highest-numbered version of Python you see there (version 3.7.0 as of this writing). When you run it, you will be asked where you want to install Python and which parts of it you want installed. Accept all the defaults.
 
 Now let’s make a folder on your desktop in which you’ll keep all of your programs.
 
@@ -37,19 +37,19 @@ Right-click your desktop, select New, and then select Folder. Name it something 
 
 To make a blank Python program, right-click in the folder, select New, and then select Text Document. Rename the document to have the `.py` file extension.
 
-So if it was "New Text Document.txt", rename it to "ponies.py" (if your program was about ponies).
+So, if it was "New Text Document.txt", rename it to "ponies.py" (if your program was about ponies).
 
-Now you need a text editor. I am a fan of [Sublime Text 3](https://www.sublimetext.com/3), so unless you already have a favorite text editor, go ahead and download and install that one.
+Now you need a text editor. I am a fan of [Sublime Text 3] (https://www.sublimetext.com/3), so unless you already have a favorite text editor, go ahead and download and install that one.
 
-To actually run your programs, you’ll need to go to your command line. In your Start menu, select Accessories, and then choose Command Prompt.
+To actually run your programs, you’ll need to go to your command line. In your Start menu, scroll down and select Windows System, and then select Command Prompt.
 
 You’ll see something like this:
 
 ```
-Microsoft Windows XP [Version 5.1.2600]
-(C) Copyright 1985-2001 Microsoft Corp.
+Microsoft Windows [Version 10.0.17134.345]
+(c) 2018 Microsoft Corporation. All rights reserved.
 
-C:\Documents and Settings\ilonabudapesti>_
+C:\Users\ilonabudapesti>_
 ```
 
 #### 1.2 Mac OS X 
@@ -65,7 +65,8 @@ Optional for Mac, you can use the built-in command prompt or what I use
 
 #### 1.3 Linux 
 
-Links
+Python comes preinstalled on most Linux distributions, and is available as a package on all others.  Type `python` into the terminal and if `>>>` comes up it is already there.  `>>>` is the prompt of the interactive Python interpreter. It indicates that the interpreter is ready to get Python statements typed in.  To install package from the terminal prompt, enter, `sudo apt-get install python3`
+
 
 
 ### 2 Numbers
@@ -77,7 +78,7 @@ Open your text editor, and type the following:
 print(1+2)
 ```
 
-Save your program (yep, that’s a complete program!) as `calc.py`. Now run your program by typing ruby `calc.py` into your command line. 
+Save your program (yep, that’s a complete program!) as `calc.py`. Now run your program by typing `python calc.py` into your command line. 
 
 It should put a 3 on your screen. 
 
@@ -101,7 +102,7 @@ Run it by typing `python calc.py` into your command line. Trust me.
 So, what’s going on in that program? 
 
 I’m sure you can guess what the 1+2 does; our program is basically the same as this:
-```python
+```python 
 print(3)
 ```
 
@@ -167,7 +168,7 @@ Write a program that tells you the following:
 - Your age in seconds. How many seconds old are you? (I'm not going to check your answer, so be as accurate—or not—as you want.)
 - Andreea Visanoiu​: I'm 48618000 seconds old hahaha. Calculate @Andreea Visanoiu's age.
 
-Here are some tougher questions:
+Optional:
 
 - How many days does it take for a 32-bit system to timeout, if it has a bug with integer overflow?
 - How about a 64-bit system?
