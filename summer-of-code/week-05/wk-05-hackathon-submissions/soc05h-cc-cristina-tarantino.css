@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 5em 0 1em;
+}
+
+.hide {
+  display: none;
+}
+
+#world {
+  margin: .5em auto 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+  #world td {
+    border: 1px solid grey;
+  }
+
+  @keyframes birth {
+    50% {
+      box-shadow: 0 0 0 44px green inset;
+    }
+  }
+
+  #world input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: white;
+  }
+
+  #world input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 44px black inset;
+    animation: birth 1s;
+  }
