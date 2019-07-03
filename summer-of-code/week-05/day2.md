@@ -205,7 +205,7 @@ To store the string, or a number, in your computer’s memory for use later in y
 
 Programmers often refer to this process as **assignment**, and they call the names **variables**. 
 
-A variable name can usually be just about any sequence of letters and numbers, but in Python the first character of this name needs to be a lowercase letter. 
+A variable name can usually be just about any sequence of letters and numbers, but in Javascript the first character of this name needs to be a lowercase letter. 
 
 Let’s try that last program again, but this time I will give the string the name `my_string` (though I could just as well have named it str or myOwnLittleString or henry_the_8th):
 
